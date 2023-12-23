@@ -4,6 +4,7 @@ permalink: /GertlerGreenLiSraer_2023/
 author_profile: true
 ---
 
+<font size=”1”>
 ```
 {
 @techreport{GertlerGreenLiSraer_2023,
@@ -13,3 +14,4 @@ author_profile: true
 	year = {2023},
 	url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559}}}
 ```
+</font>
