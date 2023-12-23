@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "GertlerGreenLiSraer_2023"
 permalink: /GertlerGreenLiSraer_2023/
 author_profile: true
 ---

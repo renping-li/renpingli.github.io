@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "GopalanLiZaldokas_2023"
 permalink: /GopalanLiZaldokas_2023/
 author_profile: true
 ---
