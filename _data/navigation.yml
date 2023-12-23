@@ -2,6 +2,8 @@
 main:
   - title: "Home"
     url: /about/
+  - title: "Working Papers"
+    url: /about/
   - title: "Data & Codes"
     url: /data_codes/
   - title: "Discussions"
