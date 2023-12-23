@@ -1,5 +1,6 @@
 ---
-redirect_from: 
-  - /data_codes/
-  - /data_codes.html
+layout: archive
+title: "Data & Codes"
+permalink: /data_codes/
+author_profile: true
 ---

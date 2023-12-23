@@ -1,7 +1,8 @@
 ---
-redirect_from: 
-  - /discussions/
-  - /discussions.html
+layout: archive
+title: "Discussions"
+permalink: /discussions/
+author_profile: true
 ---
 
 1. “SPACs’ Directors Network: Conflicts of Interest, Compensation, and Competition,” Chinese Economists Society North America Conference, 2023, [Slides](https://www.dropbox.com/s/olfeg1m6ycfn4w3/CES_2023.pdf?dl=0)
