@@ -12,5 +12,5 @@ Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. My
 
 Working Papers
 ======
-1. The Welfare Benefits of Pay-As-You-Go Financing (with Paul Gertler, Brett Green, & David Sraer) SSRN, BibLaTex
+1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com), (Brett Green](https://www.brettgreen.info), & [David Sraer](https://www.davidsraer.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), BibLaTex
 1. Do Board Connections between Product Market Peers Impede Competition? (with Radha Gopalan & Alminas Žaldokas) SSRN, Blog Post,  BibLaTex
