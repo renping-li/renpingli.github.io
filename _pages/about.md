@@ -15,7 +15,7 @@ Research Interests
 Financial Intermediation\\
 Consumer Lending\\
 Corporate Governance\\
-Public Finance\\
+Public Finance
 
 Working Papers
 ======
