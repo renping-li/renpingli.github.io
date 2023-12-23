@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. My research interest includes financial intermediation, consumer lending, corporate governance, and public finance. I obtained a BBA in Finance and a BS in Applied Mathematics both in 2018 from Peking University. I studied at The Ohio State University in 2017.
+Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. I obtained a BBA in Finance and a BS in Applied Mathematics both in 2018 from Peking University. I studied at The Ohio State University in 2017.
+
+Research Interests
+======
+Financial Intermediation
+Consumer Lending
+Corporate Governance
+Public Finance
 
 Working Papers
 ======
