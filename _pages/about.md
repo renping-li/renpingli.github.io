@@ -12,10 +12,10 @@ Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. I 
 
 Research Interests
 ======
-Financial Intermediation
-Consumer Lending
-Corporate Governance
-Public Finance
+Financial Intermediation\\
+Consumer Lending\\
+Corporate Governance\\
+Public Finance\\
 
 Working Papers
 ======
