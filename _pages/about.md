@@ -10,7 +10,7 @@ redirect_from:
 
 Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. I obtained a BBA in Finance and a BS in Applied Mathematics both in 2018 from Peking University. I studied at The Ohio State University in 2017.
 
-You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
+<!-- You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0). -->
 
 Research Interests
 ======
