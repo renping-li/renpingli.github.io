@@ -8,6 +8,16 @@ redirect_from:
   - /about.html
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LK2GPXZMWH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LK2GPXZMWH');
+</script>
+
 Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. I obtained a BBA in Finance and a BS in Applied Mathematics both in 2018 from Peking University. I studied at The Ohio State University in 2017.
 
 You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
