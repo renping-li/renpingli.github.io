@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: /about/
   - title: "Working Papers"
-    url: /about/
+    url: "#working-papers"
   - title: "Data & Codes"
     url: /data_codes/
   - title: "Discussions"

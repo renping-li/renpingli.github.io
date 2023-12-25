@@ -10,16 +10,16 @@ redirect_from:
 
 Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. I obtained a BBA in Finance and a BS in Applied Mathematics both in 2018 from Peking University. I studied at The Ohio State University in 2017.
 
-<!-- You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0). -->
+You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
 
-Research Interests
+Research Interest
 ======
 Financial Intermediation\\
 Consumer Lending\\
 Corporate Governance\\
 Public Finance
 
-Working Papers
+<a href="#working-papers">Working Papers</a>
 ======
 1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com), [Brett Green](https://www.brettgreen.info), & [David Sraer](https://www.davidsraer.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [BibLaTex](GertlerGreenLiSraer_2023)
 1. Do Board Connections between Product Market Peers Impede Competition? (with [Radha Gopalan](http://apps.olin.wustl.edu/faculty/Gopalan/) & [Alminas Žaldokas](http://www.alminas.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853), [Blog Post](https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/),  [BibLaTex](GopalanLiZaldokas_2023)
