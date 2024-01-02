@@ -22,8 +22,8 @@ author_profile: true
       align-items: center;
       justify-content: space-around;
       padding: 20px;
-      background-color: #f0f0f0;
-      border-bottom: 1px solid #ccc;
+      background-color: #ffffff;
+      border-bottom: 0px solid #ccc;
     }
 
     .text-container {
@@ -48,7 +48,6 @@ author_profile: true
   <!-- First Section -->
   <section>
     <div class="text-container">
-      <h2>First Section Text</h2>
       <p>This is some text on the left side of the first section.</p>
     </div>
     <div class="image-container">
@@ -62,7 +61,6 @@ author_profile: true
       <img src="https://via.placeholder.com/200" alt="Placeholder Image">
     </div>
     <div class="text-container">
-      <h2>Second Section Text</h2>
       <p>This is some text on the right side of the second section.</p>
     </div>
   </section>
@@ -70,7 +68,6 @@ author_profile: true
   <!-- Third Section -->
   <section>
     <div class="text-container">
-      <h2>Third Section Text</h2>
       <p>This is some text on the left side of the third section.</p>
     </div>
     <div class="image-container">
