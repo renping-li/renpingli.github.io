@@ -58,12 +58,12 @@ author_profile: true
 
   <!-- Second Section -->
   <section>
+    <div class="image-container">
+      <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    </div>
     <div class="text-container">
       <h2>Second Section Text</h2>
       <p>This is some text on the right side of the second section.</p>
-    </div>
-    <div class="image-container">
-      <img src="https://via.placeholder.com/200" alt="Placeholder Image">
     </div>
   </section>
 
