@@ -4,7 +4,9 @@ main:
     url: /about/
   - title: "Working Papers"
     url: "#working-papers"
-  - title: "Data & Codes"
-    url: /data_codes/
+  - title: "Job Market Paper"
+    url: /job_market_paper/
+  - title: "Data & Code"
+    url: /data_code/
   - title: "Discussions"
     url: /discussions/

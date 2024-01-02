@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Data & Codes"
-permalink: /data_codes/
+title: "Data & Code"
+permalink: /data_code/
 author_profile: true
 ---
 
