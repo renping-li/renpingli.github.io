@@ -22,7 +22,7 @@ Hello. I am a PhD Candidate in Finance at Washington University in St. Louis. I 
 
 You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
 
-Research Interest
+Research Interests
 ======
 Financial Intermediation\\
 Consumer Lending\\
