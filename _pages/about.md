@@ -27,7 +27,7 @@ Research Interests
 Financial Intermediation\\
 Consumer Lending\\
 Corporate Governance\\
-Public Finance
+Antitrust
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;">Working Papers</a>
 ======
