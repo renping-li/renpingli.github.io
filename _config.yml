@@ -81,6 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Renping Li"
+  tag              : "Go Bucks!"
   avatar           : "profile.jpeg"
   bio              : "PhD Candidate in Finance"
   location         : "St. Louis, MO, USA"
