@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Renping Li"
-  tag              : "Go Bucks!"
   avatar           : "profile.jpeg"
   bio              : "PhD Candidate in Finance"
+  tag              : "Go Bucks!"
   location         : "St. Louis, MO, USA"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
