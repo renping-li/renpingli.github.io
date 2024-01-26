@@ -12,12 +12,22 @@ The municipal bond underwriting market provides a natural laboratory for studyin
 
 <figure>
 <img src="/images/muni-underwriter-ma/Figure-1.jpg" width="1000" class="center">
-<figcaption>Caption goes here</figcaption>
+<figcaption>Local Market Shares of Merging Underwriters</figcaption>
 </figure>
 
 I hand-collect the sample of M&As among municipal bond underwriters during 1970-2022. I find 157 M&As among underwriters with geographic overlap. I define that an area is affected by underwriter M&As if both sides operate there and the deal is significant enough to raise the degree of concentration in the local underwriting market. Figure 1 shows the example of the M&A between SunTrust Bank and Equitable Securities. While SunTrust Bank underwrote in many states in the U.S. Southeast, Equitable Securities was more localized and focused on the state of Tennessee. Their M&A would affect the areas where they both operated, such as “Nashville-Davidson–Murfreesboro, TN”, but not the areas where only one side operated in, such as those in Florida. For each treated area, I look for a control area that is the closest in terms of population and average income but is not affected by consolidation during the concurrent period itself. Figure 2 gives some examples of my treatment-control matched sample.
 
+<figure>
+<img src="/images/muni-underwriter-ma/Figure-1.jpg" width="500" class="center">
+<figcaption>Illustration of Treated-Control Matched Sample</figcaption>
+</figure>
+
 I first investigate the effects of underwriter M&As on the underwriting spread, i.e., the difference between the offering price to initial investors and the proceeds that the government receives, which is expressed as a fraction of the principal amount and constitutes the revenue of underwriters. I find that it rises by 5.7 basis points from a sample mean of 102.9 basis points. For a median bond issue with an amount of &dollar;8.4 million, the increase corresponds to a &dollar;4,777 greater financial burden on the issuing government. A median county would incur &dollar;19,560 more in the underwriting spread annually. Figure 3 illustrates the dynamics of the difference in the underwriting spread in treated relative to control areas. Consistent with investment banks wielding their pricing power in more concentrated markets, the effects double for larger M&As and triple in highly concentrated areas. The offering yield also rises in less competitive markets or under negotiate sales, consistent with underwriters also influencing offering terms in a way that makes the securities easier to market and distribute but at the cost of issuers.
+
+<figure>
+<img src="/images/muni-underwriter-ma/Figure-3.jpg" width="500" class="center">
+<figcaption>Effects of M&As on Underwriting Spread</figcaption>
+</figure>
 
 To ensure a scientific approach in making a causal interpretation of my findings and to mitigate the possibility of spurious correlations, I conduct a range of additional tests. The primary concern is that local economic dynamics could be driving both M&As and the underwriting spread. I show that the effects hold when I examine scenarios where the M&A-affected areas account for only a small fraction of the total businesses of the merging underwriters or when I consider only M&As for which the driving reasons, according to news reports, are orthogonal to the local economy. In both cases, the M&As are unlikely to be driven by local economic dynamics that could simultaneously affect the underwriting spread. I also show that the effects are absent for M&As among underwriters that are geographically apart in their businesses, M&As that are withdrawn, or M&As among purely commercial banks without underwriting services.
 
