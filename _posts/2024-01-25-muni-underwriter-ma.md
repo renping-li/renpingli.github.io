@@ -11,11 +11,9 @@ How should we view the underwriting fees? Are underwriters rightfully compensate
 The municipal bond underwriting market provides a natural laboratory for studying these questions. It rivals corporate securities underwriting markets in the amount of issuance and is instrumental in providing funding for the nation’s public projects. Additionally, it is a much more geographically fragmented market compared to corporate securities underwriting. For example, none of the top three underwriters in California during 2010-2020 is a top ten in Massachusetts, nor vice versa. Moreover, it is a dynamic industry with significant consolidating activities in recent decades. These features allow me to study the effects of M&As among underwriters as shifters of market power, and use areas not affected by M&As as the control group in my scientific inference.
 
 <figure>
-<img src="/images/muni-underwriter-ma/Figure-1.png" width="500" class="center">
+<img src="/images/muni-underwriter-ma/Figure-1.jpg" width="1000" class="center">
 <figcaption>Caption goes here</figcaption>
 </figure>
-
-<img src="/images/editing-talk.png" width="500" class="center">
 
 I hand-collect the sample of M&As among municipal bond underwriters during 1970-2022. I find 157 M&As among underwriters with geographic overlap. I define that an area is affected by underwriter M&As if both sides operate there and the deal is significant enough to raise the degree of concentration in the local underwriting market. Figure 1 shows the example of the M&A between SunTrust Bank and Equitable Securities. While SunTrust Bank underwrote in many states in the U.S. Southeast, Equitable Securities was more localized and focused on the state of Tennessee. Their M&A would affect the areas where they both operated, such as “Nashville-Davidson–Murfreesboro, TN”, but not the areas where only one side operated in, such as those in Florida. For each treated area, I look for a control area that is the closest in terms of population and average income but is not affected by consolidation during the concurrent period itself. Figure 2 gives some examples of my treatment-control matched sample.
 
