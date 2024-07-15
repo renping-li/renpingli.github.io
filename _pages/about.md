@@ -32,7 +32,7 @@ Antitrust
 <a href="#working-papers" style="text-decoration: none; color: inherit;">Working Papers</a>
 ======
 1. When the Thin Bench Gets Thinner: Investment Bank Consolidation and Municipal Finance [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748), [Slides](https://www.dropbox.com/scl/fi/hlyo7a0455ahklsevthyz/slides_Li_UnderwriterMA.pdf?rlkey=rpna3k8k8xb1kutnig5bxibw7&dl=0), [BibLaTex](Li_2024)
-  - Scheduled for AEA Poster Session 2025 and [13th Annual Municipal Finance Conference](https://www.brookings.edu/centers/the-hutchins-center-on-fiscal-and-monetary-policy/municipal-finance-conference/)
+  - Scheduled for AEA 2025 Poster Session and [13th Annual Municipal Finance Conference](https://www.brookings.edu/centers/the-hutchins-center-on-fiscal-and-monetary-policy/municipal-finance-conference/)
   - Featured in [ProMarket](https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/)
 1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com), [Brett Green](https://www.brettgreen.info), & [David Sraer](https://www.davidsraer.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [Slides](https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0), [BibLaTex](GertlerGreenLiSraer_2023)
   - Scheduled for WFA 2024 and CICF 2024
