@@ -24,10 +24,7 @@ You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pd
 
 Research Interests
 ======
-Financial Intermediation\\
-Corporate Governance\\
-Public Finance\\
-Antitrust
+Financial Intermediation, Corporate Governance, Public Finance, Antitrust
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;">Working Papers</a>
 ======
