@@ -32,9 +32,9 @@ Financial Intermediation, Corporate Governance, Public Finance, Antitrust
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 24px; font-weight: bold">Working Papers</a>
 
 {:start="2"}
-1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com), [Brett Green](https://www.brettgreen.info), & [David Sraer](https://www.davidsraer.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [Slides](https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0), [CLS Blue Sky Blog](https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/)
+1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com), [Brett Green](https://www.brettgreen.info), & [David Sraer](https://www.davidsraer.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [Slides](https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0)
   - Scheduled for WFA 2024 and CICF 2024
-1. Board Connections, Firm Profitability, and Product Market Actions (with [Radha Gopalan](http://apps.olin.wustl.edu/faculty/Gopalan/) & [Alminas Žaldokas](http://www.alminas.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853), [Slides](https://www.dropbox.com/scl/fi/u7jrco0rky23z8dbav0to/slides_GopalanLiZaldokas.pdf?rlkey=iqdint5otjj62q881mv0uzqmv&dl=0),  [BibLaTex](GopalanLiZaldokas_2024)
+1. Board Connections, Firm Profitability, and Product Market Actions (with [Radha Gopalan](http://apps.olin.wustl.edu/faculty/Gopalan/) & [Alminas Žaldokas](http://www.alminas.com/)) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853), [Slides](https://www.dropbox.com/scl/fi/u7jrco0rky23z8dbav0to/slides_GopalanLiZaldokas.pdf?rlkey=iqdint5otjj62q881mv0uzqmv&dl=0), [CLS Blue Sky Blog](https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/)
   - R&R at ***Journal of Financial Economics***
   - Scheduled for EFA 2024 and AFA 2025
   - Winner of [2024 John L. Weinberg/IRRCi Research Paper Award](https://weinberg.udel.edu/2024-corporate-governance-symposium/)
