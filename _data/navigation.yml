@@ -2,6 +2,8 @@
 main:
   - title: "Home"
     url: /about/
+  - title: "CV"
+    url: /cv/
   - title: "Working Papers"
     url: "#working-papers"
   # - title: "Job Market Paper"
