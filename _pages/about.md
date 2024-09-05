@@ -27,7 +27,7 @@ Financial Intermediation, Corporate Governance, Public Finance, Antitrust
 <a href="#jmp" style="text-decoration: none; color: inherit; font-size: 22px; font-weight: bold">Job Market Paper</a>
 
 1. When the Thin Bench Gets Thinner: Investment Bank Consolidation and Municipal Finance (*Solo-Authored*) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748), [Slides](https://www.dropbox.com/scl/fi/hlyo7a0455ahklsevthyz/slides_Li_UnderwriterMA.pdf?rlkey=rpna3k8k8xb1kutnig5bxibw7&dl=0), [ProMarket](https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/)
-- Scheduled for AEA 2025 Poster Session and [Municipal Finance Conference](https://www.brookings.edu/centers/the-hutchins-center-on-fiscal-and-monetary-policy/municipal-finance-conference/)
+- Scheduled for AEA 2025 Poster Session, AFA 2025 Poster Session, and [Municipal Finance Conference](https://www.brookings.edu/centers/the-hutchins-center-on-fiscal-and-monetary-policy/municipal-finance-conference/)
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
