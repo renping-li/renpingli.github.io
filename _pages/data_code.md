@@ -16,4 +16,4 @@ author_profile: true
 		- "[SMM_rs0_global1.m](https://github.com/renping-li/ReusableFiles/blob/main/SMM_rs0_global1.m), [SMM_rs0_local.m](https://github.com/renping-li/ReusableFiles/blob/main/SMM_rs0_local.m)": A working example of [TikTak Global Optimizer](https://www.fatihguvenen.com/tiktak) in Matlab
 3. Gopalan, Li, & Žaldokas (2024), Board Connections, Firm Profitability, and Product Market Actions.
 	- Reusable files:
-		- "[Match_BoardEx_UPCPrefix.ipynb](https://github.com/renping-li/ReusableFiles/blob/main/3_Match_BoardEx_UPCPrefix.ipynb)": Codes for the matching between GS1 and BoardEx by firm name
+		- "[Match_BoardEx_UPCPrefix.ipynb](https://github.com/renping-li/ReusableFiles/blob/main/3_Match_BoardEx_UPCPrefix.ipynb)": Codes for the matching between GS1 (i.e., UPC prefixes) and BoardEx by firm name
