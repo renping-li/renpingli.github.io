@@ -33,7 +33,7 @@ Financial Intermediation, Corporate Governance, Public Finance, Antitrust
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
 {:start="2"}
-1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com), [Brett Green](https://www.brettgreen.info), & [David Sraer](https://www.davidsraer.com/))
+1. The Welfare Benefits of Pay-As-You-Go Financing (with [Paul Gertler](https://www.paulgertler.com){: .no-underline }, [Brett Green](https://www.brettgreen.info){: .no-underline }, & [David Sraer](https://www.davidsraer.com/){: .no-underline })
   - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [Slides](https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0)
   - Scheduled for WFA 2024 and CICF 2024
 1. Board Connections, Firm Profitability, and Product Market Actions (with [Radha Gopalan](http://apps.olin.wustl.edu/faculty/Gopalan/) & [Alminas Žaldokas](http://www.alminas.com/))
