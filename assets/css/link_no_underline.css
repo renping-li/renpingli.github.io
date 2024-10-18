@@ -1,0 +1,9 @@
+.no-underline {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the link color the same */
+}
+
+.no-underline:hover, .no-underline:focus {
+    text-decoration: none; /* Ensures underline won't appear on hover or focus */
+    color: inherit; /* Keeps the link color the same on hover or focus */
+}
