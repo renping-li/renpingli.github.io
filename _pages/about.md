@@ -22,7 +22,7 @@ Hi. I am a PhD Candidate in Finance at Washington University in St. Louis. I obt
 
 <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a>
 
-Financial Intermediation, Corporate Governance, Antitrust, Public Finance
+Financial Intermediation, Corporate Governance, Antitrust
 
 <a href="#jmp" style="text-decoration: none; color: inherit; font-size: 22px; font-weight: bold">Job Market Paper</a>
 
