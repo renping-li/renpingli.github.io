@@ -27,7 +27,7 @@ Corporate Governance, Financial Intermediation and FinTech, Competition and Anti
 <a href="#jmp" style="text-decoration: none; color: inherit; font-size: 22px; font-weight: bold">Job Market Paper</a>
 
 1. When the Thin Bench Gets Thinner: The Effects of Investment Bank Consolidation on Municipal Finance (*Solo-Authored*) [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748), [Slides](https://www.dropbox.com/scl/fi/hlyo7a0455ahklsevthyz/slides_Li_UnderwriterMA.pdf?rlkey=rpna3k8k8xb1kutnig5bxibw7&dl=0), [ProMarket](https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/)
-  - Scheduled for AEA 2025 Poster Session, AFA 2025 Poster Session, MFA 2025, and Municipal Finance Conference 2024
+  - Scheduled for AEA 2025 Poster Session, AFA 2025 Poster Session, MFA 2025, EFA 2025 (Philadelphia), and Municipal Finance Conference 2024
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
