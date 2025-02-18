@@ -10,5 +10,5 @@ main:
   #   url: /job_market_paper/
   - title: "Data & Code"
     url: /data_code/
-  - title: "Discussions"
-    url: /discussions/
+  - title: "Discussion"
+    url: /discussion/
