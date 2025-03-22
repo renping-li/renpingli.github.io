@@ -18,7 +18,7 @@ redirect_from:
   gtag('config', 'G-LK2GPXZMWH');
 </script>
 
-Hi. My research interests are corporate governance, banking, and antitrust. I am a PhD Candidate in Finance at Washington University in St. Louis. I obtained a BBA in Finance and a BS in Applied Mathematics from Peking University. I studied at The Ohio State University as an exchange student. You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
+Hi. My research interests are corporate governance, banking, and antitrust. I am a PhD Candidate in Finance at Washington University in St. Louis. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
 
 I am on the 2024-2025 job market.
 
