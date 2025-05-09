@@ -118,6 +118,9 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
+      {% if author.strava %}
+        <li><a href="https://www.strava.com/athletes/103841449"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Strava</a></li>
+      {% endif %}
       <li><i class="fabnomargin fa-fw" aria-hidden="true"></i><b> <em><font color="BA0C2F">{{ author.tag }}</font></em></b> &#x1F330;</li>
     </ul>
   </div>
