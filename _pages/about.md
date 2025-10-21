@@ -18,7 +18,7 @@ redirect_from:
   gtag('config', 'G-LK2GPXZMWH');
 </script>
 
-Hi. My research interests are corporate governance, banking, and antitrust. I hold a PhD in Finance from Washington University in St. Louis. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
+Hi. My research interests are FinTech, financial intermediation, and corporate governance. I hold a PhD in Finance from Washington University in St. Louis. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
 
 <!-- <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a> -->
 
