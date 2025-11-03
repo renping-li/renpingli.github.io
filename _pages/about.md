@@ -18,7 +18,9 @@ redirect_from:
   gtag('config', 'G-LK2GPXZMWH');
 </script>
 
-Hi. My research interests are AI & FinTech, financial intermediation, and corporate governance. I hold a PhD in Finance from Washington University in St. Louis. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
+Hi. I hold a PhD in Finance from Washington University in St. Louis. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/s/yuwc34250an4u33/CV.pdf?dl=0).
+
+<!-- My research interests are AI & FinTech, financial intermediation, and corporate governance. -->
 
 <!-- <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a> -->
 
@@ -26,6 +28,10 @@ Hi. My research interests are AI & FinTech, financial intermediation, and corpor
 
 <!-- <a href="#jmp" style="text-decoration: none; color: inherit; font-size: 22px; font-weight: bold">Job Market Paper</a> -->
 <!-- {:start="2"} -->
+
+<a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a>
+
+AI & FinTech, Financial Intermediation, Corporate Governance
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
