@@ -83,7 +83,7 @@ author:
   name             : "Renping Li"
   avatar           : "profile.jpeg"
   bio              : "Assistant Professor of Finance"
-  tag              : "Go Bucks!"
+  tag              : # "Go Bucks!"
   location         : "New Orleans, LA"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
