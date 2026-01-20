@@ -31,7 +31,7 @@ Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in
 
 <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a>
 
-AI & FinTech, Financial Intermediation, Corporate Governance
+Financial Intermediation, Consumer Lending, Corporate Governance
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
