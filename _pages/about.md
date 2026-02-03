@@ -44,6 +44,6 @@ Financial Intermediation, Consumer Lending, Corporate Governance
   - *Under Review*
 3. Board Connections, Firm Profitability, and Product Market Actions (with Radha Gopalan & Alminas Žaldokas) 
   - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853), [Slides](https://www.dropbox.com/scl/fi/u7jrco0rky23z8dbav0to/slides_GopalanLiZaldokas.pdf?rlkey=iqdint5otjj62q881mv0uzqmv&dl=0), [CLS Blue Sky Blog](https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/)
-  - Review & Resubmit at ***Journal of Financial Economics***
+  - Revise & Resubmit at ***Journal of Financial Economics***
   - Recipient of [John L. Weinberg/IRRCi Research Paper Award](https://weinberg.udel.edu/2024-corporate-governance-symposium/)
   - Recipient of [Sudipto Bhattacharya Memorial Prize](http://ewfs.org/award/)
