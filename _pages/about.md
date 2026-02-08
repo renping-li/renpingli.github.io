@@ -41,7 +41,7 @@ Financial Intermediation, Consumer Lending, Corporate Governance
   - Recipient of [Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)](https://easternfinance.org/best-paper-awards-of-2025/)
 2. The Welfare Benefits of Pay-As-You-Go Financing (with Paul Gertler, Brett Green, & David Sraer) 
   - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [NBER Working Paper](https://www.nber.org/papers/w33484), [Slides](https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0)
-  - *Under Review*
+  - Revise & Resubmit at ***Review of Economic Studies***
 3. Board Connections, Firm Profitability, and Product Market Actions (with Radha Gopalan & Alminas Žaldokas) 
   - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853), [Slides](https://www.dropbox.com/scl/fi/u7jrco0rky23z8dbav0to/slides_GopalanLiZaldokas.pdf?rlkey=iqdint5otjj62q881mv0uzqmv&dl=0), [CLS Blue Sky Blog](https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/)
   - Revise & Resubmit at ***Journal of Financial Economics***
