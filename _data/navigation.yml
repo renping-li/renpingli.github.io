@@ -4,9 +4,9 @@ main:
     url: /
   - title: "Teaching"
     url: /teaching/
-  - title: "CV"
-    url: /cv/
   - title: "Data & Code"
     url: /data_code/
+  - title: "CV"
+    url: /cv/
   # - title: "Discussions"
   #   url: /discussions/
