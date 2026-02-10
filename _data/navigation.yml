@@ -8,6 +8,8 @@ main:
   #   url: "#working-papers"
   # - title: "Job Market Paper"
   #   url: /job_market_paper/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Data & Code"
     url: /data_code/
   # - title: "Discussions"
