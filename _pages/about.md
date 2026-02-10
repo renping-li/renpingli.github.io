@@ -449,16 +449,29 @@ function copyBib(preId) {
 
   if (!anchors.length || !navLinks.length) return;
 
+  // Map each section to the id of its preceding anchor
+  var sectionMap = [];
+  anchors.forEach(function(anchor) {
+    var section = anchor.nextElementSibling;
+    if (section && section.tagName === 'SECTION') {
+      sectionMap.push({ section: section, id: anchor.id });
+    }
+  });
+
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        var id = entry.target.getAttribute('id');
-        navLinks.forEach(function(link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '/#' + id) {
-            link.classList.add('active');
-          }
+        var match = sectionMap.find(function(item) {
+          return item.section === entry.target;
         });
+        if (match) {
+          navLinks.forEach(function(link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '/#' + match.id) {
+              link.classList.add('active');
+            }
+          });
+        }
       }
     });
   }, {
@@ -466,8 +479,8 @@ function copyBib(preId) {
     threshold: 0
   });
 
-  anchors.forEach(function(anchor) {
-    observer.observe(anchor);
+  sectionMap.forEach(function(item) {
+    observer.observe(item.section);
   });
 })();
 </script>
