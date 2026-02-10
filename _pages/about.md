@@ -19,11 +19,13 @@ redirect_from:
 </script>
 
 <style>
-/* Section spacing to account for sticky header */
-section[id] {
-  scroll-margin-top: 120px;
+/* Scroll anchors: clear sticky header */
+.scroll-anchor {
+  display: block;
+  scroll-margin-top: 70px;
 }
-section[id] + section[id] {
+/* Section dividers */
+section + section {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid #eee;
@@ -247,7 +249,7 @@ details.abstract p {
 }
 </style>
 
-<section id="about" markdown="1">
+<section markdown="1">
 
 Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
 
@@ -257,7 +259,8 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 
 </section>
 
-<section id="papers" markdown="1">
+<span id="papers" class="scroll-anchor"></span>
+<section markdown="1">
 
 ## Working Papers
 
@@ -349,7 +352,8 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 
 </section>
 
-<section id="teaching" markdown="1">
+<span id="teaching" class="scroll-anchor"></span>
+<section markdown="1">
 
 ## Teaching
 
@@ -359,7 +363,8 @@ Fall 2025: Financial Management (FINE 3010)
 
 </section>
 
-<section id="data-code" markdown="1">
+<span id="data-code" class="scroll-anchor"></span>
+<section markdown="1">
 
 ## Data & Code
 
@@ -394,7 +399,8 @@ Fall 2025: Financial Management (FINE 3010)
 
 </section>
 
-<section id="cv" markdown="1">
+<span id="cv" class="scroll-anchor"></span>
+<section markdown="1">
 
 ## CV
 
@@ -438,10 +444,10 @@ function copyBib(preId) {
 
 // Scroll-based active nav highlighting
 (function() {
-  var sections = document.querySelectorAll('section[id]');
+  var anchors = document.querySelectorAll('.scroll-anchor');
   var navLinks = document.querySelectorAll('#site-nav .visible-links a[href*="#"]');
 
-  if (!sections.length || !navLinks.length) return;
+  if (!anchors.length || !navLinks.length) return;
 
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
@@ -460,8 +466,8 @@ function copyBib(preId) {
     threshold: 0
   });
 
-  sections.forEach(function(section) {
-    observer.observe(section);
+  anchors.forEach(function(anchor) {
+    observer.observe(anchor);
   });
 })();
 </script>
