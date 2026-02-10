@@ -19,20 +19,6 @@ redirect_from:
 </script>
 
 <style>
-/* Scroll anchors: clear sticky header */
-.scroll-anchor {
-  display: block;
-  scroll-margin-top: 70px;
-}
-/* Section dividers */
-section + section {
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid #eee;
-}
-
-
-/* Publication styles */
 .pub-title {
   font-size: 110%;
   font-weight: bold;
@@ -175,92 +161,13 @@ details.abstract p {
   cursor: pointer;
   font-weight: 500;
 }
-
-/* Data & Code styles */
-.data-entry {
-  margin-bottom: 1.5em;
-}
-.data-title {
-  font-size: 110%;
-  font-weight: bold;
-}
-.data-row {
-  margin-top: 0.35em;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.2em;
-}
-.data-label {
-  font-size: 0.82em;
-  font-weight: 600;
-  color: #006747;
-  margin-right: 0.2em;
-  white-space: nowrap;
-}
-.data-row a {
-  display: inline-block;
-  padding: 0.15em 0.55em;
-  font-size: 0.82em;
-  font-weight: 500;
-  color: #7B2D8E;
-  border: 1px solid rgba(123, 45, 142, 0.35);
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
-.data-row a:hover {
-  background: #7B2D8E;
-  color: #fff;
-  text-decoration: none;
-  border-color: #7B2D8E;
-}
-.data-note {
-  margin-top: 0.15em;
-  margin-left: 0.1em;
-  font-size: 0.82em;
-  color: #555;
-}
-
-/* CV styles */
-.cv-btn {
-  display: inline-block;
-  width: 120px;
-  text-align: center;
-  background-color: #7B2D8E !important;
-}
-.cv-btn:hover {
-  background-color: #5e2270 !important;
-}
-.cv-embed {
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-.cv-embed iframe {
-  border: none;
-  width: 100%;
-  height: 700px;
-}
-@media screen and (max-width: 768px) {
-  .cv-embed {
-    display: none;
-  }
-}
 </style>
-
-<section markdown="1">
 
 Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
 
 ## Research Interests
 
 AI & FinTech, Financial Intermediation, Corporate Governance
-
-<span id="papers" class="scroll-anchor"></span>
-</section>
-
-<section data-nav="papers" markdown="1">
 
 ## Working Papers
 
@@ -350,72 +257,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 </div>
 </div>
 
-<span id="teaching" class="scroll-anchor"></span>
-</section>
-
-<section data-nav="teaching" markdown="1">
-
-## Teaching
-
-### Tulane University
-
-Fall 2025: Financial Management (FINE 3010)
-
-<span id="data-code" class="scroll-anchor"></span>
-</section>
-
-<section data-nav="data-code" markdown="1">
-
-## Data & Code
-
-<ol>
-<li>
-<div class="data-entry">
-<div class="data-title">Investment Bank Consolidation and Municipal Finance</div>
-<div>(<em>Li, 2025</em>)</div>
-<div class="data-row"><span class="data-label">Replication:</span> <a href="https://github.com/renping-li/MuniUnderwriterMA" target="_blank">GitHub Repository</a></div>
-<div class="data-row"><span class="data-label">Data:</span> <a href="https://github.com/renping-li/MuniUnderwriterMA/blob/main/SCRIPT_hand_search_M%26A.csv" target="_blank">Municipal Bond Underwriter M&As, 1970-2022</a></div>
-</div>
-</li>
-
-<li>
-<div class="data-entry">
-<div class="data-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
-<div>(<em>Gertler, Green, Li, &amp; Sraer, 2025</em>)</div>
-<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak_global.m" target="_blank">TikTak_global.m</a> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak_local.m" target="_blank">TikTak_local.m</a></div>
-<div class="data-note">A working example of <a href="https://www.fatihguvenen.com/tiktak" target="_blank">TikTak Global Optimizer</a> in Matlab</div>
-</div>
-</li>
-
-<li>
-<div class="data-entry">
-<div class="data-title">Board Connections, Firm Profitability, and Product Market Actions</div>
-<div>(<em>Gopalan, Li, &amp; Žaldokas, 2025</em>)</div>
-<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/3_Match_BoardEx_UPCPrefix.ipynb" target="_blank">Match_BoardEx_UPCPrefix.ipynb</a></div>
-<div class="data-note">Matching between GS1 (UPC prefixes) and BoardEx by firm name</div>
-</div>
-</li>
-</ol>
-
-<span id="cv" class="scroll-anchor"></span>
-</section>
-
-<section data-nav="cv" markdown="1">
-
-## CV
-
-<a href="/files/CV.pdf" download><button class="btn cv-btn"><i class="fa fa-download"></i> Download</button></a>
-<a href="/files/CV.pdf" target="_blank"><button class="btn cv-btn"><i class="fa fa-eye"></i> View</button></a>
-<br>
-<br>
-<div class="cv-embed">
-  <iframe src="/files/CV.pdf#navpanes=0"></iframe>
-</div>
-
-</section>
-
 <script>
-// Citation modal functions
 function openCite(id) {
   document.getElementById(id).classList.add('active');
 }
@@ -441,33 +283,4 @@ function copyBib(preId) {
     });
   });
 }
-
-// Scroll-based active nav highlighting
-(function() {
-  var sections = document.querySelectorAll('section[data-nav]');
-  var navLinks = document.querySelectorAll('#site-nav .visible-links a[href*="#"]');
-
-  if (!sections.length || !navLinks.length) return;
-
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var id = entry.target.getAttribute('data-nav');
-        navLinks.forEach(function(link) {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '/#' + id) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
-  }, {
-    rootMargin: '-80px 0px -50% 0px',
-    threshold: 0
-  });
-
-  sections.forEach(function(section) {
-    observer.observe(section);
-  });
-})();
 </script>
