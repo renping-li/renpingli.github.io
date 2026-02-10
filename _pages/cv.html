@@ -13,12 +13,27 @@ author_profile: true
     width: 120px;
     text-align: center;
   }
+  .cv-embed {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .cv-embed iframe {
+    border: none;
+    width: 100%;
+    height: 700px;
+  }
+  @media screen and (max-width: 768px) {
+    .cv-embed {
+      display: none;
+    }
+  }
 </style>
 
 <a href="/files/CV.pdf" download><button class="btn cv-btn"><i class="fa fa-download"></i> Download</button></a>
 <a href="/files/CV.pdf" target="_blank"><button class="btn cv-btn"><i class="fa fa-eye"></i> View</button></a>
 <br>
 <br>
-<div style="position: relative; width: 100%; max-width: 100%; overflow: hidden; padding-bottom: 0;">
-  <iframe src="/files/CV.pdf#navpanes=0" style="border: none; width: 100%; height: 700px; max-width: 100%;"></iframe>
+<div class="cv-embed">
+  <iframe src="/files/CV.pdf#navpanes=0"></iframe>
 </div>
