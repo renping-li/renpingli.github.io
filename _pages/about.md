@@ -257,9 +257,9 @@ Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in
 
 AI & FinTech, Financial Intermediation, Corporate Governance
 
+<span id="papers" class="scroll-anchor"></span>
 </section>
 
-<span id="papers" class="scroll-anchor"></span>
 <section markdown="1">
 
 ## Working Papers
@@ -350,9 +350,9 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 </div>
 </div>
 
+<span id="teaching" class="scroll-anchor"></span>
 </section>
 
-<span id="teaching" class="scroll-anchor"></span>
 <section markdown="1">
 
 ## Teaching
@@ -361,9 +361,9 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 
 Fall 2025: Financial Management (FINE 3010)
 
+<span id="data-code" class="scroll-anchor"></span>
 </section>
 
-<span id="data-code" class="scroll-anchor"></span>
 <section markdown="1">
 
 ## Data & Code
@@ -397,9 +397,9 @@ Fall 2025: Financial Management (FINE 3010)
 </li>
 </ol>
 
+<span id="cv" class="scroll-anchor"></span>
 </section>
 
-<span id="cv" class="scroll-anchor"></span>
 <section markdown="1">
 
 ## CV
@@ -450,9 +450,10 @@ function copyBib(preId) {
   if (!anchors.length || !navLinks.length) return;
 
   // Map each section to the id of its preceding anchor
+  // (anchor is inside the previous section, so the target section is parent's next sibling)
   var sectionMap = [];
   anchors.forEach(function(anchor) {
-    var section = anchor.nextElementSibling;
+    var section = anchor.parentElement.nextElementSibling;
     if (section && section.tagName === 'SECTION') {
       sectionMap.push({ section: section, id: anchor.id });
     }
