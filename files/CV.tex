@@ -1,0 +1,319 @@
+% LaTeX Curriculum Vitae Template
+%
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+\usepackage[rm={proportional,lining},sf={proportional,lining},tt={tabular,lining,monowidth}]{cfr-lm}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{lmodern}
+%\renewcommand\rmdefault{lmss}
+
+% Set your name here
+\def\name{{\textcolor{black}{{{Renping Li}}}}}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template/}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={7in, 8.5in},
+  left=0.75in,
+  right=1in,
+  top=0.75in,
+  bottom=1in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+
+\titleformat{\section}
+{\color{black}\normalfont\Large}
+{\color{black}\thesection}{1em}{}
+
+
+\newcommand{\LiUnderwriterMarketPower}{1}
+\newcommand{\GertlerGreenLiSraer}{2}
+\newcommand{\GopalanLiZaldokas}{3}
+
+\begin{document}
+
+% Place name at left
+% {\huge \name}
+
+% Alternatively, print name centered and bold:
+\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  {Tulane University} \\
+  Freeman School of Business \\
+  Goldring/Woldenberg Complex \\
+  New Orleans, LA 70118
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (504) 314-2950 \\
+    Email: & \href{mailto:renpingli@wustl.edu}{\tt renpingli@wustl.edu} \\
+    % Email: & \href{mailto:rli17@tulane.edu}{\tt rli17@tulane.edu}; \href{mailto:renpingli@wustl.edu}{\tt renpingli@wustl.edu} \\
+    Homepage: & \href{https://renpingli.com}{\tt renpingli.com} \\
+    Personal: & Born September 1996
+  \end{tabular}
+\end{minipage}
+
+
+
+\section*{\textsc{Research Interest}}
+\begin{itemize}
+\item AI \& FinTech, Financial Intermediation, Corporate Governance
+\end{itemize}
+
+
+
+
+
+\section*{\textsc{Employment}}
+
+\begin{itemize}
+
+\item Assistant Professor of Finance, Freeman School of Business, Tulane University, 2025-Present
+
+\end{itemize}
+
+
+
+
+\section*{\textsc{Education}}
+
+\begin{itemize}
+
+\item PhD in Finance, Olin Business School, Washington University in St.\;Louis, 2025
+% \begin{itemize}
+% \item Committee: Todd Gormley, Brett Green, Anjan Thakor, David Sraer, Nishant Vats
+% \end{itemize}
+\item Visiting Student, Fisher College of Business, The Ohio State University
+\item BBA in Finance \& BS in Applied Mathematics, Peking University, 2018
+
+\end{itemize}
+
+
+
+
+\section*{\textsc{Working Papers}}
+\begin{itemize}
+\item 1.\;The Effects of Investment Bank Consolidation on Municipal Finance
+\begin{itemize}
+\item - \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748}{SSRN}, \href{https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/}{ProMarket}
+\item - Recipient of Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)
+\item - \emph{Under Review}
+\end{itemize}
+\item 2.\;The Welfare Benefits of Pay-As-You-Go Financing
+\begin{itemize}
+\item - Coauthors: Paul Gertler, Brett Green and David Sraer
+\item - \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559}{SSRN}, NBER Working Paper No.\;33484
+\item - Revise \& Resubmit at \emph{\sbweight Review of Economic Studies}
+\end{itemize}
+\item 3.\;Board Connections, Firm Profitability, and Product Market Actions
+\begin{itemize}
+\item - Coauthors: Radha Gopalan and Alminas {\v Z}aldokas
+\item - \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853}{SSRN}, \href{https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/}{CLS Blue Sky}, ECGI Finance Working Paper No.\;996/2024
+\item - Recipient of John L.\;Weinberg/IRRCi Research Paper Award
+\item - Recipient of Sudipto Bhattacharya Memorial Prize
+\item - Revise \& Resubmit at \emph{\sbweight Journal of Financial Economics}
+\end{itemize}
+\end{itemize}
+
+
+
+
+\section*{\textsc{Presentations \& Discussions}}
+\begin{itemize}
+
+\item{Conference Presentations}
+\begin{itemize}
+\item 2026:\;AFA, Finance Down Under Conference
+\item 2025:\;AEA Poster Session, AFA, AFA Poster Session, EFA (Philadelphia), Financial Intermediation in the 3rd Millennium: Perils and Pearls Conference, FIRS, Georgia Tech-Atlanta Fed Household Finance Conference$^{*}$, MFA, UD/Philly Fed Fintech \& Financial Institutions Conference, WEFIDEV-RFS-CEPR Conference
+\item 2024:\;13th Annual Municipal Finance Conference, CICF, EFA (Bratislava), European Winter Finance Summit$^{*}$, NBER Fall Household Finance Meeting, WFA$^{*}$, SFS Cavalcade North America, Weinberg/ECGI Corporate Governance Symposium
+\item 2023:\;AEA Poster Session, Chinese Economists Society North America Conference, CICF, EFA Poster Session (Barcelona), FIRS, International Industrial Organization Conference, MFA, NFA, NFI-Oxford Conference on Common Ownership, Experimental IO and Governance$^{*}$
+\item 2022:\;CEPR Endless Summer Conference on Financial Intermediation and Corporate Finance, New Zealand Finance Meeting, SFS Cavalcade Asia-Pacific
+\end{itemize}
+
+\item{Workshop Presentations}
+\begin{itemize}
+\item 2025:\;Bristol Workshop on Banking and Financial Intermediation, Virtual Municipal Finance Workshop
+\item 2024:\;Nova School of Business and Economics Finance PhD Final Countdown, St.\;Louis Federal Reserve – WashU Olin Workshop$^{*}$
+\item 2023:\;FIT IN Initiative Workshop at Toulouse School of Economics$^\GertlerGreenLiSraer$
+\end{itemize}
+
+\item{Seminar Presentations}
+\begin{itemize}
+\item 2025:\;Boston College, CUHK, Nanyang Tech, Tulane
+\item 2024:\;WashU $\times$ 2 (Business Economics brown bag, Finance brown bag)
+\item 2023:\;WashU $\times$ 2 (Finance brown bag, RIS Scientific Compute Platform seminar)
+\item 2022:\;HKUST, WashU $\times$ 2 (Business Economics brown bag, Finance brown bag)
+\end{itemize}
+
+\item{Discussions}
+\begin{itemize}
+\item 2026:\;MFA $\times$ 2
+\item 2025:\;EFA (Philadelphia), NFA
+\item 2023:\;Chinese Economists Society North America Conference
+\item 2022:\;New Zealand Finance Meeting
+\end{itemize}
+
+\item{$^*$ indicates presentation by coauthors}
+
+\end{itemize}
+
+
+
+
+\section*{\textsc{Professional Service}}
+
+\begin{itemize}
+
+\item {Ad-Hoc Review Service}
+\begin{itemize}
+\item Journal of Corporate Finance
+\end{itemize}
+
+\item {School Service}
+\begin{itemize}
+\item Master of Finance and Master of Management in Energy Curriculum Committee, 2025
+\item Student representative to the PhD Students Committee at Olin Business School, 2021, 2022
+\end{itemize}
+
+\item {Research Assistance}
+\begin{itemize}
+\item RA (2021-2023) for Prof.\;Anjan Thakor
+\item RA (2020-2021) for Prof.\;Brett Green
+\item RA (Pre-PhD) for various projects at Peking University
+\end{itemize}
+
+\end{itemize}
+
+
+
+\section*{\textsc{Teaching}}
+
+\begin{itemize}
+
+\item Financial Management (FINE 3010), Tulane University, Fall 2025
+
+\end{itemize}
+
+
+
+\section*{\textsc{Miscellaneous}}
+\begin{itemize}
+\item Honors \& Awards
+\begin{itemize}
+\item 2025:\;Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)
+\item 2024:\;John L.\;Weinberg/IRRCi Research Paper Award, Sudipto Bhattacharya Memorial Prize
+% \item 2023:\;Moog Scholar
+% \item Pre-PhD:\;Graduate with Distinction awarded by Peking University, Graduate with Distinction awarded by the provincial government, Guanghua Scholarship, Guifang Hou - Jizhong Li Scholarship, Merit Student awarded by Peking University (twice), Student of Excellent Academic Records awarded by Peking University, WorriBank Scholarship, Xiaosong Ge Scholarship
+\end{itemize}
+\item Grants
+\begin{itemize}
+\item 2024: AFA Doctoral Travel Grant
+\item 2023: FIT IN Initiative Grant by Toulouse School of Economics
+\item 2022: EFA Doctoral Travel Grant
+\end{itemize}
+\item Media Mentions
+\begin{itemize}
+\item 2024: \href{https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/}{ProMarket}, \href{https://www.forbes.com/sites/boazsobrado/2024/12/22/how-digital-collateral-is-revolutionizing-credit-in-emerging-markets/}{Forbes}
+\item 2023: \href{https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/}{CLS Blue Sky}
+\end{itemize}
+% \item Preferred Programming Languages: Python, Stata, Matlab, \LaTeX
+% \item Graduate of The High School Affiliated to Northwest Normal University.\;Class of 2014
+% \item Born September 1996 %, Jinchuan, China
+\end{itemize}
+
+
+
+% \section*{\textsc{References}}
+
+% \begin{tabular}{lr}
+% \begin{minipage}[t]{3.5in}
+% {\sbweight Prof.\;Brett Green}\\
+% Professor of Finance\\
+% Washington University in St.\;Louis\\
+% \href{mailto:b.green@wustl.edu}{b.green@wustl.edu}\\
+% \end{minipage}
+% \begin{minipage}[t]{3.5in}
+% {\sbweight Prof.\;David Sraer}\\
+% Professor of Economics and Finance\\
+% James J. and Marianne B. Lowry Chair\\
+% University of California, Berkeley\\
+% \href{mailto:sraer@berkeley.edu}{sraer@berkeley.edu}\\
+% \end{minipage}
+% \\
+% \begin{minipage}[t]{3.5in}
+% {\sbweight Prof.\;Anjan Thakor}\\
+% John E. Simon Professor of Finance \\
+% Director of WFA-CFAR\\
+% Washington University in St.\;Louis\\
+% \href{mailto:thakor@wustl.edu}{thakor@wustl.edu}\\
+% \end{minipage}
+% \begin{minipage}[t]{3.5in}
+% {\sbweight Prof.\;Alminas \v{Z}aldokas}\\
+% Associate Professor of Finance\\
+% Dean's Chair\\
+% National University of Singapore\\
+% \href{mailto:alminas@nus.edu.sg}{alminas@nus.edu.sg}\\
+% \end{minipage}
+% \end{tabular}
+
+
+\vspace{5mm}
+
+Last update: January 30, 2026
+
+
+\end{document}
