@@ -20,18 +20,9 @@ redirect_from:
 
 Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/scl/fi/j9urbstx2apopg3ex7myw/CV.pdf?rlkey=3vhnppg16ox4jthayh5q810hn&st=4z7q2hp4&dl=0).
 
-<!-- My research interests are AI & FinTech, financial intermediation, and corporate governance. -->
-
-<!-- <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a> -->
-
-<!-- **Research Interests**: Corporate Governance, Banking and FinTech, Competition and Antitrust -->
-
-<!-- <a href="#jmp" style="text-decoration: none; color: inherit; font-size: 22px; font-weight: bold">Job Market Paper</a> -->
-<!-- {:start="2"} -->
-
 <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a>
 
-Financial Intermediation, Consumer Lending, Corporate Governance
+AI & FinTech, Consumer Lending, Corporate Governance
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
