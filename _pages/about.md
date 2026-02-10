@@ -19,9 +19,6 @@ redirect_from:
 </script>
 
 <style>
-/* Smooth scrolling */
-html { scroll-behavior: smooth; }
-
 /* Section spacing to account for sticky header */
 section[id] {
   scroll-margin-top: 70px;
@@ -30,6 +27,13 @@ section[id] + section[id] {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid #eee;
+}
+
+/* Keep sidebar fixed while scrolling */
+.sidebar.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
 }
 
 /* Publication styles */
@@ -249,7 +253,7 @@ details.abstract p {
 }
 </style>
 
-<section id="papers">
+<section id="papers" markdown="1">
 
 Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
 
@@ -347,7 +351,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 
 </section>
 
-<section id="teaching">
+<section id="teaching" markdown="1">
 
 ## Teaching
 
@@ -357,7 +361,7 @@ Fall 2025: Financial Management (FINE 3010)
 
 </section>
 
-<section id="data-code">
+<section id="data-code" markdown="1">
 
 ## Data & Code
 
@@ -392,7 +396,7 @@ Fall 2025: Financial Management (FINE 3010)
 
 </section>
 
-<section id="cv">
+<section id="cv" markdown="1">
 
 ## CV
 
