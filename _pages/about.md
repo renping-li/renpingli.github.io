@@ -151,11 +151,11 @@ details.abstract p {
 
 Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
 
-<a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a>
+## Research Interests
 
 AI & FinTech, Financial Intermediation, Corporate Governance
 
-<a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
+## Working Papers
 
 <ol>
 <li>
