@@ -27,7 +27,7 @@ details.abstract summary {
   cursor: pointer;
   font-weight: 600;
   font-size: 0.85em;
-  color: #009639;
+  color: #7B2D8E;
   list-style: none;
   display: inline-block;
 }
@@ -45,7 +45,7 @@ details.abstract p {
   margin-top: 0.5em;
   padding: 0.75em 1em;
   background: #f8f8f8;
-  border-left: 3px solid #7B2D8E;
+  border-left: 3px solid #009639;
   font-size: 0.9em;
   line-height: 1.6;
 }
