@@ -57,7 +57,7 @@ author_profile: true
 <div class="data-entry">
 <div class="data-title">Investment Bank Consolidation and Municipal Finance</div>
 <div>(<em>Li, 2025</em>)</div>
-<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/MuniUnderwriterMA" target="_blank">Replication Files</a></div>
+<div class="data-row"><span class="data-label">Replication:</span> <a href="https://github.com/renping-li/MuniUnderwriterMA" target="_blank">GitHub Repository</a></div>
 <div class="data-row"><span class="data-label">Data:</span> <a href="https://github.com/renping-li/MuniUnderwriterMA/blob/main/SCRIPT_hand_search_M%26A.csv" target="_blank">Municipal Bond Underwriter M&As, 1970-2022</a></div>
 </div>
 </li>
