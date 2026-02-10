@@ -34,7 +34,7 @@ details.abstract summary {
   cursor: pointer;
   font-weight: 600;
   font-size: 0.85em;
-  color: #7B2D8E;
+  color: #B31942;
   list-style: none;
   display: inline-block;
 }
@@ -52,7 +52,7 @@ details.abstract p {
   margin-top: 0.5em;
   padding: 0.75em 1em;
   background: #f8f8f8;
-  border-left: 3px solid #006747;
+  border-left: 3px solid #0A3161;
   font-size: 0.9em;
   line-height: 1.6;
 }
@@ -81,7 +81,7 @@ details.abstract p {
   max-height: 80vh;
   overflow: auto;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  border-top: 4px solid #006747;
+  border-top: 4px solid #0A3161;
 }
 .cite-modal-header {
   display: flex;
@@ -93,7 +93,7 @@ details.abstract p {
 .cite-modal-header h3 {
   margin: 0;
   font-size: 1em;
-  color: #006747;
+  color: #0A3161;
 }
 .cite-modal-close {
   background: none;
@@ -112,7 +112,7 @@ details.abstract p {
 }
 .cite-modal-body pre {
   background: #f8f8f8;
-  border-left: 3px solid #7B2D8E;
+  border-left: 3px solid #B31942;
   padding: 0.75em 1em;
   font-size: 0.82em;
   line-height: 1.5;
@@ -128,13 +128,13 @@ details.abstract p {
   font-size: 0.8em;
   font-weight: 600;
   color: #fff;
-  background: #7B2D8E;
+  background: #B31942;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 .cite-copy-btn:hover {
-  background: #5e2270;
+  background: #8B0E2F;
 }
 .pub-links {
   margin-top: 0.3em;
@@ -145,17 +145,17 @@ details.abstract p {
   margin: 0.15em 0.1em;
   font-size: 0.82em;
   font-weight: 500;
-  color: #7B2D8E;
-  border: 1px solid rgba(123, 45, 142, 0.35);
+  color: #B31942;
+  border: 1px solid rgba(179, 25, 66, 0.35);
   border-radius: 3px;
   text-decoration: none;
   transition: all 0.15s ease;
 }
 .pub-links a:hover, .pub-links .cite-link:hover {
-  background: #7B2D8E;
+  background: #B31942;
   color: #fff;
   text-decoration: none;
-  border-color: #7B2D8E;
+  border-color: #B31942;
 }
 .cite-link {
   cursor: pointer;
@@ -277,7 +277,7 @@ function copyBib(preId) {
       if (b.closest('.cite-modal-body').querySelector('pre').id === preId) {
         var orig = b.textContent;
         b.textContent = 'Copied!';
-        b.style.background = '#006747';
+        b.style.background = '#0A3161';
         setTimeout(function() { b.textContent = orig; b.style.background = ''; }, 1500);
       }
     });

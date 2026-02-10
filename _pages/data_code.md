@@ -23,7 +23,7 @@ author_profile: true
 .data-label {
   font-size: 0.82em;
   font-weight: 600;
-  color: #006747;
+  color: #0A3161;
   margin-right: 0.2em;
   white-space: nowrap;
 }
@@ -32,17 +32,17 @@ author_profile: true
   padding: 0.15em 0.55em;
   font-size: 0.82em;
   font-weight: 500;
-  color: #7B2D8E;
-  border: 1px solid rgba(123, 45, 142, 0.35);
+  color: #B31942;
+  border: 1px solid rgba(179, 25, 66, 0.35);
   border-radius: 3px;
   text-decoration: none;
   transition: all 0.15s ease;
 }
 .data-row a:hover {
-  background: #7B2D8E;
+  background: #B31942;
   color: #fff;
   text-decoration: none;
-  border-color: #7B2D8E;
+  border-color: #B31942;
 }
 .data-note {
   margin-top: 0.15em;
