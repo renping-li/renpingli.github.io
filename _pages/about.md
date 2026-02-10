@@ -21,7 +21,7 @@ redirect_from:
 <style>
 /* Section spacing to account for sticky header */
 section[id] {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 90px;
 }
 section[id] + section[id] {
   margin-top: 2em;
