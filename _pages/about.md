@@ -19,9 +19,16 @@ redirect_from:
 </script>
 
 <style>
+.pub-title {
+  font-size: 110%;
+  font-weight: bold;
+}
+.pub-entry {
+  margin-bottom: 1.5em;
+}
 details.abstract {
-  margin-top: 0.25rem;
-  margin-bottom: 1rem;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
 }
 details.abstract summary {
   cursor: pointer;
@@ -59,18 +66,36 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
-1. The Effects of Investment Bank Consolidation on Municipal Finance
-  - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748), [Slides](https://www.dropbox.com/scl/fi/hlyo7a0455ahklsevthyz/slides_Li_UnderwriterMA.pdf?rlkey=rpna3k8k8xb1kutnig5bxibw7&dl=0), [ProMarket](https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/)
-  - *Under Review*
-  - Recipient of [Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)](https://easternfinance.org/best-paper-awards-of-2025/)
-  <details class="abstract"><summary>Abstract</summary><p>Antitrust regulators historically focused on commercial banking. Does investment bank consolidation have competitive effects? Using the municipal bond market as a natural laboratory, I find that underwriting spreads increase by 4.5% of their sample mean following within-market consolidation. The effects double for larger M&As or in concentrated markets. Narrative analysis and placebo tests support a causal interpretation. Consolidation does not generate efficiency gains that manifest as lower bond yields or substitution of other issuer-paid services. Further, Census data indicate a decline in issuance after consolidation. My findings provide a novel perspective on bank antitrust regulations.</p></details>
-2. The Welfare Benefits of Pay-As-You-Go Financing (with Paul Gertler, Brett Green, & David Sraer)
-  - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559), [NBER Working Paper](https://www.nber.org/papers/w33484), [Slides](https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0)
-  - Revise & Resubmit at ***Review of Economic Studies***
-  <details class="abstract"><summary>Abstract</summary><p>The rapid expansion of digital financial products in low- and middle-income countries has increased access to credit but raises important questions about their welfare effects. Pay-as-you-go (PAYGo) financing is one such product, relying on lockout technology that allows lenders to remotely disable the collateral's flow benefits when borrowers miss payments. This paper quantifies the welfare effects of PAYGo financing. We build a dynamic structural model of consumer behavior and estimate it using a large-scale, multi-arm pricing experiment conducted by a fintech lender that offers PAYGo financing for smartphones. We find that the welfare gains from access to PAYGo financing are equivalent to a 3.4% increase in income while remaining highly profitable for the lender. The welfare gains are larger for low-risk borrowers and those in the middle of the income distribution. Under plausible assumptions, PAYGo dominates traditional secured loans for all but the riskiest consumers. We explore contract design and show that variations of PAYGo contracts can deliver further welfare improvements.</p></details>
-3. Board Connections, Firm Profitability, and Product Market Actions (with Radha Gopalan & Alminas Žaldokas)
-  - [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853), [Slides](https://www.dropbox.com/scl/fi/u7jrco0rky23z8dbav0to/slides_GopalanLiZaldokas.pdf?rlkey=iqdint5otjj62q881mv0uzqmv&dl=0), [CLS Blue Sky Blog](https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/)
-  - Revise & Resubmit at ***Journal of Financial Economics***
-  - Recipient of [John L. Weinberg/IRRCi Research Paper Award](https://weinberg.udel.edu/2024-corporate-governance-symposium/)
-  - Recipient of [Sudipto Bhattacharya Memorial Prize](http://ewfs.org/award/)
-  <details class="abstract"><summary>Abstract</summary><p>A firm's gross margin increases by 0.8 p.p. after forming a new direct board connection to a product market peer. Gross margin also rises by 0.4 p.p. after a connection is formed to a peer indirectly through a third intermediate firm. Further, using barcode-level data of 2.7 million products, we show that new board connections are related to higher consumer good prices, a greater tendency for market allocation, and slower new product introductions. The effects are stronger when the newly connected peers share corporate customers or have similar business descriptions and hold when controlling for other inter-firm relationships.</p></details>
+<ol>
+<li>
+<div class="pub-entry">
+<div class="pub-title">The Effects of Investment Bank Consolidation on Municipal Finance</div>
+<div><em>Under Review</em></div>
+<div>Recipient of <a href="https://easternfinance.org/best-paper-awards-of-2025/">Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)</a></div>
+<div>[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748">SSRN</a>] [<a href="https://www.dropbox.com/scl/fi/hlyo7a0455ahklsevthyz/slides_Li_UnderwriterMA.pdf?rlkey=rpna3k8k8xb1kutnig5bxibw7&dl=0">Slides</a>] [<a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/">ProMarket</a>]</div>
+<details class="abstract"><summary>Abstract</summary><p>Antitrust regulators historically focused on commercial banking. Does investment bank consolidation have competitive effects? Using the municipal bond market as a natural laboratory, I find that underwriting spreads increase by 4.5% of their sample mean following within-market consolidation. The effects double for larger M&As or in concentrated markets. Narrative analysis and placebo tests support a causal interpretation. Consolidation does not generate efficiency gains that manifest as lower bond yields or substitution of other issuer-paid services. Further, Census data indicate a decline in issuance after consolidation. My findings provide a novel perspective on bank antitrust regulations.</p></details>
+</div>
+</li>
+
+<li>
+<div class="pub-entry">
+<div class="pub-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
+<div>(<em>with Paul Gertler, Brett Green, &amp; David Sraer</em>)</div>
+<div><em>Revise &amp; Resubmit at <b>Review of Economic Studies</b></em></div>
+<div>[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559">SSRN</a>] [<a href="https://www.nber.org/papers/w33484">NBER Working Paper</a>] [<a href="https://www.dropbox.com/scl/fi/tgqlbfokfv6msf1wrav8u/slides_GertlerGreenLiSraer.pdf?rlkey=xw7hnqlq1siehnpwdoi6eqbwp&dl=0">Slides</a>]</div>
+<details class="abstract"><summary>Abstract</summary><p>The rapid expansion of digital financial products in low- and middle-income countries has increased access to credit but raises important questions about their welfare effects. Pay-as-you-go (PAYGo) financing is one such product, relying on lockout technology that allows lenders to remotely disable the collateral's flow benefits when borrowers miss payments. This paper quantifies the welfare effects of PAYGo financing. We build a dynamic structural model of consumer behavior and estimate it using a large-scale, multi-arm pricing experiment conducted by a fintech lender that offers PAYGo financing for smartphones. We find that the welfare gains from access to PAYGo financing are equivalent to a 3.4% increase in income while remaining highly profitable for the lender. The welfare gains are larger for low-risk borrowers and those in the middle of the income distribution. Under plausible assumptions, PAYGo dominates traditional secured loans for all but the riskiest consumers. We explore contract design and show that variations of PAYGo contracts can deliver further welfare improvements.</p></details>
+</div>
+</li>
+
+<li>
+<div class="pub-entry">
+<div class="pub-title">Board Connections, Firm Profitability, and Product Market Actions</div>
+<div>(<em>with Radha Gopalan &amp; Alminas Žaldokas</em>)</div>
+<div><em>Revise &amp; Resubmit at <b>Journal of Financial Economics</b></em></div>
+<div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/">John L. Weinberg/IRRCi Research Paper Award</a></div>
+<div>Recipient of <a href="http://ewfs.org/award/">Sudipto Bhattacharya Memorial Prize</a></div>
+<div>[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853">SSRN</a>] [<a href="https://www.dropbox.com/scl/fi/u7jrco0rky23z8dbav0to/slides_GopalanLiZaldokas.pdf?rlkey=iqdint5otjj62q881mv0uzqmv&dl=0">Slides</a>] [<a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/">CLS Blue Sky Blog</a>]</div>
+<details class="abstract"><summary>Abstract</summary><p>A firm's gross margin increases by 0.8 p.p. after forming a new direct board connection to a product market peer. Gross margin also rises by 0.4 p.p. after a connection is formed to a peer indirectly through a third intermediate firm. Further, using barcode-level data of 2.7 million products, we show that new board connections are related to higher consumer good prices, a greater tendency for market allocation, and slower new product introductions. The effects are stronger when the newly connected peers share corporate customers or have similar business descriptions and hold when controlling for other inter-firm relationships.</p></details>
+</div>
+</li>
+</ol>
