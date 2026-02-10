@@ -2,14 +2,10 @@
 main:
   - title: "Papers"
     url: /
-  - title: "CV"
-    url: /cv/
-  # - title: "Working Papers"
-  #   url: "#working-papers"
-  # - title: "Job Market Paper"
-  #   url: /job_market_paper/
   - title: "Teaching"
     url: /teaching/
+  - title: "CV"
+    url: /cv/
   - title: "Data & Code"
     url: /data_code/
   # - title: "Discussions"
