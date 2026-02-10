@@ -260,7 +260,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <span id="papers" class="scroll-anchor"></span>
 </section>
 
-<section markdown="1">
+<section data-nav="papers" markdown="1">
 
 ## Working Papers
 
@@ -353,7 +353,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <span id="teaching" class="scroll-anchor"></span>
 </section>
 
-<section markdown="1">
+<section data-nav="teaching" markdown="1">
 
 ## Teaching
 
@@ -364,7 +364,7 @@ Fall 2025: Financial Management (FINE 3010)
 <span id="data-code" class="scroll-anchor"></span>
 </section>
 
-<section markdown="1">
+<section data-nav="data-code" markdown="1">
 
 ## Data & Code
 
@@ -400,7 +400,7 @@ Fall 2025: Financial Management (FINE 3010)
 <span id="cv" class="scroll-anchor"></span>
 </section>
 
-<section markdown="1">
+<section data-nav="cv" markdown="1">
 
 ## CV
 
@@ -444,35 +444,21 @@ function copyBib(preId) {
 
 // Scroll-based active nav highlighting
 (function() {
-  var anchors = document.querySelectorAll('.scroll-anchor');
+  var sections = document.querySelectorAll('section[data-nav]');
   var navLinks = document.querySelectorAll('#site-nav .visible-links a[href*="#"]');
 
-  if (!anchors.length || !navLinks.length) return;
-
-  // Map each section to the id of its preceding anchor
-  // (anchor is inside the previous section, so the target section is parent's next sibling)
-  var sectionMap = [];
-  anchors.forEach(function(anchor) {
-    var section = anchor.parentElement.nextElementSibling;
-    if (section && section.tagName === 'SECTION') {
-      sectionMap.push({ section: section, id: anchor.id });
-    }
-  });
+  if (!sections.length || !navLinks.length) return;
 
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        var match = sectionMap.find(function(item) {
-          return item.section === entry.target;
+        var id = entry.target.getAttribute('data-nav');
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '/#' + id) {
+            link.classList.add('active');
+          }
         });
-        if (match) {
-          navLinks.forEach(function(link) {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '/#' + match.id) {
-              link.classList.add('active');
-            }
-          });
-        }
       }
     });
   }, {
@@ -480,8 +466,8 @@ function copyBib(preId) {
     threshold: 0
   });
 
-  sectionMap.forEach(function(item) {
-    observer.observe(item.section);
+  sections.forEach(function(section) {
+    observer.observe(section);
   });
 })();
 </script>
