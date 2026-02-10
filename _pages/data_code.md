@@ -66,7 +66,7 @@ author_profile: true
 <div class="data-entry">
 <div class="data-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
 <div>(<em>Gertler, Green, Li, &amp; Sraer, 2025</em>)</div>
-<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/SMM_rs0_global1.m" target="_blank">SMM_rs0_global1.m</a> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/SMM_rs0_local.m" target="_blank">SMM_rs0_local.m</a></div>
+<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak_global.m" target="_blank">TikTak_global.m</a> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak_local.m" target="_blank">TikTak_local.m</a></div>
 <div class="data-note">A working example of <a href="https://www.fatihguvenen.com/tiktak" target="_blank">TikTak Global Optimizer</a> in Matlab</div>
 </div>
 </li>
