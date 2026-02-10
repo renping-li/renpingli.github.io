@@ -29,11 +29,23 @@ section[id] + section[id] {
   border-top: 1px solid #eee;
 }
 
-/* Keep sidebar fixed while scrolling */
-.sidebar.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 70px;
+/* Keep sidebar fixed while scrolling (flexbox override for float layout) */
+@media screen and (min-width: 925px) {
+  #main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .sidebar.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    flex-shrink: 0;
+  }
+  .archive {
+    flex: 1;
+    min-width: 0;
+  }
 }
 
 /* Publication styles */
