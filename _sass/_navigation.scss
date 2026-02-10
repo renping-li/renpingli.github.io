@@ -197,7 +197,7 @@
     border: 0;
     outline: none;
     background-color: $primary-color;
-    color: #fff;
+    color: #C5A55A;
     cursor: pointer;
   }
 
@@ -232,7 +232,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: #fff;
+        background: #C5A55A;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -274,10 +274,10 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
-      color: #fff;
+      color: #C5A55A;
 
       &:hover {
-        color: #fff;
+        color: #C5A55A;
         background: mix(#000, $primary-color, 20%);
       }
     }
