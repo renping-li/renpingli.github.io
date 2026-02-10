@@ -18,11 +18,11 @@ redirect_from:
   gtag('config', 'G-LK2GPXZMWH');
 </script>
 
-Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my [CV](https://www.dropbox.com/scl/fi/j9urbstx2apopg3ex7myw/CV.pdf?rlkey=3vhnppg16ox4jthayh5q810hn&st=4z7q2hp4&dl=0).
+Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
 
 <a href="#research-interests" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Research Interests</a>
 
-AI & FinTech, Consumer Lending, Corporate Governance
+AI & FinTech, Financial Intermediation, Corporate Governance
 
 <a href="#working-papers" style="text-decoration: none; color: inherit;  font-size: 22px; font-weight: bold">Working Papers</a>
 
