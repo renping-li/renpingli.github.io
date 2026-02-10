@@ -52,7 +52,7 @@ details.abstract p {
   margin-top: 0.5em;
   padding: 0.75em 1em;
   background: #f8f8f8;
-  border-left: 3px solid #009639;
+  border-left: 3px solid #006747;
   font-size: 0.9em;
   line-height: 1.6;
 }
