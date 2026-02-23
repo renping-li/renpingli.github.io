@@ -13,10 +13,28 @@ author_profile: true
 </style>
 
 <ol>
-<li><div class="disc-entry">Dealer Quid Pro Quo in the Municipal Bond Market, <em>by Dougal, Rettl, and Yakimenko</em> (MFA 2026)</div></li>
-<li><div class="disc-entry">When Diversity Rules, <em>by Gupta, Kalmenovitz, Ranjan, and Xiao</em> (MFA 2026)</div></li>
-<li><div class="disc-entry">Data Breaches, Debt Costs, and Public Service Provision: Evidence from U.S. Municipalities, <em>by Cao, Nakhmurina, and Zhao</em> (EFA 2025)</div></li>
-<li><div class="disc-entry">The Quiet Hand of Regulation: Harnessing Uncertainty and Disagreement, <em>by Andrei and Garlappi</em> (NFA 2025)</div></li>
-<li><div class="disc-entry">SPACs&#39; Directors Network: Conflicts of Interest, Compensation, and Competition, <em>by Gofman and Yao</em> (CES 2023)</div></li>
-<li><div class="disc-entry">Portfolio Allocation and Business Connection: Evidence from Mutual Fund Misconduct, <em>by Lee</em> (NZFM 2022)</div></li>
+<li><div class="disc-entry">
+<div>Dealer Quid Pro Quo in the Municipal Bond Market</div>
+<div><em>(by Dougal, Rettl, and Yakimenko, at MFA 2026)</em></div>
+</div></li>
+<li><div class="disc-entry">
+<div>When Diversity Rules</div>
+<div><em>(by Gupta, Kalmenovitz, Ranjan, and Xiao, at MFA 2026)</em></div>
+</div></li>
+<li><div class="disc-entry">
+<div>Data Breaches, Debt Costs, and Public Service Provision: Evidence from U.S. Municipalities</div>
+<div><em>(by Cao, Nakhmurina, and Zhao, at EFA 2025)</em></div>
+</div></li>
+<li><div class="disc-entry">
+<div>The Quiet Hand of Regulation: Harnessing Uncertainty and Disagreement</div>
+<div><em>(by Andrei and Garlappi, at NFA 2025)</em></div>
+</div></li>
+<li><div class="disc-entry">
+<div>SPACs&#39; Directors Network: Conflicts of Interest, Compensation, and Competition</div>
+<div><em>(by Gofman and Yao, at CES 2023)</em></div>
+</div></li>
+<li><div class="disc-entry">
+<div>Portfolio Allocation and Business Connection: Evidence from Mutual Fund Misconduct</div>
+<div><em>(by Lee, at NZFM 2022)</em></div>
+</div></li>
 </ol>
