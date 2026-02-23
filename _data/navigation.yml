@@ -1,12 +1,12 @@
 # main links links
 main:
   - title: "Papers"
-    url: /
-  - title: "Teaching"
-    url: /teaching/
+    url: /papers/
   - title: "Data & Code"
     url: /data_code/
+  - title: "Discussions"
+    url: /discussions/
+  - title: "Teaching"
+    url: /teaching/
   - title: "CV"
     url: /cv/
-  # - title: "Discussions"
-  #   url: /discussions/
