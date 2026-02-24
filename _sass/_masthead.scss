@@ -6,7 +6,8 @@
   position: sticky;
   top: 0;
   background: $primary-color;
-  border-bottom: 1px solid $primary-color;
+  border-bottom: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -16,7 +17,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 0.6em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
