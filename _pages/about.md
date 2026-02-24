@@ -186,7 +186,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <li>
 <div class="pub-entry">
 <div class="pub-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
-<div>(<em>with Paul Gertler, Brett Green, &amp; David Sraer</em>)</div>
+<div><em>(with Paul Gertler, Brett Green, &amp; David Sraer)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Review of Economic Studies</b></em></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559" target="_blank">SSRN</a> <a href="https://www.nber.org/papers/w33484" target="_blank">NBER Working Paper</a> <a href="/files/slides_GertlerGreenLiSraer.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite2')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>The rapid expansion of digital financial products in low- and middle-income countries has increased access to credit but raises important questions about their welfare effects. Pay-as-you-go (PAYGo) financing is one such product, relying on lockout technology that allows lenders to remotely disable the collateral's flow benefits when borrowers miss payments. This paper quantifies the welfare effects of PAYGo financing. We build a dynamic structural model of consumer behavior and estimate it using a large-scale, multi-arm pricing experiment conducted by a fintech lender that offers PAYGo financing for smartphones. We find that the welfare gains from access to PAYGo financing are equivalent to a 3.4% increase in income while remaining highly profitable for the lender. The welfare gains are larger for low-risk borrowers and those in the middle of the income distribution. Under plausible assumptions, PAYGo dominates traditional secured loans for all but the riskiest consumers. We explore contract design and show that variations of PAYGo contracts can deliver further welfare improvements.</p></details>
@@ -196,7 +196,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <li>
 <div class="pub-entry">
 <div class="pub-title">Board Connections, Firm Profitability, and Product Market Actions</div>
-<div>(<em>with Radha Gopalan &amp; Alminas Žaldokas</em>)</div>
+<div><em>(with Radha Gopalan &amp; Alminas Žaldokas)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Journal of Financial Economics</b></em></div>
 <div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/" target="_blank">John L. Weinberg/IRRCi Research Paper Award</a></div>
 <div>Recipient of <a href="http://ewfs.org/award/" target="_blank">Sudipto Bhattacharya Memorial Prize</a></div>
