@@ -22,4 +22,50 @@
     {% endif %}
   {% endif %}
   </div>
+  <script>
+  (function() {
+    var sidebar = document.querySelector('.sidebar');
+    if (!sidebar || window.innerWidth < 925) return;
+    var masthead = document.querySelector('.masthead');
+    var origWidth = sidebar.offsetWidth;
+    var origLeft = sidebar.getBoundingClientRect().left + window.scrollX;
+    var startY = sidebar.getBoundingClientRect().top + window.scrollY;
+    var gap = 20;
+
+    function onScroll() {
+      if (window.innerWidth < 925) {
+        sidebar.style.position = '';
+        sidebar.style.top = '';
+        sidebar.style.width = '';
+        sidebar.style.left = '';
+        return;
+      }
+      var mastheadH = masthead ? masthead.offsetHeight : 0;
+      var threshold = startY - mastheadH - gap;
+      if (window.scrollY > threshold) {
+        sidebar.style.position = 'fixed';
+        sidebar.style.top = (mastheadH + gap) + 'px';
+        sidebar.style.width = origWidth + 'px';
+        sidebar.style.left = origLeft + 'px';
+      } else {
+        sidebar.style.position = '';
+        sidebar.style.top = '';
+        sidebar.style.width = '';
+        sidebar.style.left = '';
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', function() {
+      sidebar.style.position = '';
+      sidebar.style.top = '';
+      sidebar.style.width = '';
+      sidebar.style.left = '';
+      origWidth = sidebar.offsetWidth;
+      origLeft = sidebar.getBoundingClientRect().left + window.scrollX;
+      startY = sidebar.getBoundingClientRect().top + window.scrollY;
+      onScroll();
+    });
+  })();
+  </script>
 {% endif %}
