@@ -34,7 +34,6 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}" target="_blank"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
-        <li><a href="{{ base_path }}/files/renping_li.vcf" download><i class="fas fa-fw fa-address-card" aria-hidden="true"></i> vCard</a></li>
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}" target="_blank"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
