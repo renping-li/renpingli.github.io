@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Li;Renping;;;
+FN:Renping Li
+ORG:Tulane University;Freeman School of Business
+TITLE:Assistant Professor of Finance
+TEL;TYPE=WORK,VOICE:(504) 314-2950
+EMAIL;TYPE=WORK:renpingli@wustl.edu
+ADR;TYPE=WORK:;;Goldring/Woldenberg Complex;New Orleans;LA;70118;USA
+URL:https://renpingli.com
+END:VCARD
