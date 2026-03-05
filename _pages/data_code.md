@@ -11,7 +11,6 @@ author_profile: true
 }
 .data-title {
   font-size: 110%;
-  font-weight: bold;
 }
 .data-row {
   margin-top: 0.35em;

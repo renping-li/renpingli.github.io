@@ -4,8 +4,8 @@ main:
     url: /papers/
   - title: "Data & Code"
     url: /data_code/
-  - title: "Discussions"
-    url: /discussions/
+  # - title: "Discussions"
+  #   url: /discussions/
   - title: "Teaching"
     url: /teaching/
   - title: "CV"

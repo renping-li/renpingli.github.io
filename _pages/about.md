@@ -22,12 +22,12 @@ redirect_from:
 <style>
 .pub-title {
   font-size: 110%;
-  font-weight: bold;
 }
 .pub-entry {
   margin-bottom: 1.5em;
 }
 details.abstract {
+  display: none; /* hidden for now */
   margin-top: 0.25em;
   margin-bottom: 0.5em;
 }
