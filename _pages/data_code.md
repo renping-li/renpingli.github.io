@@ -65,7 +65,7 @@ author_profile: true
 <div class="data-entry">
 <div class="data-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
 <div><em>(Gertler, Green, Li, &amp; Sraer, 2025)</em></div>
-<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak_global.m" target="_blank">TikTak_global.m</a> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak_local.m" target="_blank">TikTak_local.m</a></div>
+<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/TikTak.m" target="_blank">TikTak.m</a></div>
 <div class="data-note">A working example of <a href="https://www.fatihguvenen.com/tiktak" target="_blank">TikTak Global Optimizer</a> in Matlab</div>
 </div>
 </li>
@@ -74,7 +74,7 @@ author_profile: true
 <div class="data-entry">
 <div class="data-title">Board Connections, Firm Profitability, and Product Market Actions</div>
 <div><em>(Gopalan, Li, &amp; Žaldokas, 2025)</em></div>
-<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/3_Match_BoardEx_UPCPrefix.ipynb" target="_blank">Match_BoardEx_UPCPrefix.ipynb</a></div>
+<div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/fuzzy_firm_name_matching.py" target="_blank">fuzzy_firm_name_matching.py</a></div>
 <div class="data-note">Matching between GS1 (UPC prefixes) and BoardEx by firm name</div>
 </div>
 </li>
