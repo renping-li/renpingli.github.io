@@ -1,9 +1,10 @@
 % LaTeX Curriculum Vitae Template
 %
-\documentclass{article}
+\documentclass[11pt]{article}
 
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{tabularx}
 
 \usepackage[rm={proportional,lining},sf={proportional,lining},tt={tabular,lining,monowidth}]{cfr-lm}
 
@@ -36,7 +37,7 @@
 \geometry{
   body={7in, 8.5in},
   left=0.75in,
-  right=1in,
+  right=0.75in,
   top=0.75in,
   bottom=1in
 }
@@ -60,6 +61,9 @@
 % Don't indent paragraphs.
 \setlength\parindent{0em}
 
+% Fixed-width interword spacing (no justification stretch)
+\raggedright
+
 % Make lists without bullets
 \renewenvironment{itemize}{
   \begin{list}{}{
@@ -74,7 +78,7 @@
 
 \titleformat{\section}
 {\color{black}\normalfont\Large}
-{\color{black}\thesection}{1em}{}
+{\color{black}\thesection}{1em}{}[\vspace{0.3em}\titlerule]
 
 
 \newcommand{\LiUnderwriterMarketPower}{1}
@@ -100,7 +104,7 @@
 \begin{minipage}{0.45\linewidth}
   \begin{tabular}{ll}
     Phone: & (504) 314-2950 \\
-    Email: & \href{mailto:renpingli@wustl.edu}{\tt renpingli@wustl.edu} \\
+    Email: & \href{mailto:rli17@tulane.edu}{\tt rli17@tulane.edu} \\
     % Email: & \href{mailto:rli17@tulane.edu}{\tt rli17@tulane.edu}; \href{mailto:renpingli@wustl.edu}{\tt renpingli@wustl.edu} \\
     Homepage: & \href{https://renpingli.com}{\tt renpingli.com} \\
     Personal: & Born September 1996
@@ -134,11 +138,11 @@
 \begin{itemize}
 
 \item PhD in Finance, Olin Business School, Washington University in St.\;Louis, 2025
+\begin{itemize}
+\item Committee: Todd Gormley, Brett Green, Anjan Thakor, David Sraer, Nishant Vats
+\end{itemize}
 \item MS in Finance, Olin Business School, Washington University in St.\;Louis, 2021
-% \begin{itemize}
-% \item Committee: Todd Gormley, Brett Green, Anjan Thakor, David Sraer, Nishant Vats
-% \end{itemize}
-\item Non-Degree Visiting Student, Fisher College of Business, The Ohio State University
+\item Visiting Student, Fisher College of Business, The Ohio State University
 \item BBA in Finance \& BS in Applied Mathematics, Peking University, 2018
 
 \end{itemize}
@@ -176,37 +180,33 @@
 \section*{\textsc{Presentations \& Discussions}}
 \begin{itemize}
 
-\item{Conference Presentations}
-\begin{itemize}
-\item 2026:\;AFA, Finance Down Under Conference
-\item 2025:\;AEA Poster Session, AFA, AFA Poster Session, EFA (Philadelphia), Financial Intermediation in the 3rd Millennium: Perils and Pearls Conference, FIRS, Georgia Tech-Atlanta Fed Household Finance Conference$^{*}$, MFA, UD/Philly Fed Fintech \& Financial Institutions Conference, WEFIDEV-RFS-CEPR Conference
-\item 2024:\;13th Annual Municipal Finance Conference, CICF, EFA (Bratislava), European Winter Finance Summit$^{*}$, NBER Fall Household Finance Meeting, WFA$^{*}$, SFS Cavalcade North America, Weinberg/ECGI Corporate Governance Symposium
-\item 2023:\;AEA Poster Session, Chinese Economists Society North America Conference, CICF, EFA Poster Session (Barcelona), FIRS, International Industrial Organization Conference, MFA, NFA, NFI-Oxford Conference on Common Ownership, Experimental IO and Governance$^{*}$
-\item 2022:\;CEPR Endless Summer Conference on Financial Intermediation and Corporate Finance, New Zealand Finance Meeting, SFS Cavalcade Asia-Pacific
-\end{itemize}
+\item{\textit{Conference and Workshop Presentations}}
+\begin{tabularx}{\linewidth}{@{}l@{\quad}X@{}}
+\\[-0.8em]
+2026: & AFA, Finance Down Under Conference \\
+2025: & AEA Poster Session, AFA, AFA Poster Session, Bristol Workshop on Banking and Financial Intermediation, EFA (Philadelphia), Financial Intermediation in the 3rd Millennium: Perils and Pearls Conference, FIRS, Georgia Tech-Atlanta Fed Household Finance Conference$^{*}$, MFA, UD/Philly Fed Fintech \& Financial Institutions Conference, Virtual Municipal Finance Workshop, WEFIDEV-RFS-CEPR Conference \\
+2024: & 13th Annual Municipal Finance Conference, CICF, EFA (Bratislava), European Winter Finance Summit$^{*}$, NBER Fall Household Finance Meeting, Nova School of Business and Economics Finance PhD Final Countdown, SFS Cavalcade North America, St.\;Louis Federal Reserve – WashU Olin Workshop$^{*}$, Weinberg/ECGI Corporate Governance Symposium, WFA$^{*}$ \\
+2023: & AEA Poster Session, Chinese Economists Society North America Conference, CICF, EFA Poster Session (Barcelona), FIRS, FIT IN Initiative Workshop at Toulouse School of Economics, International Industrial Organization Conference, MFA, NFA, NFI-Oxford Conference on Common Ownership, Experimental IO and Governance$^{*}$ \\
+2022: & CEPR Endless Summer Conference on Financial Intermediation and Corporate Finance, New Zealand Finance Meeting, SFS Cavalcade Asia-Pacific \\
+\end{tabularx}
 
-\item{Workshop Presentations}
-\begin{itemize}
-\item 2025:\;Bristol Workshop on Banking and Financial Intermediation, Virtual Municipal Finance Workshop
-\item 2024:\;Nova School of Business and Economics Finance PhD Final Countdown, St.\;Louis Federal Reserve – WashU Olin Workshop$^{*}$
-\item 2023:\;FIT IN Initiative Workshop at Toulouse School of Economics$^\GertlerGreenLiSraer$
-\end{itemize}
+\item{\textit{Seminar Presentations}}
+\begin{tabularx}{\linewidth}{@{}l@{\quad}X@{}}
+\\[-0.8em]
+2025: & Boston College, CUHK, Nanyang Tech, Tulane \\
+2024: & WashU $\times$ 2 (Business Economics brown bag, Finance brown bag) \\
+2023: & WashU $\times$ 2 (Finance brown bag, RIS Scientific Compute Platform seminar) \\
+2022: & HKUST, WashU $\times$ 2 (Business Economics brown bag, Finance brown bag) \\
+\end{tabularx}
 
-\item{Seminar Presentations}
-\begin{itemize}
-\item 2025:\;Boston College, CUHK, Nanyang Tech, Tulane
-\item 2024:\;WashU $\times$ 2 (Business Economics brown bag, Finance brown bag)
-\item 2023:\;WashU $\times$ 2 (Finance brown bag, RIS Scientific Compute Platform seminar)
-\item 2022:\;HKUST, WashU $\times$ 2 (Business Economics brown bag, Finance brown bag)
-\end{itemize}
-
-\item{Discussions}
-\begin{itemize}
-\item 2026:\;MFA $\times$ 2
-\item 2025:\;EFA (Philadelphia), NFA
-\item 2023:\;Chinese Economists Society North America Conference
-\item 2022:\;New Zealand Finance Meeting
-\end{itemize}
+\item{\textit{Discussions}}
+\begin{tabularx}{\linewidth}{@{}l@{\quad}X@{}}
+\\[-0.8em]
+2026: & MFA $\times$ 2 \\
+2025: & EFA (Philadelphia), NFA \\
+2023: & Chinese Economists Society North America Conference \\
+2022: & New Zealand Finance Meeting \\
+\end{tabularx}
 
 \item{$^*$ indicates presentation by coauthors}
 
@@ -219,18 +219,32 @@
 
 \begin{itemize}
 
-\item {Ad-Hoc Review Service}
+\item {\textit{Ad-Hoc Review Service}}
+\vspace{-0.5em}
 \begin{itemize}
 \item Journal of Corporate Finance
 \end{itemize}
 
-\item {School Service}
+\vspace{-0.5em}
+\item {\textit{School Service}}
+\vspace{-0.5em}
+\begin{itemize}
+\item Tulane
+\vspace{-0.5em}
 \begin{itemize}
 \item Master of Finance and Master of Management in Energy Curriculum Committee, 2025
-\item Student representative to the PhD Students Committee at Olin Business School, 2021, 2022
+\end{itemize}
+\vspace{-0.5em}
+\item WashU
+\vspace{-0.5em}
+\begin{itemize}
+\item Student representative to the PhD Students Committee at Olin Business School, 2022, 2023
+\end{itemize}
 \end{itemize}
 
-\item {Research Assistance}
+\vspace{-0.5em}
+\item {\textit{Research Assistance}}
+\vspace{-0.5em}
 \begin{itemize}
 \item RA (2021-2023) for Prof.\;Anjan Thakor
 \item RA (2020-2021) for Prof.\;Brett Green
@@ -253,24 +267,27 @@
 
 \section*{\textsc{Miscellaneous}}
 \begin{itemize}
-\item Honors \& Awards
-\begin{itemize}
-\item 2025:\;Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)
-\item 2024:\;John L.\;Weinberg/IRRCi Research Paper Award, Sudipto Bhattacharya Memorial Prize
-% \item 2023:\;Moog Scholar
-% \item Pre-PhD:\;Graduate with Distinction awarded by Peking University, Graduate with Distinction awarded by the provincial government, Guanghua Scholarship, Guifang Hou - Jizhong Li Scholarship, Merit Student awarded by Peking University (twice), Student of Excellent Academic Records awarded by Peking University, WorriBank Scholarship, Xiaosong Ge Scholarship
-\end{itemize}
-\item Grants
-\begin{itemize}
-\item 2024: AFA Doctoral Travel Grant
-\item 2023: FIT IN Initiative Grant by Toulouse School of Economics
-\item 2022: EFA Doctoral Travel Grant
-\end{itemize}
-\item Media Mentions
-\begin{itemize}
-\item 2024: \href{https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/}{ProMarket}, \href{https://www.forbes.com/sites/boazsobrado/2024/12/22/how-digital-collateral-is-revolutionizing-credit-in-emerging-markets/}{Forbes}
-\item 2023: \href{https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/}{CLS Blue Sky}
-\end{itemize}
+\item \textit{Honors \& Awards}
+\begin{tabularx}{\linewidth}{@{}l@{\quad}X@{}}
+\\[-0.8em]
+2025: & Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia) \\
+2024: & John L.\;Weinberg/IRRCi Research Paper Award, Sudipto Bhattacharya Memorial Prize \\
+% 2023: & Moog Scholar \\
+% Pre-PhD: & Graduate with Distinction awarded by Peking University, Graduate with Distinction awarded by the provincial government, Guanghua Scholarship, Guifang Hou - Jizhong Li Scholarship, Merit Student awarded by Peking University (twice), Student of Excellent Academic Records awarded by Peking University, WorriBank Scholarship, Xiaosong Ge Scholarship \\
+\end{tabularx}
+\item \textit{Grants}
+\begin{tabularx}{\linewidth}{@{}l@{\quad}X@{}}
+\\[-0.8em]
+2024: & AFA Doctoral Travel Grant \\
+2023: & FIT IN Initiative Grant by Toulouse School of Economics \\
+2022: & EFA Doctoral Travel Grant \\
+\end{tabularx}
+\item \textit{Media Mentions}
+\begin{tabularx}{\linewidth}{@{}l@{\quad}X@{}}
+\\[-0.8em]
+2024: & \href{https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/}{ProMarket}, \href{https://www.forbes.com/sites/boazsobrado/2024/12/22/how-digital-collateral-is-revolutionizing-credit-in-emerging-markets/}{Forbes} \\
+2023: & \href{https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/}{CLS Blue Sky} \\
+\end{tabularx}
 % \item Preferred Programming Languages: Python, Stata, Matlab, \LaTeX
 % \item Graduate of The High School Affiliated to Northwest Normal University.\;Class of 2014
 % \item Born September 1996 %, Jinchuan, China
@@ -314,7 +331,7 @@
 
 \vspace{5mm}
 
-Last update: January 30, 2026
+Last update: March 18, 2026
 
 
 \end{document}

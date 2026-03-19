@@ -20,6 +20,24 @@ redirect_from:
 </script>
 
 <style>
+ol {
+  counter-reset: pub-counter;
+  list-style: none;
+  padding-left: 0;
+}
+ol > li {
+  counter-increment: pub-counter;
+  position: relative;
+  padding-left: 1.8em;
+}
+ol > li::before {
+  content: counter(pub-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #0A3161;
+  font-weight: 600;
+  font-size: 1.1em;
+}
 .pub-title {
   font-size: 110%;
 }
