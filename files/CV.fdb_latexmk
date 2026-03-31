@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1774900825 "CV.tex" "CV.pdf" "CV" 1774900826 0
+["pdflatex"] 1774974345 "CV.tex" "CV.pdf" "CV" 1774974346 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -103,9 +103,9 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1687661907 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1687661878 7883454 98ea5376872b8956e59d965617e60d4d ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "CV.aux" 1774900826 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
-  "CV.out" 1774900826 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "CV.tex" 1774900824 11140 2acb60ff3114a71f5488855977c1e471 ""
+  "CV.aux" 1774974346 554 dd2b48f1aba1e3b725040b4d3abf7fbe "pdflatex"
+  "CV.out" 1774974345 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CV.tex" 1774974345 11168 cb6d767fcc2b8832b9d4ac2e7adb2273 ""
   (generated)
   "CV.aux"
   "CV.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.24)  30 MAR 2026 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.24)  31 MAR 2026 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,11 +460,15 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
-(Font)              using `T1/lmr/b/it' instead on input line 165.
+(Font)              using `T1/lmr/b/it' instead on input line 159.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/b/it' in size <10.95> not available
-(Font)              Font shape `T1/lmr/b/sl' tried instead on input line 165.
+(Font)              Font shape `T1/lmr/b/sl' tried instead on input line 159.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
+(Font)              using `T1/lmr/b/it' instead on input line 165.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
@@ -493,7 +497,7 @@ xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fo
 nts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
 public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/
 lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on CV.pdf (3 pages, 170487 bytes).
+Output written on CV.pdf (3 pages, 170285 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
