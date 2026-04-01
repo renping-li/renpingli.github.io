@@ -205,7 +205,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <li>
 <div class="pub-entry">
 <div class="pub-title">The Effects of Investment Bank Consolidation on Municipal Finance</div>
-<div><em>Under Review</em></div>
+<div><em>Revise &amp; Resubmit at <b>Journal of Finance</b></em></div>
 <div>Recipient of <a href="https://easternfinance.org/best-paper-awards-of-2025/" target="_blank">Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)</a></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748" target="_blank">SSRN</a> <a href="/files/slides_Li_UnderwriterMA.pdf" target="_blank">Slides</a> <a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/" target="_blank">ProMarket</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>Antitrust regulators historically focused on commercial banking. Does investment bank consolidation have competitive effects? Using the municipal bond market as a natural laboratory, I find that underwriting spreads increase by 4.5% of their sample mean following within-market consolidation. The effects double for larger M&As or in concentrated markets. Narrative analysis and placebo tests support a causal interpretation. Consolidation does not generate efficiency gains that manifest as lower bond yields or substitution of other issuer-paid services. Further, Census data indicate a decline in issuance after consolidation. My findings provide a novel perspective on bank antitrust regulations.</p></details>
@@ -226,7 +226,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <div class="pub-entry">
 <div class="pub-title">Board Connections, Firm Profitability, and Product Market Actions</div>
 <div><em>(with <a href="https://scholar.google.com/citations?user=aify3ioAAAAJ&amp;hl=en" target="_blank" class="coauthor">Radha Gopalan</a> &amp; <a href="https://www.alminas.com/" target="_blank" class="coauthor">Alminas Žaldokas</a>)</em></div>
-<div><em>Revise &amp; Resubmit at <b>Journal of Financial Economics</b></em></div>
+<div><em>Accepted at <b>Journal of Financial Economics</b></em></div>
 <div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/" target="_blank">John L. Weinberg/IRRCi Research Paper Award</a></div>
 <div>Recipient of <a href="http://ewfs.org/award/" target="_blank">Sudipto Bhattacharya Memorial Prize</a></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853" target="_blank">SSRN</a> <a href="/files/slides_GopalanLiZaldokas.pdf" target="_blank">Slides</a> <a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/" target="_blank">CLS Blue Sky Blog</a> <span class="cite-link" onclick="openCite('cite3')">Citation</span></div>
