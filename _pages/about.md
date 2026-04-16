@@ -180,17 +180,6 @@ details.abstract p {
   cursor: pointer;
   font-weight: 500;
 }
-a.coauthor {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-}
-a.coauthor:hover {
-  color: #B31942;
-  text-decoration-style: solid;
-}
 </style>
 
 Hi. I am an Assistant Professor of Finance at Tulane University. I hold a PhD in Finance from Washington University in St. Louis. I studied at The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
@@ -205,7 +194,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <li>
 <div class="pub-entry">
 <div class="pub-title">AI Product Displacement Risk</div>
-<div><em>(with <a href="https://www.brettgreen.info/" target="_blank" class="coauthor">Brett Green</a> &amp; <a href="https://www.kellogg.northwestern.edu/faculty/papanikolaou/htm/index.htm" target="_blank" class="coauthor">Dimitris Papanikolaou</a>)</em></div>
+<div><em>(with Brett Green &amp; Dimitris Papanikolaou)</em></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558" target="_blank">SSRN</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>Generative AI can raise firm value by replacing workers but destroy it by replacing products. We construct AI Product Displacement Risk (AI-PDR), a firm-level measure of vulnerability to product substitution by generative AI. AI-PDR captures the demand-side threat to revenue---the opposite channel from the supply-side labor cost savings measured by existing AI-exposure indices. Event studies around four AI releases show that the displacement signal strengthens as AI advances from demonstration to targeted product substitution: early capability releases produce no within-industry return spread, a later release reveals a significant spread once correlated beta exposure is absorbed, and the January 2026 launch of AI agents designed to replace specific incumbent SaaS products generates the largest repricing---top-quintile firms underperform bottom-quintile firms by 4.8 percentage points. Digital deliverability drives the entire effect. Analyst target prices decline significantly for high-displacement-risk firms while near-term earnings forecasts are unchanged, consistent with long-horizon repricing.</p></details>
 </div>
@@ -224,7 +213,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <li>
 <div class="pub-entry">
 <div class="pub-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
-<div><em>(with <a href="https://www.paulgertler.com/" target="_blank" class="coauthor">Paul Gertler</a>, <a href="https://www.brettgreen.info/" target="_blank" class="coauthor">Brett Green</a>, &amp; <a href="https://www.davidsraer.com/" target="_blank" class="coauthor">David Sraer</a>)</em></div>
+<div><em>(with Paul Gertler, Brett Green, &amp; David Sraer)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Review of Economic Studies</b></em></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559" target="_blank">SSRN</a> <a href="https://www.nber.org/papers/w33484" target="_blank">NBER Working Paper</a> <a href="/files/slides_GertlerGreenLiSraer.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite3')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>The rapid expansion of digital financial products in low- and middle-income countries has increased access to credit but raises important questions about their welfare effects. Pay-as-you-go (PAYGo) financing is one such product, relying on lockout technology that allows lenders to remotely disable the collateral's flow benefits when borrowers miss payments. This paper quantifies the welfare effects of PAYGo financing. We build a dynamic structural model of consumer behavior and estimate it using a large-scale, multi-arm pricing experiment conducted by a fintech lender that offers PAYGo financing for smartphones. We find that the welfare gains from access to PAYGo financing are equivalent to a 3.4% increase in income while remaining highly profitable for the lender. The welfare gains are larger for low-risk borrowers and those in the middle of the income distribution. Under plausible assumptions, PAYGo dominates traditional secured loans for all but the riskiest consumers. We explore contract design and show that variations of PAYGo contracts can deliver further welfare improvements.</p></details>
@@ -234,7 +223,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <li>
 <div class="pub-entry">
 <div class="pub-title">Board Connections, Firm Profitability, and Product Market Actions</div>
-<div><em>(with <a href="https://scholar.google.com/citations?user=aify3ioAAAAJ&amp;hl=en" target="_blank" class="coauthor">Radha Gopalan</a> &amp; <a href="https://www.alminas.com/" target="_blank" class="coauthor">Alminas Žaldokas</a>)</em></div>
+<div><em>(with Radha Gopalan &amp; Alminas Žaldokas)</em></div>
 <div><em>Accepted at <b>Journal of Financial Economics</b></em></div>
 <div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/" target="_blank">John L. Weinberg/IRRCi Research Paper Award</a></div>
 <div>Recipient of <a href="http://ewfs.org/award/" target="_blank">Sudipto Bhattacharya Memorial Prize</a></div>
