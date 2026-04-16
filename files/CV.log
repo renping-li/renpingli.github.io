@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.24)  1 APR 2026 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.24)  3 APR 2026 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,7 +384,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 88
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 89
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -398,48 +398,48 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./CV.aux)
 \openout1 = `CV.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/lmm/m/it on input line 88.
+LaTeX Font Info:    Checking defaults for OML/lmm/m/it on input line 89.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-8.
+9.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/lmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/lmsy/m/n on input line 89.
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-88.
+89.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/lmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/lmr/m/n on input line 89.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-8.
+9.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/lmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/lmex/m/n on input line 89.
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-88.
+89.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-Package hyperref Info: Link coloring ON on input line 88.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+Package hyperref Info: Link coloring ON on input line 89.
  (./CV.out)
 (./CV.out)
 \@outlinefile=\write3
@@ -496,33 +496,33 @@ Package hyperref Info: Link coloring ON on input line 88.
 \everyMPtoPDFconversion=\toks24
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 103.
+(Font)              <10.95> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 103.
+(Font)              <8> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 103.
+(Font)              <6> on input line 104.
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-103.
+104.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-07.
+08.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
-(Font)              using `T1/lmr/b/it' instead on input line 159.
+(Font)              using `T1/lmr/b/it' instead on input line 165.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/b/it' in size <10.95> not available
-(Font)              Font shape `T1/lmr/b/sl' tried instead on input line 159.
+(Font)              Font shape `T1/lmr/b/sl' tried instead on input line 165.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
-(Font)              using `T1/lmr/b/it' instead on input line 165.
+(Font)              using `T1/lmr/b/it' instead on input line 171.
 
 [1
 
@@ -530,7 +530,7 @@ LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
 al/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
 
 LaTeX Font Warning: Font shape `T1/lmr/sb/it' undefined
-(Font)              using `T1/lmr/b/it' instead on input line 180.
+(Font)              using `T1/lmr/b/it' instead on input line 186.
 
 [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 [3] (./CV.aux)
@@ -538,13 +538,13 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10685 strings out of 476025
- 166984 string characters out of 5790017
- 1863388 words of memory out of 5000000
- 30973 multiletter control sequences out of 15000+600000
+ 10686 strings out of 476025
+ 167003 string characters out of 5790017
+ 1864388 words of memory out of 5000000
+ 30974 multiletter control sequences out of 15000+600000
  554276 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,416b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,416b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/te
@@ -553,10 +553,10 @@ nts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
 public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/
 lmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
 
-Output written on CV.pdf (3 pages, 170569 bytes).
+Output written on CV.pdf (3 pages, 171163 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
