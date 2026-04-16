@@ -204,10 +204,19 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <ol>
 <li>
 <div class="pub-entry">
+<div class="pub-title">AI Product Displacement Risk</div>
+<div><em>(with <a href="https://www.brettgreen.info/" target="_blank" class="coauthor">Brett Green</a> &amp; <a href="https://www.kellogg.northwestern.edu/faculty/papanikolaou/htm/index.htm" target="_blank" class="coauthor">Dimitris Papanikolaou</a>)</em></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558" target="_blank">SSRN</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span></div>
+<details class="abstract"><summary>Abstract</summary><p>Generative AI can raise firm value by replacing workers but destroy it by replacing products. We construct AI Product Displacement Risk (AI-PDR), a firm-level measure of vulnerability to product substitution by generative AI. AI-PDR captures the demand-side threat to revenue---the opposite channel from the supply-side labor cost savings measured by existing AI-exposure indices. Event studies around four AI releases show that the displacement signal strengthens as AI advances from demonstration to targeted product substitution: early capability releases produce no within-industry return spread, a later release reveals a significant spread once correlated beta exposure is absorbed, and the January 2026 launch of AI agents designed to replace specific incumbent SaaS products generates the largest repricing---top-quintile firms underperform bottom-quintile firms by 4.8 percentage points. Digital deliverability drives the entire effect. Analyst target prices decline significantly for high-displacement-risk firms while near-term earnings forecasts are unchanged, consistent with long-horizon repricing.</p></details>
+</div>
+</li>
+
+<li>
+<div class="pub-entry">
 <div class="pub-title">The Effects of Investment Bank Consolidation on Municipal Finance</div>
 <div><em>Revise &amp; Resubmit at <b>Journal of Finance</b></em></div>
 <div>Recipient of <a href="https://easternfinance.org/best-paper-awards-of-2025/" target="_blank">Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)</a></div>
-<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748" target="_blank">SSRN</a> <a href="/files/slides_Li_UnderwriterMA.pdf" target="_blank">Slides</a> <a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/" target="_blank">ProMarket</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748" target="_blank">SSRN</a> <a href="/files/slides_Li_UnderwriterMA.pdf" target="_blank">Slides</a> <a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/" target="_blank">ProMarket</a> <span class="cite-link" onclick="openCite('cite2')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>Antitrust regulators historically focused on commercial banking. Does investment bank consolidation have competitive effects? Using the municipal bond market as a natural laboratory, I find that underwriting spreads increase by 4.5% of their sample mean following within-market consolidation. The effects double for larger M&As or in concentrated markets. Narrative analysis and placebo tests support a causal interpretation. Consolidation does not generate efficiency gains that manifest as lower bond yields or substitution of other issuer-paid services. Further, Census data indicate a decline in issuance after consolidation. My findings provide a novel perspective on bank antitrust regulations.</p></details>
 </div>
 </li>
@@ -217,7 +226,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <div class="pub-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
 <div><em>(with <a href="https://www.paulgertler.com/" target="_blank" class="coauthor">Paul Gertler</a>, <a href="https://www.brettgreen.info/" target="_blank" class="coauthor">Brett Green</a>, &amp; <a href="https://www.davidsraer.com/" target="_blank" class="coauthor">David Sraer</a>)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Review of Economic Studies</b></em></div>
-<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559" target="_blank">SSRN</a> <a href="https://www.nber.org/papers/w33484" target="_blank">NBER Working Paper</a> <a href="/files/slides_GertlerGreenLiSraer.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite2')">Citation</span></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559" target="_blank">SSRN</a> <a href="https://www.nber.org/papers/w33484" target="_blank">NBER Working Paper</a> <a href="/files/slides_GertlerGreenLiSraer.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite3')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>The rapid expansion of digital financial products in low- and middle-income countries has increased access to credit but raises important questions about their welfare effects. Pay-as-you-go (PAYGo) financing is one such product, relying on lockout technology that allows lenders to remotely disable the collateral's flow benefits when borrowers miss payments. This paper quantifies the welfare effects of PAYGo financing. We build a dynamic structural model of consumer behavior and estimate it using a large-scale, multi-arm pricing experiment conducted by a fintech lender that offers PAYGo financing for smartphones. We find that the welfare gains from access to PAYGo financing are equivalent to a 3.4% increase in income while remaining highly profitable for the lender. The welfare gains are larger for low-risk borrowers and those in the middle of the income distribution. Under plausible assumptions, PAYGo dominates traditional secured loans for all but the riskiest consumers. We explore contract design and show that variations of PAYGo contracts can deliver further welfare improvements.</p></details>
 </div>
 </li>
@@ -229,7 +238,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <div><em>Accepted at <b>Journal of Financial Economics</b></em></div>
 <div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/" target="_blank">John L. Weinberg/IRRCi Research Paper Award</a></div>
 <div>Recipient of <a href="http://ewfs.org/award/" target="_blank">Sudipto Bhattacharya Memorial Prize</a></div>
-<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853" target="_blank">SSRN</a> <a href="/files/slides_GopalanLiZaldokas.pdf" target="_blank">Slides</a> <a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/" target="_blank">CLS Blue Sky Blog</a> <span class="cite-link" onclick="openCite('cite3')">Citation</span></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853" target="_blank">SSRN</a> <a href="/files/slides_GopalanLiZaldokas.pdf" target="_blank">Slides</a> <a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/" target="_blank">CLS Blue Sky Blog</a> <span class="cite-link" onclick="openCite('cite4')">Citation</span></div>
 <details class="abstract"><summary>Abstract</summary><p>A firm's gross margin increases by 0.8 p.p. after forming a new direct board connection to a product market peer. Gross margin also rises by 0.4 p.p. after a connection is formed to a peer indirectly through a third intermediate firm. Further, using barcode-level data of 2.7 million products, we show that new board connections are related to higher consumer good prices, a greater tendency for market allocation, and slower new product introductions. The effects are stronger when the newly connected peers share corporate customers or have similar business descriptions and hold when controlling for other inter-firm relationships.</p></details>
 </div>
 </li>
@@ -240,13 +249,13 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <div class="cite-modal" onclick="event.stopPropagation()">
 <div class="cite-modal-header"><h3>Citation</h3><button class="cite-modal-close" onclick="closeCiteBtn('cite1')">&times;</button></div>
 <div class="cite-modal-body">
-<pre id="cite1-text">@techreport{Li2025underwriter,
-  author    = {Li, Renping},
-  title     = {The Effects of Investment Bank Consolidation on Municipal Finance},
-  year      = {2025},
+<pre id="cite1-text">@techreport{GreenLiPapanikolaou2026,
+  author    = {Green, Brett and Li, Renping and Papanikolaou, Dimitris},
+  title     = {AI Product Displacement Risk},
+  year      = {2026},
   type      = {Working Paper},
-  institution = {Tulane University},
-  url       = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748}
+  institution = {Washington University in St.~Louis, Tulane University, Northwestern University},
+  url       = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558}
 }</pre>
 <button class="cite-copy-btn" onclick="copyBib('cite1-text')">Copy BibTeX</button>
 </div>
@@ -257,13 +266,13 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <div class="cite-modal" onclick="event.stopPropagation()">
 <div class="cite-modal-header"><h3>Citation</h3><button class="cite-modal-close" onclick="closeCiteBtn('cite2')">&times;</button></div>
 <div class="cite-modal-body">
-<pre id="cite2-text">@techreport{GertlerGreenLiSraer2025,
-  author    = {Gertler, Paul and Green, Brett and Li, Renping and Sraer, David},
-  title     = {The Welfare Benefits of Pay-As-You-Go Financing},
+<pre id="cite2-text">@techreport{Li2025underwriter,
+  author    = {Li, Renping},
+  title     = {The Effects of Investment Bank Consolidation on Municipal Finance},
   year      = {2025},
   type      = {Working Paper},
-  institution = {UC Berkeley, Washington University in St.~Louis, Tulane University, UC Berkeley},
-  url       = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559}
+  institution = {Tulane University},
+  url       = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748}
 }</pre>
 <button class="cite-copy-btn" onclick="copyBib('cite2-text')">Copy BibTeX</button>
 </div>
@@ -274,7 +283,24 @@ AI & FinTech, Financial Intermediation, Corporate Governance
 <div class="cite-modal" onclick="event.stopPropagation()">
 <div class="cite-modal-header"><h3>Citation</h3><button class="cite-modal-close" onclick="closeCiteBtn('cite3')">&times;</button></div>
 <div class="cite-modal-body">
-<pre id="cite3-text">@techreport{GopalanLiZaldokas2025,
+<pre id="cite3-text">@techreport{GertlerGreenLiSraer2025,
+  author    = {Gertler, Paul and Green, Brett and Li, Renping and Sraer, David},
+  title     = {The Welfare Benefits of Pay-As-You-Go Financing},
+  year      = {2025},
+  type      = {Working Paper},
+  institution = {UC Berkeley, Washington University in St.~Louis, Tulane University, UC Berkeley},
+  url       = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559}
+}</pre>
+<button class="cite-copy-btn" onclick="copyBib('cite3-text')">Copy BibTeX</button>
+</div>
+</div>
+</div>
+
+<div class="cite-overlay" id="cite4" onclick="closeCite(event, 'cite4')">
+<div class="cite-modal" onclick="event.stopPropagation()">
+<div class="cite-modal-header"><h3>Citation</h3><button class="cite-modal-close" onclick="closeCiteBtn('cite4')">&times;</button></div>
+<div class="cite-modal-body">
+<pre id="cite4-text">@techreport{GopalanLiZaldokas2025,
   author    = {Gopalan, Radha and Li, Renping and \v{Z}aldokas, Alminas},
   title     = {Board Connections, Firm Profitability, and Product Market Actions},
   year      = {2025},
@@ -282,7 +308,7 @@ AI & FinTech, Financial Intermediation, Corporate Governance
   institution = {Washington University in St.~Louis, Tulane University, National University of Singapore},
   url       = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853}
 }</pre>
-<button class="cite-copy-btn" onclick="copyBib('cite3-text')">Copy BibTeX</button>
+<button class="cite-copy-btn" onclick="copyBib('cite4-text')">Copy BibTeX</button>
 </div>
 </div>
 </div>
