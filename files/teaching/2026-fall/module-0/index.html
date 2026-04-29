@@ -195,6 +195,105 @@ body {
 .img-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .img-grid img { width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
 
+
+/* === Warm-Up module-group slide === */
+.warmup-body {
+  flex: 1; min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 0.85fr);
+  gap: clamp(1.4rem, 3.5vw, 2.6rem);
+  align-items: stretch;
+}
+.warmup-questions {
+  display: flex; flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+.warmup-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: var(--accent);
+}
+.warmup-questions .page-title { margin-top: 0.3rem; }
+.warmup-questions .title-rule { margin-bottom: clamp(0.6rem, 1.5vh, 1rem); }
+.warmup-q {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2vw, 1.7rem);
+  line-height: 1.25;
+  color: var(--ink);
+  margin-top: clamp(0.5rem, 1.2vh, 0.9rem);
+}
+.warmup-q .speaker {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+  font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+/* Question fragment reuse the same .frag fade-in pattern as bullets */
+.warmup-q.frag {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(.2,.7,.2,1);
+  pointer-events: none;
+}
+.warmup-q.frag.shown { opacity: 1; transform: none; pointer-events: auto; }
+
+/* Module nav on the right */
+.warmup-nav {
+  display: flex; flex-direction: column;
+  border-left: 2px solid rgba(0,0,0,0.08);
+  padding-left: clamp(0.9rem, 2vw, 1.4rem);
+  align-self: stretch;
+  justify-content: center;
+}
+.warmup-nav-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: clamp(0.6rem, 0.85vw, 0.75rem);
+  color: var(--muted);
+  margin-bottom: clamp(0.5rem, 1vh, 0.8rem);
+}
+.warmup-nav .mod {
+  display: flex;
+  align-items: baseline;
+  gap: clamp(0.4rem, 1vw, 0.7rem);
+  padding: clamp(0.25rem, 0.6vh, 0.4rem) 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(0.78rem, 1.05vw, 0.95rem);
+  color: rgba(26,26,26,0.45);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.warmup-nav .mod:last-child { border-bottom: 0; }
+.warmup-nav .mod .num {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85em;
+  color: rgba(26,26,26,0.45);
+  min-width: 2.6em;
+  letter-spacing: 0.06em;
+}
+.warmup-nav .mod .title { flex: 1; line-height: 1.3; }
+.warmup-nav .mod.active {
+  color: var(--ink);
+  background: rgba(0,105,92,0.08);
+  border-radius: 4px;
+  padding: clamp(0.3rem, 0.7vh, 0.45rem) clamp(0.4rem, 0.8vw, 0.6rem);
+  margin: 2px calc(-1 * clamp(0.4rem, 0.8vw, 0.6rem));
+  border-bottom-color: transparent;
+}
+.warmup-nav .mod.active .num { color: var(--accent); }
+.warmup-nav .mod.active .title { font-weight: 700; }
+
 /* Video frame (iframe when embeddable, thumbnail link when not) */
 .video-frame {
   flex: 1; min-height: 0;
@@ -441,7 +540,7 @@ body {
 </button>
 
 <aside id="outline">
-  <h3>Module 0 - 13 slides</h3>
+  <h3>Module 0 - 16 slides</h3>
   <ol>
 <li class="sec-intro"><a href="#" data-goto="0"><span class="num">001</span><span class="t">Introduction</span></a></li>
 <li class="sec-intro"><a href="#" data-goto="1"><span class="num">002</span><span class="t">About the Instructor</span></a></li>
@@ -452,10 +551,13 @@ body {
 <li class="sec-goals"><a href="#" data-goto="6"><span class="num">007</span><span class="t">Pre-Course Survey</span></a></li>
 <li class="sec-goals"><a href="#" data-goto="7"><span class="num">008</span><span class="t">Pre-Course Survey</span></a></li>
 <li class="sec-agency"><a href="#" data-goto="8"><span class="num">009</span><span class="t">Warm-Up</span></a></li>
-<li class="sec-agency"><a href="#" data-goto="9"><span class="num">010</span><span class="t">Warm-Up</span></a></li>
-<li class="sec-agency"><a href="#" data-goto="10"><span class="num">011</span><span class="t">Warm-Up</span></a></li>
-<li class="sec-markets"><a href="#" data-goto="11"><span class="num">012</span><span class="t">Course Overview</span></a></li>
-<li class="sec-markets"><a href="#" data-goto="12"><span class="num">013</span><span class="t">See you next time</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="9"><span class="num">010</span><span class="t">Warm-Up - Module 1</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="10"><span class="num">011</span><span class="t">Warm-Up - Modules 2 & 3</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="14"><span class="num">015</span><span class="t">Warm-Up - Modules 4 & 5</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="15"><span class="num">016</span><span class="t">Warm-Up - Modules 6 & 7</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="16"><span class="num">017</span><span class="t">Warm-Up - Modules 8 & 9</span></a></li>
+<li class="sec-markets"><a href="#" data-goto="14"><span class="num">015</span><span class="t">Course Overview</span></a></li>
+<li class="sec-markets"><a href="#" data-goto="15"><span class="num">016</span><span class="t">See you next time</span></a></li>
   </ol>
 </aside>
 
@@ -473,7 +575,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">01 / 13</span>
+  <span class="page-num">01 / 16</span>
 </div>
 </article>
 </section>
@@ -502,7 +604,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">02 / 13</span>
+  <span class="page-num">02 / 16</span>
 </div>
 </article>
 </section>
@@ -532,7 +634,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">03 / 13</span>
+  <span class="page-num">03 / 16</span>
 </div>
 </article>
 </section>
@@ -561,7 +663,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">04 / 13</span>
+  <span class="page-num">04 / 16</span>
 </div>
 </article>
 </section>
@@ -586,7 +688,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">05 / 13</span>
+  <span class="page-num">05 / 16</span>
 </div>
 </article>
 </section>
@@ -611,7 +713,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">06 / 13</span>
+  <span class="page-num">06 / 16</span>
 </div>
 </article>
 </section>
@@ -636,7 +738,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">07 / 13</span>
+  <span class="page-num">07 / 16</span>
 </div>
 </article>
 </section>
@@ -661,7 +763,7 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">08 / 13</span>
+  <span class="page-num">08 / 16</span>
 </div>
 </article>
 </section>
@@ -682,63 +784,169 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">09 / 13</span>
+  <span class="page-num">09 / 16</span>
 </div>
 </article>
 </section>
-<section class="slide sec-agency" data-idx="9" data-section="3" data-orig="11" data-frags="0">
+<section class="slide sec-agency" data-idx="9" data-section="3" data-orig="warmup" data-frags="2">
 <article class="page">
 <div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
-<div class="page-body content-body">
-  <h2 class="page-title">Warm-Up</h2>
-  <div class="title-rule"></div>
-  <ul class="bullets">
-    <li>Product:</li>
-  </ul>
+<div class="page-body warmup-body">
+  <div class="warmup-questions">
+    <div class="warmup-eyebrow">Warm-Up - Connecting to Module 1</div>
+    <h2 class="page-title">Investment, financing, and ethics</h2>
+    <div class="title-rule"></div>
+    <p class="warmup-q">"What do you want to do with the money? Hire people, distribution, expand the product line. How do you plan to raise money?" <span class="speaker">- Daymond</span></p>
+    <p class="warmup-q frag">"Is there a patent, or can anybody do it?" <span class="speaker">- Kevin</span></p>
+    <p class="warmup-q frag">"What do sharks want as shareholders? ‘I like the social aspects of it.’" <span class="speaker">- Mark</span></p>
+  </div>
+  <aside class="warmup-nav">
+    <div class="warmup-nav-title">Course Roadmap</div>
+    <div class="mod active"><span class="num">M01</span><span class="title">Introduction</span></div>
+    <div class="mod"><span class="num">M02</span><span class="title">Accounting (Statements)</span></div>
+    <div class="mod"><span class="num">M03</span><span class="title">Accounting (Cash Flows)</span></div>
+    <div class="mod"><span class="num">M04</span><span class="title">Time Value of Money</span></div>
+    <div class="mod"><span class="num">M05</span><span class="title">Equity & Bond Valuation</span></div>
+    <div class="mod"><span class="num">M06</span><span class="title">Project Evaluation</span></div>
+    <div class="mod"><span class="num">M07</span><span class="title">Capital Budgeting</span></div>
+    <div class="mod"><span class="num">M08</span><span class="title">Risk-Return Trade-off</span></div>
+    <div class="mod"><span class="num">M09</span><span class="title">Corporate Finance</span></div>
+  </aside>
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">10 / 13</span>
+  <span class="page-num">10 / 16</span>
 </div>
 </article>
 </section>
-<section class="slide sec-agency" data-idx="10" data-section="3" data-orig="12" data-frags="16">
+<section class="slide sec-agency" data-idx="10" data-section="3" data-orig="warmup" data-frags="0">
 <article class="page">
 <div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
-<div class="page-body content-body">
-  <h2 class="page-title">Warm-Up</h2>
-  <div class="title-rule"></div>
-  <ul class="bullets">
-    <li>Product: PowerPot thermoelectric generator</li>
-    <li class="frag">Daymond: What do you want to do with the money? 3 things: Hire people, distribution network, expand the product line. How do you plan to raise money?</li>
-    <li class="frag">Module 1: Investment decisions and financing decisions</li>
-    <li class="frag">Kevin: Is there a patent, or can anybody do it?</li>
-    <li class="frag">Module 1: Tangible and intangible assets</li>
-    <li class="frag">What do sharks want as a shareholder? Mark: “I like the social aspects of it”</li>
-    <li class="frag">Module 1: Maximize shareholder value. But there are ethical considerations</li>
-    <li class="frag">Investors ask a lot of questions: Why do you need water? How long does it charge? How much did you raise on Kickstarter?</li>
-    <li class="frag">Module 2, 3 (Accounting): How to explain your business to investors? How to evaluate a business?</li>
-    <li class="frag">Daymond: “You asked for $250,000 for 10%. You value the company at $2.5 million?” Mark: “I’ll offer you $250,000 for 20%.” Deal: $250k for 12% share + 3% in advisory options</li>
-    <li class="frag">Module 4, 5: What are future cash flows worth today? How to value equity and bonds?</li>
-    <li class="frag">How did the entrepreneurs make those 3 investment decisions?</li>
-    <li class="frag">Module 6, 7 (Project Evaluation): How to evaluate projects and choose the best ones to pursue?</li>
-    <li class="frag">How do sharks choose the companies they want to invest in?</li>
-    <li class="frag">Module 8 (Risk-return Trade-off): How to choose the best companies to invest in?</li>
-    <li class="frag">Why do they give up their share? Can’t they get a bank loan?</li>
-    <li class="frag">Module 9 (Corporate Finance): How to choose between debt and equity?</li>
-  </ul>
+<div class="page-body warmup-body">
+  <div class="warmup-questions">
+    <div class="warmup-eyebrow">Warm-Up - Connecting to Modules 2 & 3</div>
+    <h2 class="page-title">Reading the financial statements</h2>
+    <div class="title-rule"></div>
+    <p class="warmup-q">"Why do you need water? How long does it charge? How much did you raise on Kickstarter?" - the sharks ask a lot of questions to size up the business. </p>
+  </div>
+  <aside class="warmup-nav">
+    <div class="warmup-nav-title">Course Roadmap</div>
+    <div class="mod"><span class="num">M01</span><span class="title">Introduction</span></div>
+    <div class="mod active"><span class="num">M02</span><span class="title">Accounting (Statements)</span></div>
+    <div class="mod active"><span class="num">M03</span><span class="title">Accounting (Cash Flows)</span></div>
+    <div class="mod"><span class="num">M04</span><span class="title">Time Value of Money</span></div>
+    <div class="mod"><span class="num">M05</span><span class="title">Equity & Bond Valuation</span></div>
+    <div class="mod"><span class="num">M06</span><span class="title">Project Evaluation</span></div>
+    <div class="mod"><span class="num">M07</span><span class="title">Capital Budgeting</span></div>
+    <div class="mod"><span class="num">M08</span><span class="title">Risk-Return Trade-off</span></div>
+    <div class="mod"><span class="num">M09</span><span class="title">Corporate Finance</span></div>
+  </aside>
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">11 / 13</span>
+  <span class="page-num">11 / 16</span>
 </div>
 </article>
 </section>
-<section class="slide sec-markets" data-idx="11" data-section="4" data-orig="29" data-frags="0">
+<section class="slide sec-agency" data-idx="14" data-section="3" data-orig="warmup" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body warmup-body">
+  <div class="warmup-questions">
+    <div class="warmup-eyebrow">Warm-Up - Connecting to Modules 4 & 5</div>
+    <h2 class="page-title">What is a future cash flow worth today?</h2>
+    <div class="title-rule"></div>
+    <p class="warmup-q">"You asked for $250,000 for 10%. You value the company at $2.5 million?" Mark counters at 20%, deal lands at 12% + advisory. <span class="speaker">- Daymond</span></p>
+  </div>
+  <aside class="warmup-nav">
+    <div class="warmup-nav-title">Course Roadmap</div>
+    <div class="mod"><span class="num">M01</span><span class="title">Introduction</span></div>
+    <div class="mod"><span class="num">M02</span><span class="title">Accounting (Statements)</span></div>
+    <div class="mod"><span class="num">M03</span><span class="title">Accounting (Cash Flows)</span></div>
+    <div class="mod active"><span class="num">M04</span><span class="title">Time Value of Money</span></div>
+    <div class="mod active"><span class="num">M05</span><span class="title">Equity & Bond Valuation</span></div>
+    <div class="mod"><span class="num">M06</span><span class="title">Project Evaluation</span></div>
+    <div class="mod"><span class="num">M07</span><span class="title">Capital Budgeting</span></div>
+    <div class="mod"><span class="num">M08</span><span class="title">Risk-Return Trade-off</span></div>
+    <div class="mod"><span class="num">M09</span><span class="title">Corporate Finance</span></div>
+  </aside>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">15 / 16</span>
+</div>
+</article>
+</section>
+<section class="slide sec-agency" data-idx="15" data-section="3" data-orig="warmup" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body warmup-body">
+  <div class="warmup-questions">
+    <div class="warmup-eyebrow">Warm-Up - Connecting to Modules 6 & 7</div>
+    <h2 class="page-title">Choosing which projects to fund</h2>
+    <div class="title-rule"></div>
+    <p class="warmup-q">How did the entrepreneurs decide between hiring people, building a distribution network, and expanding the product line? </p>
+  </div>
+  <aside class="warmup-nav">
+    <div class="warmup-nav-title">Course Roadmap</div>
+    <div class="mod"><span class="num">M01</span><span class="title">Introduction</span></div>
+    <div class="mod"><span class="num">M02</span><span class="title">Accounting (Statements)</span></div>
+    <div class="mod"><span class="num">M03</span><span class="title">Accounting (Cash Flows)</span></div>
+    <div class="mod"><span class="num">M04</span><span class="title">Time Value of Money</span></div>
+    <div class="mod"><span class="num">M05</span><span class="title">Equity & Bond Valuation</span></div>
+    <div class="mod active"><span class="num">M06</span><span class="title">Project Evaluation</span></div>
+    <div class="mod active"><span class="num">M07</span><span class="title">Capital Budgeting</span></div>
+    <div class="mod"><span class="num">M08</span><span class="title">Risk-Return Trade-off</span></div>
+    <div class="mod"><span class="num">M09</span><span class="title">Corporate Finance</span></div>
+  </aside>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">16 / 16</span>
+</div>
+</article>
+</section>
+<section class="slide sec-agency" data-idx="16" data-section="3" data-orig="warmup" data-frags="1">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body warmup-body">
+  <div class="warmup-questions">
+    <div class="warmup-eyebrow">Warm-Up - Connecting to Modules 8 & 9</div>
+    <h2 class="page-title">Risk, return, and the choice of capital</h2>
+    <div class="title-rule"></div>
+    <p class="warmup-q">How do the sharks choose the companies they want to invest in? </p>
+    <p class="warmup-q frag">Why do the entrepreneurs give up a share of the company? Can’t they just get a bank loan? </p>
+  </div>
+  <aside class="warmup-nav">
+    <div class="warmup-nav-title">Course Roadmap</div>
+    <div class="mod"><span class="num">M01</span><span class="title">Introduction</span></div>
+    <div class="mod"><span class="num">M02</span><span class="title">Accounting (Statements)</span></div>
+    <div class="mod"><span class="num">M03</span><span class="title">Accounting (Cash Flows)</span></div>
+    <div class="mod"><span class="num">M04</span><span class="title">Time Value of Money</span></div>
+    <div class="mod"><span class="num">M05</span><span class="title">Equity & Bond Valuation</span></div>
+    <div class="mod"><span class="num">M06</span><span class="title">Project Evaluation</span></div>
+    <div class="mod"><span class="num">M07</span><span class="title">Capital Budgeting</span></div>
+    <div class="mod active"><span class="num">M08</span><span class="title">Risk-Return Trade-off</span></div>
+    <div class="mod active"><span class="num">M09</span><span class="title">Corporate Finance</span></div>
+  </aside>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">17 / 16</span>
+</div>
+</article>
+</section>
+<section class="slide sec-markets" data-idx="14" data-section="4" data-orig="29" data-frags="0">
 <article class="page">
 <div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
@@ -759,11 +967,11 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">12 / 13</span>
+  <span class="page-num">15 / 16</span>
 </div>
 </article>
 </section>
-<section class="slide sec-markets" data-idx="12" data-section="4" data-orig="30" data-frags="0">
+<section class="slide sec-markets" data-idx="15" data-section="4" data-orig="30" data-frags="0">
 <article class="page">
 <div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
@@ -774,13 +982,13 @@ body {
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
-  <span class="page-num">13 / 13</span>
+  <span class="page-num">16 / 16</span>
 </div>
 </article>
 </section>
 </main>
 
-<div id="counter"><span class="slide-pos">01 / 13</span><span class="frag-pos"></span></div>
+<div id="counter"><span class="slide-pos">01 / 16</span><span class="frag-pos"></span></div>
 
 <script>
 class SlidePresentation {
