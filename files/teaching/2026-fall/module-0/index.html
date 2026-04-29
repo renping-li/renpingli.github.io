@@ -254,19 +254,9 @@ body {
 /* === Instructor slide === */
 .instructor-body {
   flex: 1; min-height: 0;
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.55fr);
-  gap: clamp(1.8rem, 4.5vw, 3.2rem);
-  align-items: center;
-}
-.portrait {
-  display: flex; align-items: center; justify-content: center;
-  height: 100%; min-height: 0;
-}
-.portrait img {
-  max-width: 100%;
-  max-height: min(70vh, 540px);
-  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bio { display: flex; flex-direction: column; gap: 0.15rem; }
@@ -493,9 +483,6 @@ body {
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
 <div class="page-body instructor-body">
-  <div class="portrait">
-    <img src="assets/instructor.png" alt="Prof. Renping Li" />
-  </div>
   <div class="bio">
     <p class="bio-eyebrow">Your Instructor</p>
     <h2 class="instr-name">Renping Li</h2>
