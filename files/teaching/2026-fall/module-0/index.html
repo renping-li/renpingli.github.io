@@ -199,8 +199,8 @@ body {
 .instructor-body {
   flex: 1; min-height: 0;
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.55fr);
+  gap: clamp(1.8rem, 4.5vw, 3.2rem);
   align-items: center;
 }
 .portrait {
@@ -211,71 +211,79 @@ body {
   max-width: 100%;
   max-height: min(70vh, 540px);
   object-fit: contain;
-  filter: drop-shadow(0 12px 24px rgba(0,0,0,0.15));
 }
-.bio { display: flex; flex-direction: column; }
+
+.bio { display: flex; flex-direction: column; gap: 0.15rem; }
+.bio-eyebrow {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.7vw, 1.4rem);
+  color: var(--accent);
+}
 .instr-name {
   font-family: 'Bodoni Moda', serif;
   font-weight: 700;
-  font-size: clamp(2rem, 4.4vw, 3.6rem);
-  line-height: 1; margin-top: 0.6rem;
-  letter-spacing: -0.01em;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  margin-top: 0.1rem;
 }
 .instr-role {
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   color: var(--muted);
-  font-size: clamp(1rem, 1.6vw, 1.3rem);
-  margin-top: 0.4rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  margin-top: 0.35rem;
+}
+.bio-rule {
+  width: clamp(60px, 6vw, 88px);
+  height: 2px;
+  background: var(--ink);
+  margin: clamp(1rem, 2vh, 1.4rem) 0 clamp(0.6rem, 1.4vh, 1rem);
 }
 .instr-meta {
   display: grid;
   grid-template-columns: max-content 1fr;
-  column-gap: clamp(1rem, 2vw, 1.6rem);
-  row-gap: clamp(0.5rem, 1.2vh, 0.8rem);
-  margin-top: clamp(1.2rem, 2.5vh, 1.6rem);
+  column-gap: clamp(1rem, 2.2vw, 1.8rem);
+  row-gap: clamp(0.55rem, 1.3vh, 0.85rem);
   align-items: baseline;
 }
 .instr-meta dt {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: clamp(0.7rem, 1.05vw, 0.95rem);
+  letter-spacing: 0.2em;
+  font-size: clamp(0.68rem, 1vw, 0.88rem);
   color: var(--muted);
   white-space: nowrap;
 }
 .instr-meta dd {
   font-family: 'DM Sans', sans-serif;
-  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
   color: var(--ink);
   line-height: 1.4;
 }
 .instr-meta .pill {
   display: inline-block;
-  background: var(--bg-outer);
-  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(0,105,92,0.08);
+  border: 1px solid rgba(0,105,92,0.28);
+  color: var(--accent);
   border-radius: 999px;
-  padding: 0.18em 0.7em;
-  font-size: 0.92em;
+  padding: 0.22em 0.85em;
+  font-size: 0.94em;
+  font-weight: 500;
   margin: 0 0.3em 0.3em 0;
   white-space: nowrap;
 }
-/* Email button styled like the SSRN/Slides links on the personal site */
-.instr-meta dd a.email-btn {
-  display: inline-block;
-  padding: 0.28em 0.85em;
-  font-weight: 500;
-  color: #B31942;
-  background: transparent;
-  border: 1px solid rgba(179, 25, 66, 0.4);
-  border-radius: 4px;
+/* Plain clickable email */
+.instr-meta dd a {
+  color: var(--accent);
   text-decoration: none;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease;
 }
-.instr-meta dd a.email-btn:hover {
-  background: #B31942;
-  color: #fff;
-  border-color: #B31942;
+.instr-meta dd a:hover {
+  text-decoration: underline;
 }
 
 .page-footer {
@@ -450,10 +458,10 @@ body {
     <img src="assets/instructor.png" alt="Prof. Renping Li" />
   </div>
   <div class="bio">
-    <h2 class="page-title">About the Instructor</h2>
-    <div class="title-rule"></div>
-    <p class="instr-name">Renping Li</p>
+    <p class="bio-eyebrow">Your Instructor</p>
+    <h2 class="instr-name">Renping Li</h2>
     <p class="instr-role">Assistant Professor of Finance, A. B. Freeman School of Business</p>
+    <div class="bio-rule"></div>
     <dl class="instr-meta">
       <dt>Education</dt>
       <dd>Ph.D. in Finance, Washington University in St. Louis</dd>
@@ -462,7 +470,7 @@ body {
       <dt>Office</dt>
       <dd>GWBC 359</dd>
       <dt>Email</dt>
-      <dd><a class="email-btn" href="mailto:rli17@tulane.edu">rli17@tulane.edu</a></dd>
+      <dd><a href="mailto:rli17@tulane.edu">rli17@tulane.edu</a></dd>
     </dl>
   </div>
 </div>
