@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FINE 3010 - Fall 2026 - Course Materials</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-outer: #f1ede4;
+    --bg-page: #faf7ef;
+    --ink: #1a1a1a;
+    --muted: #5b5751;
+    --accent: rgb(0,105,92);
+    --tab-1: #98d4bb;
+    --tab-2: #c7b8ea;
+    --tab-3: #f4b8c5;
+    --tab-4: #a8d8ea;
+    --tab-5: #ffe6a7;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { min-height: 100%; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 800px at 80% 110%, #ece7da 0%, transparent 60%),
+      var(--bg-outer);
+    min-height: 100vh;
+  }
+
+  /* === Passcode gate (shown by default) === */
+  .gate {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .gate-card {
+    width: min(100%, 480px);
+    background: var(--bg-page);
+    border-radius: 10px;
+    padding: clamp(1.6rem, 4vw, 2.6rem);
+    box-shadow:
+      0 1px 0 rgba(0,0,0,0.04),
+      0 24px 48px -16px rgba(0,0,0,0.18),
+      0 8px 16px -8px rgba(0,0,0,0.12);
+    text-align: left;
+  }
+  .gate-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .gate-rule {
+    width: 60px; height: 2px;
+    background: var(--ink);
+    margin: 0.5rem 0 1rem;
+  }
+  .gate-card h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.005em;
+  }
+  .gate-card h1 em { font-style: italic; font-weight: 400; color: var(--muted); }
+  .gate-card p {
+    margin-top: 0.7rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .gate-form {
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .gate-form input {
+    flex: 1;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 6px;
+    background: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .gate-form input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(0,105,92,0.15);
+  }
+  .gate-form button {
+    padding: 0.65rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--ink);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+  .gate-form button:hover { background: var(--accent); }
+  .gate-form button:active { transform: scale(0.98); }
+  .gate-error {
+    margin-top: 0.7rem;
+    color: #c41e3a;
+    font-size: 0.85rem;
+    min-height: 1rem;
+  }
+  .gate-back {
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .gate-back a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+  }
+
+  /* === Gallery (revealed after correct passcode) === */
+  .gallery { display: none; }
+  body.unlocked .gate { display: none; }
+  body.unlocked .gallery { display: block; }
+
+  .gallery-header {
+    padding: clamp(1.6rem, 4vw, 2.4rem) clamp(1.2rem, 4vw, 3rem) 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .gallery-header .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .gallery-header h1 {
+    margin-top: 0.4rem;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+    line-height: 1.05;
+  }
+  .gallery-header h1 em { font-style: italic; font-weight: 400; color: var(--muted); }
+  .gallery-header p {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 18px;
+    padding: 24px clamp(1.2rem, 4vw, 3rem) 48px;
+  }
+  .module {
+    background: var(--bg-page);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+  }
+  .module:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -12px rgba(0,0,0,0.18);
+    border-color: rgba(0,0,0,0.18);
+  }
+  .module .frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--bg-outer);
+  }
+  .module .frame iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1280px; height: 720px;
+    border: 0;
+    transform: scale(0.45);
+    transform-origin: top left;
+    pointer-events: none;
+  }
+  @media (min-width: 1100px) {
+    .module .frame iframe { transform: scale(0.55); }
+  }
+  .module .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 18px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    background: var(--bg-page);
+  }
+  .module .num {
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .module .title {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .gallery-footer {
+    padding: 0 clamp(1.2rem, 4vw, 3rem) 28px;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+  .gallery-footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- ===== Passcode gate ===== -->
+<div class="gate" id="gate">
+  <div class="gate-card">
+    <div class="gate-eyebrow">FINE 3010 - Fall 2026</div>
+    <div class="gate-rule"></div>
+    <h1>Course materials are <em>passcode-protected</em>.</h1>
+    <p>Enter the passcode shared in class or on Canvas to view the module slides.</p>
+    <form class="gate-form" id="gate-form" autocomplete="off">
+      <input type="password" id="gate-input" placeholder="Passcode" inputmode="numeric" autofocus>
+      <button type="submit">Enter</button>
+    </form>
+    <div class="gate-error" id="gate-error" role="alert" aria-live="polite"></div>
+    <p class="gate-back"><a href="/teaching/">&larr; Back to teaching</a></p>
+  </div>
+</div>
+
+<!-- ===== Gallery (revealed after unlock) ===== -->
+<div class="gallery">
+  <header class="gallery-header">
+    <div class="eyebrow">FINE 3010 - Fall 2026</div>
+    <h1>Financial Management <em>- Course Slides</em></h1>
+    <p>Click any module to open the deck. Use arrow keys or space to advance, press <strong>O</strong> for the outline.</p>
+  </header>
+
+  <main class="modules">
+    <a class="module" href="module-0/" target="_blank" rel="noopener">
+      <div class="frame"><iframe src="module-0/" loading="lazy" scrolling="no" tabindex="-1"></iframe></div>
+      <div class="meta"><span class="num">Module 00</span><span class="title">Course Introduction</span></div>
+    </a>
+    <a class="module" href="module-1/" target="_blank" rel="noopener">
+      <div class="frame"><iframe src="module-1/" loading="lazy" scrolling="no" tabindex="-1"></iframe></div>
+      <div class="meta"><span class="num">Module 01</span><span class="title">Introduction to Finance</span></div>
+    </a>
+  </main>
+
+  <footer class="gallery-footer">
+    Renping Li &middot; Tulane University, A. B. Freeman School of Business &middot; <a href="/teaching/">Back to teaching</a>
+  </footer>
+</div>
+
+<script>
+  /* ===========================================
+     Passcode gate. Not real security (this is a static
+     site so anyone determined can just read the source),
+     but it discourages the casual visitor and remembers
+     unlock for the rest of the browser session.
+     =========================================== */
+  (function () {
+    var PASSCODE = '2026';
+    var STORAGE_KEY = 'fine3010_2026_unlocked';
+
+    function unlock() {
+      document.body.classList.add('unlocked');
+      try { sessionStorage.setItem(STORAGE_KEY, '1'); } catch (e) { /* ignore */ }
+    }
+
+    // Already unlocked this session?
+    try {
+      if (sessionStorage.getItem(STORAGE_KEY) === '1') {
+        unlock();
+      }
+    } catch (e) { /* sessionStorage may be blocked, fine */ }
+
+    var form = document.getElementById('gate-form');
+    var input = document.getElementById('gate-input');
+    var err = document.getElementById('gate-error');
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var entered = (input.value || '').trim();
+      if (entered === PASSCODE) {
+        err.textContent = '';
+        unlock();
+      } else {
+        err.textContent = 'Incorrect passcode. Try again.';
+        input.select();
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>

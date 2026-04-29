@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FINE 3010 - Module 0 Slides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-outer: #f1ede4; --bg-page: #faf7ef;
+  --ink: #1a1a1a; --muted: #5b5751;
+  --accent: rgb(0,105,92);
+  --tab-1: #98d4bb; --tab-2: #c7b8ea; --tab-3: #f4b8c5; --tab-4: #a8d8ea; --tab-5: #ffe6a7;
+  --slide-padding: clamp(0.4rem, 1.4vw, 1.2rem);
+  --title-size: clamp(1.6rem, 3.6vw, 2.8rem);
+  --display-size: clamp(2.4rem, 7vw, 5.5rem);
+  --h2-size: clamp(1.05rem, 2vw, 1.6rem);
+  --body-size: clamp(0.9rem, 1.4vw, 1.15rem);
+  --bullet-size: clamp(0.95rem, 1.6vw, 1.35rem);
+  --small-size: clamp(0.7rem, 1vw, 0.9rem);
+  --content-gap: clamp(0.5rem, 1.5vw, 1.2rem);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { height:100%; overflow-x:hidden; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif; color: var(--ink);
+  background: radial-gradient(1200px 800px at 80% 110%, #ece7da 0%, transparent 60%), var(--bg-outer);
+}
+.slide {
+  width:100vw; height:100vh; height:100dvh;
+  overflow:hidden; scroll-snap-align: start;
+  display:flex; align-items:center; justify-content:center;
+  padding: var(--slide-padding);
+  position: relative;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
+  html { scroll-behavior: auto; }
+}
+
+.page {
+  position: relative; width: 100%; height: 100%;
+  background: var(--bg-page); border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 24px 48px -16px rgba(0,0,0,0.18), 0 8px 16px -8px rgba(0,0,0,0.12);
+  padding: clamp(1.2rem, 3.5vw, 2.6rem) clamp(1.6rem, 4.5vw, 3.5rem) clamp(1.2rem, 3vw, 2.2rem) clamp(1.8rem, 5vw, 3.8rem);
+  display: flex; flex-direction: column;
+  overflow: hidden; isolation: isolate;
+}
+
+.holes {
+  position: absolute; top: 12%; bottom: 12%; left: clamp(0.5rem, 1.2vw, 1rem);
+  width: 12px; display:flex; flex-direction:column; justify-content:space-between;
+}
+.hole {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--bg-outer); box-shadow: inset 0 1px 2px rgba(0,0,0,0.18);
+}
+
+.tabs {
+  position: absolute; top: 12%; bottom: 12%; right: 0;
+  transform: translateX(58%);
+  display: flex; flex-direction: column; gap: 6px;
+  width: clamp(26px, 3vw, 38px); z-index: 2;
+}
+.tab {
+  flex: 1; border-radius: 4px 8px 8px 4px;
+  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.15);
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  filter: saturate(0.85) brightness(0.97); opacity: 0.78;
+}
+.tab span {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: clamp(0.5rem, 0.95vh, 0.68rem);
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(0,0,0,0.6);
+}
+.tab-0 { background: var(--tab-1); }
+.tab-1 { background: var(--tab-2); }
+.tab-2 { background: var(--tab-3); }
+.tab-3 { background: var(--tab-4); }
+.tab-4 { background: var(--tab-5); }
+.slide.sec-intro    .tab-0,
+.slide.sec-business .tab-1,
+.slide.sec-goals    .tab-2,
+.slide.sec-agency   .tab-3,
+.slide.sec-markets  .tab-4 {
+  filter: none; opacity: 1;
+  transform: translateX(-58%) scale(1.04);
+  box-shadow: 0 6px 14px -4px rgba(0,0,0,0.22);
+  z-index: 3;
+}
+
+.corner {
+  position: absolute;
+  top: clamp(0.8rem, 1.6vw, 1.3rem);
+  right: clamp(0.8rem, 1.6vw, 1.3rem);
+  font-family: 'Bodoni Moda', serif; font-style: italic;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  color: var(--muted); letter-spacing: 0.02em; z-index: 1;
+}
+
+.page-body {
+  flex: 1; display: flex; flex-direction: column;
+  min-height: 0; margin-top: clamp(0.4rem, 1.2vw, 1rem);
+  gap: var(--content-gap);
+}
+
+.title-slide, .divider-slide { justify-content: center; align-items: flex-start; text-align: left; }
+.title-slide .eyebrow, .divider-slide .eyebrow {
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-size: var(--body-size); letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--muted);
+}
+.rule { width: clamp(60px, 6vw, 88px); height: 2px; background: var(--ink); margin: 0.4rem 0 1rem; }
+.display {
+  font-family: 'Bodoni Moda', serif; font-weight: 700;
+  font-size: var(--display-size); line-height: 0.98; letter-spacing: -0.01em;
+}
+.display em { font-style: italic; font-weight: 400; }
+.lede {
+  font-family: 'DM Sans', sans-serif; font-weight: 400;
+  font-size: var(--h2-size); margin-top: 1rem;
+  color: var(--muted); max-width: 70ch; line-height: 1.4;
+}
+
+.page-title {
+  font-family: 'Bodoni Moda', serif; font-weight: 700;
+  font-size: var(--title-size); line-height: 1.05; letter-spacing: -0.005em;
+  color: var(--ink); max-width: 92%;
+}
+.title-rule { width: clamp(48px, 5vw, 72px); height: 2px; background: var(--ink); margin-top: 0.4rem; }
+.bullets {
+  list-style: none; display: flex; flex-direction: column;
+  gap: clamp(0.4rem, 1vh, 0.9rem);
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--bullet-size); line-height: 1.4;
+  color: var(--ink); max-width: 80ch;
+}
+.bullets li { position: relative; padding-left: 1.4em; }
+.bullets li::before {
+  content: ''; position: absolute; left: 0; top: 0.55em;
+  width: 0.55em; height: 2px; background: var(--ink);
+  transform: translateY(-1px);
+}
+.bullets li.frag {
+  opacity: 0; transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(.2,.7,.2,1);
+  pointer-events: none;
+}
+.bullets li.frag.shown { opacity: 1; transform: none; pointer-events: auto; }
+
+.cols {
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem); flex: 1; min-height: 0; align-items: start;
+}
+.cols .bullets { font-size: clamp(0.85rem, 1.4vw, 1.15rem); }
+.figs {
+  display: flex; flex-direction: column; gap: 0.6rem;
+  align-items: center; justify-content: center;
+  max-height: 100%; min-height: 0;
+}
+.figs img {
+  max-width: 100%; max-height: min(60vh, 480px);
+  object-fit: contain; border-radius: 6px;
+}
+.figs img + img { max-height: min(28vh, 220px); }
+
+.figs-only {
+  display: flex; align-items: center; justify-content: center;
+  flex: 1; min-height: 0; gap: 0.8rem; flex-wrap: wrap;
+}
+.figs-only.single img {
+  max-width: 100%; max-height: min(70vh, 560px);
+  object-fit: contain; border-radius: 6px;
+}
+.figs-only.multi {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem; align-content: center;
+}
+.figs-only.multi img {
+  width: 100%; max-height: min(40vh, 320px);
+  object-fit: contain; border-radius: 6px;
+}
+
+.image-grid-body { flex: 1; min-height: 0; }
+.img-grid { flex: 1; min-height: 0; display: grid; gap: 0.5rem; align-content: center; }
+.img-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.img-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.img-grid img { width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
+
+.page-footer {
+  display: flex; justify-content: space-between; align-items: end;
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--small-size); color: var(--muted);
+  border-top: 1px solid rgba(0,0,0,0.12);
+  padding-top: clamp(0.4rem, 1vw, 0.7rem);
+  margin-top: clamp(0.4rem, 1vw, 0.8rem);
+  flex-shrink: 0;
+}
+.page-num { font-variant-numeric: tabular-nums; letter-spacing: 0.05em; }
+
+.slide .page { opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s cubic-bezier(.2,.7,.2,1); }
+.slide .page-title, .slide .display, .slide .eyebrow, .slide .lede,
+.slide .figs img, .slide .figs-only img, .slide .img-grid img,
+.slide .title-rule, .slide .rule {
+  opacity: 0; transform: translateY(8px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(.2,.7,.2,1);
+}
+.slide .bullets li:not(.frag) {
+  opacity: 0; transform: translateY(8px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(.2,.7,.2,1);
+}
+.slide.visible .page { opacity: 1; transform: none; }
+.slide.visible .page-title,
+.slide.visible .display,
+.slide.visible .eyebrow,
+.slide.visible .lede,
+.slide.visible .title-rule,
+.slide.visible .rule,
+.slide.visible .figs img,
+.slide.visible .figs-only img,
+.slide.visible .img-grid img,
+.slide.visible .bullets li:not(.frag) { opacity: 1; transform: none; }
+.slide.visible .bullets li:not(.frag):nth-child(1) { transition-delay: 0.15s; }
+.slide.visible .bullets li:not(.frag):nth-child(2) { transition-delay: 0.25s; }
+.slide.visible .bullets li:not(.frag):nth-child(3) { transition-delay: 0.35s; }
+.slide.visible .bullets li:not(.frag):nth-child(4) { transition-delay: 0.45s; }
+.slide.visible .bullets li:not(.frag):nth-child(5) { transition-delay: 0.55s; }
+.slide.visible .bullets li:not(.frag):nth-child(n+6) { transition-delay: 0.65s; }
+
+#progress {
+  position: fixed; top: 0; left: 0; height: 3px;
+  background: var(--ink); z-index: 49;
+  width: 0%; transition: width 0.2s ease;
+}
+#outline {
+  position: fixed; top: 0; left: 0; width: 320px; height: 100%;
+  background: rgba(255,255,255,0.96); backdrop-filter: blur(6px);
+  border-right: 1px solid rgba(0,0,0,0.08);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  z-index: 40;
+}
+#outline.open { transform: none; }
+#outline h3 {
+  margin: 0; padding: 12px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+#outline ol { list-style: none; padding: 6px 0; margin: 0; }
+#outline li { position: relative; }
+#outline li::before {
+  content: ''; position: absolute; left: 0; top: 6px; bottom: 6px;
+  width: 4px; background: transparent;
+}
+#outline li.sec-intro::before    { background: var(--tab-1); }
+#outline li.sec-business::before { background: var(--tab-2); }
+#outline li.sec-goals::before    { background: var(--tab-3); }
+#outline li.sec-agency::before   { background: var(--tab-4); }
+#outline li.sec-markets::before  { background: var(--tab-5); }
+#outline a {
+  display: flex; gap: 10px; padding: 7px 16px 7px 18px;
+  text-decoration: none; color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px; line-height: 1.3;
+}
+#outline a:hover { background: rgba(0,0,0,0.04); }
+#outline a.active { background: var(--ink); color: #fff; }
+#outline .num {
+  min-width: 32px; font-variant-numeric: tabular-nums;
+  color: var(--muted); font-size: 11px; padding-top: 1px;
+}
+#outline a.active .num { color: #fff; opacity: 0.85; }
+#outline .t { flex: 1; }
+
+#counter {
+  position: fixed; bottom: 14px; right: 18px; z-index: 50;
+  background: rgba(0,0,0,0.65); color: #fff;
+  padding: 5px 12px; border-radius: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+#counter .frag-pos { margin-left: 8px; opacity: 0.7; font-size: 11px; }
+
+#outline-fab {
+  position: fixed; bottom: 14px; left: 18px; z-index: 50;
+  background: rgba(0,0,0,0.65); color: #fff;
+  border: none; cursor: pointer;
+  padding: 5px 12px; border-radius: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px; letter-spacing: 0.08em;
+  display: flex; align-items: center; gap: 6px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+#outline-fab:hover { background: rgba(0,0,0,0.85); }
+#outline-fab:active { transform: scale(0.97); }
+#outline-fab .icon { display: inline-flex; flex-direction: column; gap: 3px; }
+#outline-fab .icon span { display: block; width: 12px; height: 2px; background: #fff; border-radius: 1px; }
+
+@media print { #outline, #counter, #progress, #outline-fab { display: none !important; } }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<button id="outline-fab" type="button" title="Show outline (O)">
+  <span class="icon" aria-hidden="true"><span></span><span></span><span></span></span>
+  Outline
+</button>
+
+<aside id="outline">
+  <h3>Module 0 - 14 slides</h3>
+  <ol>
+<li class="sec-intro"><a href="#" data-goto="0"><span class="num">001</span><span class="t">Introduction</span></a></li>
+<li class="sec-intro"><a href="#" data-goto="1"><span class="num">002</span><span class="t">About the Instructor</span></a></li>
+<li class="sec-business"><a href="#" data-goto="2"><span class="num">003</span><span class="t">About the Course</span></a></li>
+<li class="sec-goals"><a href="#" data-goto="3"><span class="num">004</span><span class="t">Administrative Info</span></a></li>
+<li class="sec-goals"><a href="#" data-goto="4"><span class="num">005</span><span class="t">Administrative Info</span></a></li>
+<li class="sec-goals"><a href="#" data-goto="5"><span class="num">006</span><span class="t">Pre-Course Survey</span></a></li>
+<li class="sec-goals"><a href="#" data-goto="6"><span class="num">007</span><span class="t">Pre-Course Survey</span></a></li>
+<li class="sec-goals"><a href="#" data-goto="7"><span class="num">008</span><span class="t">Pre-Course Survey</span></a></li>
+<li class="sec-goals"><a href="#" data-goto="8"><span class="num">009</span><span class="t">Pre-Course Survey</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="9"><span class="num">010</span><span class="t">Real-world Application of What We Will Learn</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="10"><span class="num">011</span><span class="t">Real-world Application of What We Will Learn</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="11"><span class="num">012</span><span class="t">Real-world Application of What We Will Learn</span></a></li>
+<li class="sec-markets"><a href="#" data-goto="12"><span class="num">013</span><span class="t">Course Overview</span></a></li>
+<li class="sec-markets"><a href="#" data-goto="13"><span class="num">014</span><span class="t">Slide 14</span></a></li>
+  </ol>
+</aside>
+
+<main>
+<section class="slide sec-intro" data-idx="0" data-section="0" data-orig="1" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body title-slide">
+  <div class="eyebrow">Module 00 - Spring 2026</div>
+  <div class="rule"></div>
+  <h1 class="display"><span>Welcome to</span><br><em>FINE 3010</em></h1>
+  <p class="lede">Course logistics, the instructor, and a tour of why finance matters in your career.</p>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">01 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-intro" data-idx="1" data-section="0" data-orig="2" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">About the Instructor</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Name: Renping Li</li>
+    <li>Education: Ph.D. in Finance from Washington University in St. Louis</li>
+    <li>Research Interests:</li>
+    <li>Corporate Governance</li>
+    <li>Banking</li>
+    <li>Municipal Finance</li>
+    <li>Office: GWBC 359</li>
+    <li>Email: rli17@tulane.edu</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">02 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-business" data-idx="2" data-section="1" data-orig="3" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">About the Course</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Introduction</li>
+    <li>Finance core</li>
+    <li>Students from different backgrounds</li>
+    <li>Learn fundamental concepts in finance</li>
+    <li>Build technical skills required to become a finance professional</li>
+    <li>Learning Objectives</li>
+    <li>Learn about financial markets</li>
+    <li>How to make financial decisions</li>
+    <li>How to trade financial securities like stocks, bonds, etc.</li>
+    <li>Nine Modules</li>
+    <li>4 lectures per module</li>
+    <li>3 lectures on material and 1 lecture for review</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">03 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-goals" data-idx="3" data-section="2" data-orig="4" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Administrative Info</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Class Hours:</li>
+    <li>Section 07: 11:00AM - 11:50AM, M/W/F, GWBC 300</li>
+    <li>Section 10: 10:00AM - 10:50AM, M/W/F, GWBC 170</li>
+    <li>Office Hours:</li>
+    <li>In-Person: Monday 1:30PM – 3:00PM</li>
+    <li>Hybrid: Wednesday 1:30PM – 3:00PM (Zoom)</li>
+    <li>Textbook:</li>
+    <li>Fundamentals of Corporate Finance, Edition 11, By Richard Brealey, Stewart Myers and Alan Marcus</li>
+    <li>McGraw Hill Connect</li>
+    <li>Newspapers:</li>
+    <li>Wall Street Journal: https://libguides.tulane.edu/news_newspapers/wsj</li>
+    <li>Financial Times: https://libguides.tulane.edu/news_newspapers/financial_times</li>
+    <li>Have questions? Use the “Discussions” board on Canvas</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">04 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-goals" data-idx="4" data-section="2" data-orig="5" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Administrative Info</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Evaluation:</li>
+    <li>Class attendance: 5%</li>
+    <li>Class participation: 5% (name plates)</li>
+    <li>Homework assignments: 10%</li>
+    <li>In-class quizzes (better one out of two): 15%, 9/19 (Friday) &amp; 11/7 (Friday)</li>
+    <li>Beta regression exercise: 5%</li>
+    <li>In-class mid-term exam: 25%, 10/17 (Friday)</li>
+    <li>Final exam: 35%</li>
+    <li>Section 07 (11:00AM - 11:50AM): 12/8 (Monday), starting 4PM</li>
+    <li>Section 10 (10:00AM - 10:50AM): 12/9 (Tuesday), starting 4PM</li>
+    <li>Accommodation:</li>
+    <li>Register with the Goldman Center for accommodations</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">05 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-goals" data-idx="5" data-section="2" data-orig="6" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Pre-Course Survey</h2>
+  <div class="title-rule"></div>
+  <div class="cols">
+    <ul class="bullets">
+      <li>Best TV Series/Movie about Finance: The Big Short, Succession</li>
+      <li>Inspiring Entrepreneur or Business Personality: Sara Blakely, Mark Cuban</li>
+      <li>Interesting Topics: General understanding about finance and investments</li>
+    </ul>
+    <div class="figs">
+      <img src="assets/slide6_img3.png" alt="" loading="lazy">
+    </div>
+  </div>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">06 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-goals" data-idx="6" data-section="2" data-orig="7" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Pre-Course Survey</h2>
+  <div class="title-rule"></div>
+  <div class="cols">
+    <ul class="bullets">
+      <li>Best TV Series/Movie about Finance: The Big Short, Succession</li>
+      <li>Inspiring Entrepreneur or Business Personality: Sara Blakely, Mark Cuban</li>
+      <li>Interesting Topics: General understanding about finance and investments</li>
+    </ul>
+    <div class="figs">
+      <img src="assets/slide7_img3.jpg" alt="" loading="lazy">
+    </div>
+  </div>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">07 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-goals" data-idx="7" data-section="2" data-orig="8" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Pre-Course Survey</h2>
+  <div class="title-rule"></div>
+  <div class="cols">
+    <ul class="bullets">
+      <li>Best TV Series/Movie about Finance: The Big Short, Succession</li>
+      <li>Inspiring Entrepreneur or Business Personality: Sara Blakely, Mark Cuban</li>
+      <li>Interesting Topics: General understanding about finance and investments</li>
+    </ul>
+    <div class="figs">
+      <img src="assets/slide8_img3.jpg" alt="" loading="lazy">
+    </div>
+  </div>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">08 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-goals" data-idx="8" data-section="2" data-orig="9" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Pre-Course Survey</h2>
+  <div class="title-rule"></div>
+  <div class="cols">
+    <ul class="bullets">
+      <li>Best TV Series/Movie about Finance: The Big Short, Succession</li>
+      <li>Inspiring Entrepreneur or Business Personality: Sara Blakely, Mark Cuban</li>
+      <li>Interesting Topics: General understanding about finance and investments</li>
+    </ul>
+    <div class="figs">
+      <img src="assets/slide9_img3.jpg" alt="" loading="lazy">
+    </div>
+  </div>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">09 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-agency" data-idx="9" data-section="3" data-orig="10" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Real-world Application of What We Will Learn</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Shark Tank (PowerPot): https://www.youtube.com/watch?v=VeCV7kotTlc</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">10 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-agency" data-idx="10" data-section="3" data-orig="11" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Real-world Application of What We Will Learn</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Product:</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">11 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-agency" data-idx="11" data-section="3" data-orig="12" data-frags="16">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Real-world Application of What We Will Learn</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Product: PowerPot thermoelectric generator</li>
+    <li class="frag">Daymond: What do you want to do with the money? 3 things: Hire people, distribution network, expand the product line. How do you plan to raise money?</li>
+    <li class="frag">Module 1: Investment decisions and financing decisions</li>
+    <li class="frag">Kevin: Is there a patent, or can anybody do it?</li>
+    <li class="frag">Module 1: Tangible and intangible assets</li>
+    <li class="frag">What do sharks want as a shareholder? Mark: “I like the social aspects of it”</li>
+    <li class="frag">Module 1: Maximize shareholder value. But there are ethical considerations</li>
+    <li class="frag">Investors ask a lot of questions: Why do you need water? How long does it charge? How much did you raise on Kickstarter?</li>
+    <li class="frag">Module 2, 3 (Accounting): How to explain your business to investors? How to evaluate a business?</li>
+    <li class="frag">Daymond: “You asked for $250,000 for 10%. You value the company at $2.5 million?” Mark: “I’ll offer you $250,000 for 20%.” Deal: $250k for 12% share + 3% in advisory options</li>
+    <li class="frag">Module 4, 5: What are future cash flows worth today? How to value equity and bonds?</li>
+    <li class="frag">How did the entrepreneurs make those 3 investment decisions?</li>
+    <li class="frag">Module 6, 7 (Project Evaluation): How to evaluate projects and choose the best ones to pursue?</li>
+    <li class="frag">How do sharks choose the companies they want to invest in?</li>
+    <li class="frag">Module 8 (Risk-return Trade-off): How to choose the best companies to invest in?</li>
+    <li class="frag">Why do they give up their share? Can’t they get a bank loan?</li>
+    <li class="frag">Module 9 (Corporate Finance): How to choose between debt and equity?</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">12 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-markets" data-idx="12" data-section="4" data-orig="29" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body content-body">
+  <h2 class="page-title">Course Overview</h2>
+  <div class="title-rule"></div>
+  <ul class="bullets">
+    <li>Module 1: Investment decisions and financing decisions</li>
+    <li>Module 1: Tangible and intangible assets</li>
+    <li>Module 1: Maximize shareholder value. But there are ethical considerations</li>
+    <li>Module 2, 3 (Accounting): How to explain your business to investors? How to evaluate a business?</li>
+    <li>Module 4, 5: What are future cash flows worth today? How to value equity and bonds?</li>
+    <li>Module 6, 7 (Project Evaluation): How to evaluate projects and choose the best ones to pursue?</li>
+    <li>Module 8 (Risk-return Trade-off): How to choose the best companies to invest in?</li>
+    <li>Module 9 (Corporate Finance): How to choose between debt and equity?</li>
+  </ul>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">13 / 14</span>
+</div>
+</article>
+</section>
+<section class="slide sec-markets" data-idx="13" data-section="4" data-orig="30" data-frags="0">
+<article class="page">
+<div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
+<div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
+<div class="corner">FINE 3010 - Module 0</div>
+<div class="page-body title-slide">
+  <div class="rule"></div>
+  <h1 class="display"><em>See you Monday</em></h1>
+</div>
+<div class="page-footer">
+  <span>Prof. Renping Li</span>
+  <span class="page-num">14 / 14</span>
+</div>
+</article>
+</section>
+</main>
+
+<div id="counter"><span class="slide-pos">01 / 14</span><span class="frag-pos"></span></div>
+
+<script>
+class SlidePresentation {
+  constructor() {
+    this.slides = Array.from(document.querySelectorAll('.slide'));
+    this.total = this.slides.length;
+    this.currentIdx = 0; this.fragIdx = 0;
+    this.counterSlide = document.querySelector('#counter .slide-pos');
+    this.counterFrag  = document.querySelector('#counter .frag-pos');
+    this.progress = document.getElementById('progress');
+    this.outline = document.getElementById('outline');
+    this.outlineLinks = Array.from(document.querySelectorAll('#outline a[data-goto]'));
+    this.setupObserver(); this.setupKeyboard();
+    this.setupOutline(); this.setupFab();
+    this.handleHash(); this.update();
+  }
+  fragsOf(slideEl) { return Array.from(slideEl.querySelectorAll('.bullets li.frag')); }
+  setupObserver() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.intersectionRatio >= 0.6) {
+          e.target.classList.add('visible');
+          const idx = this.slides.indexOf(e.target);
+          if (idx !== -1 && idx !== this.currentIdx) {
+            this.currentIdx = idx; this.fragIdx = 0;
+            this.applyFragState(); this.update();
+          }
+        }
+      });
+    }, { threshold: [0.6] });
+    this.slides.forEach(s => io.observe(s));
+    this.slides[0].classList.add('visible');
+  }
+  setupKeyboard() {
+    document.addEventListener('keydown', (e) => {
+      if (e.target.matches('input, textarea, [contenteditable]')) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); this.next(); }
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); this.prev(); }
+      else if (e.key === 'Home') { e.preventDefault(); this.go(0); }
+      else if (e.key === 'End')  { e.preventDefault(); this.go(this.total - 1, true, true); }
+      else if (e.key === 'o' || e.key === 'O') { this.outline.classList.toggle('open'); }
+    });
+  }
+  setupOutline() {
+    this.outlineLinks.forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.go(parseInt(a.dataset.goto, 10));
+        if (window.innerWidth < 900) this.outline.classList.remove('open');
+      });
+    });
+  }
+  setupFab() { document.getElementById('outline-fab').onclick = () => this.outline.classList.toggle('open'); }
+  handleHash() {
+    const m = window.location.hash.match(/^#\/?(\d+)/);
+    if (m) {
+      const idx = Math.max(0, Math.min(this.total - 1, parseInt(m[1], 10) - 1));
+      setTimeout(() => this.go(idx, false, false), 50);
+    }
+  }
+  next() {
+    const frags = this.fragsOf(this.slides[this.currentIdx]);
+    if (this.fragIdx < frags.length) { this.fragIdx++; this.applyFragState(); this.update(); }
+    else if (this.currentIdx < this.total - 1) { this.go(this.currentIdx + 1); }
+  }
+  prev() {
+    if (this.fragIdx > 0) { this.fragIdx--; this.applyFragState(); this.update(); }
+    else if (this.currentIdx > 0) { this.go(this.currentIdx - 1, true, true); }
+  }
+  go(idx, updateHash = true, allFrags = false) {
+    idx = Math.max(0, Math.min(this.total - 1, idx));
+    this.currentIdx = idx;
+    this.fragIdx = allFrags ? this.fragsOf(this.slides[idx]).length : 0;
+    this.applyFragState();
+    this.slides[idx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (updateHash) {
+      const h = '#/' + (idx + 1);
+      if (window.location.hash !== h) history.replaceState(null, '', h);
+    }
+    this.update();
+  }
+  applyFragState() {
+    const frags = this.fragsOf(this.slides[this.currentIdx]);
+    frags.forEach((f, i) => f.classList.toggle('shown', i < this.fragIdx));
+  }
+  update() {
+    this.counterSlide.textContent =
+      String(this.currentIdx + 1).padStart(2,'0') + ' / ' + String(this.total).padStart(2,'0');
+    const frags = this.fragsOf(this.slides[this.currentIdx]);
+    this.counterFrag.textContent = frags.length > 0 ? '· ' + this.fragIdx + '/' + frags.length : '';
+    this.progress.style.width = ((this.currentIdx + 1) / this.total * 100) + '%';
+    this.outlineLinks.forEach((a, i) => a.classList.toggle('active', i === this.currentIdx));
+    const active = this.outline.querySelector('a.active');
+    if (active) active.scrollIntoView({ block: 'nearest' });
+  }
+}
+window.addEventListener('DOMContentLoaded', () => new SlidePresentation());
+</script>
+</body>
+</html>
