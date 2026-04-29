@@ -195,6 +195,62 @@ body {
 .img-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .img-grid img { width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
 
+/* Video frame (iframe when embeddable, thumbnail link when not) */
+.video-frame {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.video-frame iframe {
+  width: 100%; max-width: min(100%, 1200px);
+  aspect-ratio: 16 / 9; max-height: 100%;
+  border: 0; border-radius: 8px;
+  box-shadow: 0 12px 24px -12px rgba(0,0,0,0.25);
+}
+.video-thumb {
+  position: relative; display: block;
+  width: 100%; max-width: min(100%, 1100px);
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 12px 24px -12px rgba(0,0,0,0.25);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.video-thumb:hover { transform: translateY(-2px); box-shadow: 0 18px 32px -12px rgba(0,0,0,0.3); }
+.video-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-thumb::after {
+  content: ''; position: absolute;
+  top: 50%; left: 50%;
+  width: clamp(64px, 8vw, 96px);
+  height: clamp(64px, 8vw, 96px);
+  background: rgba(229, 9, 20, 0.92);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.video-thumb:hover::after { background: rgb(229, 9, 20); transform: translate(-50%, -50%) scale(1.08); }
+.video-thumb::before {
+  content: ''; position: absolute;
+  top: 50%; left: calc(50% + 5px);
+  width: 0; height: 0;
+  border-left: clamp(20px, 2.6vw, 30px) solid #fff;
+  border-top: clamp(14px, 1.8vw, 22px) solid transparent;
+  border-bottom: clamp(14px, 1.8vw, 22px) solid transparent;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+.video-caption {
+  margin-top: clamp(0.7rem, 1.5vh, 1rem);
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+}
+
 /* === Instructor slide === */
 .instructor-body {
   flex: 1; min-height: 0;
@@ -264,25 +320,9 @@ body {
   color: var(--ink);
   line-height: 1.4;
 }
-.instr-meta .pill {
-  display: inline-block;
-  background: rgba(0,105,92,0.08);
-  border: 1px solid rgba(0,105,92,0.28);
-  color: var(--accent);
-  border-radius: 999px;
-  padding: 0.22em 0.85em;
-  font-size: 0.94em;
-  font-weight: 500;
-  margin: 0 0.3em 0.3em 0;
-  white-space: nowrap;
-}
-/* Plain clickable email */
+/* Email as a plain green hyperlink */
 .instr-meta dd a {
   color: var(--accent);
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-.instr-meta dd a:hover {
   text-decoration: underline;
 }
 
@@ -421,9 +461,9 @@ body {
 <li class="sec-goals"><a href="#" data-goto="5"><span class="num">006</span><span class="t">Pre-Course Survey</span></a></li>
 <li class="sec-goals"><a href="#" data-goto="6"><span class="num">007</span><span class="t">Pre-Course Survey</span></a></li>
 <li class="sec-goals"><a href="#" data-goto="7"><span class="num">008</span><span class="t">Pre-Course Survey</span></a></li>
-<li class="sec-agency"><a href="#" data-goto="8"><span class="num">009</span><span class="t">Real-world Application of What We Will Learn</span></a></li>
-<li class="sec-agency"><a href="#" data-goto="9"><span class="num">010</span><span class="t">Real-world Application of What We Will Learn</span></a></li>
-<li class="sec-agency"><a href="#" data-goto="10"><span class="num">011</span><span class="t">Real-world Application of What We Will Learn</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="8"><span class="num">009</span><span class="t">Warm-Up</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="9"><span class="num">010</span><span class="t">Warm-Up</span></a></li>
+<li class="sec-agency"><a href="#" data-goto="10"><span class="num">011</span><span class="t">Warm-Up</span></a></li>
 <li class="sec-markets"><a href="#" data-goto="11"><span class="num">012</span><span class="t">Course Overview</span></a></li>
 <li class="sec-markets"><a href="#" data-goto="12"><span class="num">013</span><span class="t">Slide 14</span></a></li>
   </ol>
@@ -465,7 +505,7 @@ body {
       <dt>Education</dt>
       <dd>Ph.D. in Finance, Washington University in St. Louis</dd>
       <dt>Research</dt>
-      <dd><span class="pill">Finance &amp; AI</span><span class="pill">Finance &amp; IO</span><span class="pill">Financial Intermediation</span></dd>
+      <dd>Finance &amp; AI, Finance &amp; IO, Financial Intermediation</dd>
       <dt>Office</dt>
       <dd>GWBC 359</dd>
       <dt>Email</dt>
@@ -644,11 +684,14 @@ body {
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
 <div class="page-body content-body">
-  <h2 class="page-title">Real-world Application of What We Will Learn</h2>
+  <h2 class="page-title">Warm-Up</h2>
   <div class="title-rule"></div>
-  <ul class="bullets">
-    <li>Shark Tank (PowerPot): https://www.youtube.com/watch?v=VeCV7kotTlc</li>
-  </ul>
+  <div class="video-frame">
+    <a class="video-thumb" href="https://www.youtube.com/watch?v=VeCV7kotTlc" target="_blank" rel="noopener" aria-label="Watch on YouTube: Shark Tank - PowerPot">
+      <img src="https://img.youtube.com/vi/VeCV7kotTlc/maxresdefault.jpg" alt="Shark Tank - PowerPot pitch">
+    </a>
+    <div class="video-caption">Click to watch on YouTube - Shark Tank, PowerPot</div>
+  </div>
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
@@ -662,7 +705,7 @@ body {
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
 <div class="page-body content-body">
-  <h2 class="page-title">Real-world Application of What We Will Learn</h2>
+  <h2 class="page-title">Warm-Up</h2>
   <div class="title-rule"></div>
   <ul class="bullets">
     <li>Product:</li>
@@ -680,7 +723,7 @@ body {
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
 <div class="page-body content-body">
-  <h2 class="page-title">Real-world Application of What We Will Learn</h2>
+  <h2 class="page-title">Warm-Up</h2>
   <div class="title-rule"></div>
   <ul class="bullets">
     <li>Product: PowerPot thermoelectric generator</li>
