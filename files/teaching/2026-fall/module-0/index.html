@@ -18,7 +18,7 @@
   --display-size: clamp(2.4rem, 7vw, 5.5rem);
   --h2-size: clamp(1.05rem, 2vw, 1.6rem);
   --body-size: clamp(0.9rem, 1.4vw, 1.15rem);
-  --bullet-size: clamp(0.95rem, 1.6vw, 1.35rem);
+  --bullet-size: clamp(0.95rem, 1.6vw, 1.6rem);
   --small-size: clamp(0.7rem, 1vw, 0.9rem);
   --content-gap: clamp(0.5rem, 1.5vw, 1.2rem);
 }
@@ -195,6 +195,89 @@ body {
 .img-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .img-grid img { width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; }
 
+/* === Instructor slide === */
+.instructor-body {
+  flex: 1; min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.portrait {
+  display: flex; align-items: center; justify-content: center;
+  height: 100%; min-height: 0;
+}
+.portrait img {
+  max-width: 100%;
+  max-height: min(70vh, 540px);
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,0.15));
+}
+.bio { display: flex; flex-direction: column; }
+.instr-name {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4.4vw, 3.6rem);
+  line-height: 1; margin-top: 0.6rem;
+  letter-spacing: -0.01em;
+}
+.instr-role {
+  font-style: italic;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  margin-top: 0.4rem;
+}
+.instr-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: clamp(1rem, 2vw, 1.6rem);
+  row-gap: clamp(0.5rem, 1.2vh, 0.8rem);
+  margin-top: clamp(1.2rem, 2.5vh, 1.6rem);
+  align-items: baseline;
+}
+.instr-meta dt {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: clamp(0.7rem, 1.05vw, 0.95rem);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.instr-meta dd {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  color: var(--ink);
+  line-height: 1.4;
+}
+.instr-meta .pill {
+  display: inline-block;
+  background: var(--bg-outer);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 999px;
+  padding: 0.18em 0.7em;
+  font-size: 0.92em;
+  margin: 0 0.3em 0.3em 0;
+  white-space: nowrap;
+}
+/* Email button styled like the SSRN/Slides links on the personal site */
+.instr-meta dd a.email-btn {
+  display: inline-block;
+  padding: 0.28em 0.85em;
+  font-weight: 500;
+  color: #B31942;
+  background: transparent;
+  border: 1px solid rgba(179, 25, 66, 0.4);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.instr-meta dd a.email-btn:hover {
+  background: #B31942;
+  color: #fff;
+  border-color: #B31942;
+}
+
 .page-footer {
   display: flex; justify-content: space-between; align-items: end;
   font-family: 'DM Sans', sans-serif;
@@ -362,19 +445,26 @@ body {
 <div class="holes" aria-hidden="true"><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div></div>
 <div class="tabs" aria-hidden="true"><div class="tab tab-0"><span>Welcome</span></div><div class="tab tab-1"><span>Course</span></div><div class="tab tab-2"><span>Admin</span></div><div class="tab tab-3"><span>Topics</span></div><div class="tab tab-4"><span>Roadmap</span></div></div>
 <div class="corner">FINE 3010 - Module 0</div>
-<div class="page-body content-body">
-  <h2 class="page-title">About the Instructor</h2>
-  <div class="title-rule"></div>
-  <ul class="bullets">
-    <li>Name: Renping Li</li>
-    <li>Education: Ph.D. in Finance from Washington University in St. Louis</li>
-    <li>Research Interests:</li>
-    <li>Corporate Governance</li>
-    <li>Banking</li>
-    <li>Municipal Finance</li>
-    <li>Office: GWBC 359</li>
-    <li>Email: rli17@tulane.edu</li>
-  </ul>
+<div class="page-body instructor-body">
+  <div class="portrait">
+    <img src="assets/instructor.png" alt="Prof. Renping Li" />
+  </div>
+  <div class="bio">
+    <h2 class="page-title">About the Instructor</h2>
+    <div class="title-rule"></div>
+    <p class="instr-name">Renping Li</p>
+    <p class="instr-role">Assistant Professor of Finance, A. B. Freeman School of Business</p>
+    <dl class="instr-meta">
+      <dt>Education</dt>
+      <dd>Ph.D. in Finance, Washington University in St. Louis</dd>
+      <dt>Research</dt>
+      <dd><span class="pill">Finance &amp; AI</span><span class="pill">Finance &amp; IO</span><span class="pill">Financial Intermediation</span></dd>
+      <dt>Office</dt>
+      <dd>GWBC 359</dd>
+      <dt>Email</dt>
+      <dd><a class="email-btn" href="mailto:rli17@tulane.edu">rli17@tulane.edu</a></dd>
+    </dl>
+  </div>
 </div>
 <div class="page-footer">
   <span>Prof. Renping Li</span>
