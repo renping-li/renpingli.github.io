@@ -203,7 +203,7 @@ Finance and AI, Finance and Industrial Organization
 <ol>
 <li>
 <div class="pub-entry">
-<div class="pub-title">AI Product Displacement Risk</div>
+<div class="pub-title">Generative AI Product Displacement Risk</div>
 <div><em>(with Brett Green &amp; Dimitris Papanikolaou)</em></div>
 <div class="pub-links"><span class="topic-tag">Finance &amp; AI</span> <span class="topic-tag">Finance &amp; IO</span></div>
 <!-- <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558" target="_blank">SSRN</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span></div> -->
@@ -251,7 +251,7 @@ Finance and AI, Finance and Industrial Organization
 <div class="cite-modal-body">
 <pre id="cite1-text">@techreport{GreenLiPapanikolaou2026,
   author    = {Green, Brett and Li, Renping and Papanikolaou, Dimitris},
-  title     = {AI Product Displacement Risk},
+  title     = {Generative AI Product Displacement Risk},
   year      = {2026},
   type      = {Working Paper},
   institution = {Washington University in St.~Louis, Tulane University, Northwestern University},
