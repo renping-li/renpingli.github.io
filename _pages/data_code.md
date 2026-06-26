@@ -54,6 +54,14 @@ author_profile: true
 <ol>
 <li>
 <div class="data-entry">
+<div class="data-title">Generative AI Product Displacement Risk</div>
+<div><em>(Green, Li, &amp; Papanikolaou, 2026)</em></div>
+<div class="data-row"><span class="data-label">Data and code available under request</span></div>
+</div>
+</li>
+
+<li>
+<div class="data-entry">
 <div class="data-title">Investment Bank Consolidation and Municipal Finance</div>
 <div><em>(Li, 2025)</em></div>
 <div class="data-row"><span class="data-label">Replication:</span> <a href="https://github.com/renping-li/MuniUnderwriterMA" target="_blank">GitHub Repository</a></div>
@@ -76,14 +84,6 @@ author_profile: true
 <div><em>(Gopalan, Li, &amp; Žaldokas, 2025)</em></div>
 <div class="data-row"><span class="data-label">Code:</span> <a href="https://github.com/renping-li/renpingli.github.io/blob/master/files/ReusableFiles/fuzzy_firm_name_matching.py" target="_blank">fuzzy_firm_name_matching.py</a></div>
 <div class="data-note">Matching between GS1 (UPC prefixes) and BoardEx by firm name</div>
-</div>
-</li>
-
-<li>
-<div class="data-entry">
-<div class="data-title">Generative AI Product Displacement Risk</div>
-<div><em>(Green, Li, &amp; Papanikolaou, 2026)</em></div>
-<div class="data-row"><span class="data-label">Data and code available under request</span></div>
 </div>
 </li>
 </ol>
