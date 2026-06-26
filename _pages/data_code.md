@@ -78,4 +78,12 @@ author_profile: true
 <div class="data-note">Matching between GS1 (UPC prefixes) and BoardEx by firm name</div>
 </div>
 </li>
+
+<li>
+<div class="data-entry">
+<div class="data-title">Generative AI Product Displacement Risk</div>
+<div><em>(Green, Li, &amp; Papanikolaou, 2026)</em></div>
+<div class="data-row"><span class="data-label">Data and code available under request</span></div>
+</div>
+</li>
 </ol>
