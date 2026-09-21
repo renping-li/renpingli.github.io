@@ -206,6 +206,7 @@ Finance and AI, Finance and Industrial Organization
 <div class="pub-title">Generative AI Product Displacement Risk</div>
 <div><em>(with Brett Green &amp; Dimitris Papanikolaou)</em></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558" target="_blank">SSRN</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span> <span class="topic-tag">Finance &amp; AI</span> <span class="topic-tag">Finance &amp; IO</span></div>
+<div>Conferences: AEA 2027, NFA 2026, AI in Finance Conference (Montréal), AI in Finance Conference (Dresden), Next-Gen AI and Autonomous Finance (NGAI) Workshop</div>
 <details class="abstract"><summary>Abstract</summary><p>Generative AI can raise firm value by replacing workers but destroy it by replacing products. We construct AI Product Displacement Risk (AI-PDR), a firm-level measure of vulnerability to product substitution by generative AI. AI-PDR captures the demand-side threat to revenue---the opposite channel from the supply-side labor cost savings measured by existing AI-exposure indices. Event studies around four AI releases show that the displacement signal strengthens as AI advances from demonstration to targeted product substitution: early capability releases produce no within-industry return spread, a later release reveals a significant spread once correlated beta exposure is absorbed, and the January 2026 launch of AI agents designed to replace specific incumbent SaaS products generates the largest repricing---top-quintile firms underperform bottom-quintile firms by 4.8 percentage points. Digital deliverability drives the entire effect. Analyst target prices decline significantly for high-displacement-risk firms while near-term earnings forecasts are unchanged, consistent with long-horizon repricing.</p></details>
 </div>
 </li>
@@ -213,6 +214,7 @@ Finance and AI, Finance and Industrial Organization
 <li>
 <div class="pub-entry">
 <div class="pub-title">The Effects of Investment Bank Consolidation on Municipal Finance</div>
+<div><em>(solo-authored)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Journal of Finance</b></em></div>
 <div>Recipient of <a href="https://easternfinance.org/best-paper-awards-of-2025/" target="_blank">Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)</a></div>
 <div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748" target="_blank">SSRN</a> <a href="/files/slides_Li_UnderwriterMA.pdf" target="_blank">Slides</a> <a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/" target="_blank">ProMarket</a> <span class="cite-link" onclick="openCite('cite2')">Citation</span> <span class="topic-tag">Finance &amp; IO</span></div>
