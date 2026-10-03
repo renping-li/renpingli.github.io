@@ -239,7 +239,7 @@ Finance and AI, Finance and Industrial Organization
 <div class="pub-entry">
 <div class="pub-title">Board Connections, Firm Profitability, and Product Market Actions</div>
 <div><em>(with Radha Gopalan &amp; Alminas Žaldokas)</em></div>
-<div><em><b>Journal of Financial Economics</b>, 2026, 183, 104332</em></div>
+<div><em><b>Journal of Financial Economics</b>, 2026</em></div>
 <div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/" target="_blank">John L. Weinberg/IRRCi Research Paper Award</a></div>
 <div>Recipient of <a href="http://ewfs.org/award/" target="_blank">Sudipto Bhattacharya Memorial Prize</a></div>
 <div class="pub-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0304405X26001030" target="_blank">Journal</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853" target="_blank">SSRN</a> <a href="/files/slides_GopalanLiZaldokas.pdf" target="_blank">Slides</a> <a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/" target="_blank">CLS Blue Sky Blog</a> <span class="cite-link" onclick="openCite('cite4')">Citation</span> <span class="topic-tag">Finance &amp; IO</span></div>
