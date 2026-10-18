@@ -248,9 +248,12 @@ Finance and AI, Finance and Industrial Organization
 </li>
 </ol>
 
+{% comment %}
+Research word cloud hidden per Renping (Oct 2026), kept for possible future use.
 ## Research Themes
 
 <img src="/images/research_wordcloud.png?v=2" alt="A word cloud of research themes drawn from my papers" style="display:block; width:100%; max-width:780px; margin:0.8em auto 0;">
+{% endcomment %}
 
 <!-- Citation Modals -->
 <div class="cite-overlay" id="cite1" onclick="closeCite(event, 'cite1')">
