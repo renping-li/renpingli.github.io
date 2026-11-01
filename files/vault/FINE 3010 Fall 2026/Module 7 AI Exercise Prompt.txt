@@ -1,0 +1,9 @@
+I am evaluating a data center project. The investment in fixed assets is $1,000 million at year 0, depreciated straight-line over 5 years to zero. The project also needs an increase in net working capital of $100 million at year 0, recovered fully at year 5. It brings in $240 million a year after COGS and SG&A expenses, for years 1 through 5. The corporate tax rate is 21%, and the discount rate is 8%.
+
+Please write a short, self-contained Python script that
+
+1. computes the project's total cash flow in each year and the NPV,
+2. plots how the NPV changes with the discount rate (0% to 12%), with what the project brings in a year ($200 to $320 million), and with the investment in fixed assets ($700 to $1,200 million), one plot per input, holding the other inputs at the base case,
+3. marks the base case and the zero-NPV line on each plot.
+
+Do not compute any numbers yourself, and do not give me the answers directly. Give me only the script, so I can run it, check it, and rerun it with new inputs.
