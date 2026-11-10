@@ -1,10 +1,9 @@
 ---
-permalink: /papers/
+permalink: /
 title:
-excerpt: "About me"
 author_profile: true
 redirect_from:
-  - /
+  - /papers/
   - /about/
   - /about.html
 ---
@@ -192,7 +191,7 @@ details.abstract p {
 }
 </style>
 
-Hi. I am an Assistant Professor of Finance at Tulane University. I received a PhD in Finance from Washington University in St. Louis in 2025. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
+I am an Assistant Professor of Finance at Tulane University. I received a PhD in Finance from Washington University in St. Louis in 2025. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
 
 ## Research Interests
 
