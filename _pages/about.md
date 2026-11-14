@@ -189,6 +189,25 @@ details.abstract p {
   border: 1px solid rgba(10, 49, 97, 0.35);
   border-radius: 3px;
 }
+.pub-links .topic-tag:hover, .pub-links .topic-tag.active {
+  background: #0A3161;
+  color: #fff;
+  border-color: #0A3161;
+}
+
+/* Topic filter banner, shown while the list is filtered to one topic */
+.topic-filter {
+  margin-top: 1.5em;
+  padding: 0.5em 0.9em;
+  background: #f8f8f8;
+  border-left: 3px solid #0A3161;
+  font-size: 0.9em;
+  scroll-margin-top: 5em; /* clear the sticky masthead */
+}
+.topic-filter a {
+  color: #B31942;
+  font-weight: 600;
+}
 </style>
 
 I am an Assistant Professor of Finance at Tulane University. I received a PhD in Finance from Washington University in St. Louis in 2025. I studied at Peking University and The Ohio State University prior to PhD. You are welcome to check my <a href="/files/CV.pdf" target="_blank">CV</a>.
@@ -197,14 +216,16 @@ I am an Assistant Professor of Finance at Tulane University. I received a PhD in
 
 Finance and AI, Finance and Industrial Organization
 
+<div id="topic-filter" class="topic-filter" hidden>Showing papers on <strong id="topic-filter-name"></strong> · <a href="/">Show all papers</a></div>
+
 ## Working Papers
 
-<ol>
+<ol class="pub-list">
 <li>
 <div class="pub-entry">
 <div class="pub-title">Generative AI Product Displacement Risk</div>
 <div><em>(with Brett Green &amp; Dimitris Papanikolaou)</em></div>
-<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558" target="_blank">SSRN</a> <a href="/files/slides_GreenLiPapanikolaou.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span> <span class="topic-tag">Finance &amp; AI</span> <span class="topic-tag">Finance &amp; IO</span></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6368558" target="_blank">SSRN</a> <a href="/files/slides_GreenLiPapanikolaou.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite1')">Citation</span> <a class="topic-tag" href="/?topic=finance-ai">Finance &amp; AI</a> <a class="topic-tag" href="/?topic=finance-io">Finance &amp; IO</a></div>
 <details class="abstract"><summary>Abstract</summary><p>Generative AI can raise firm value by replacing workers but destroy it by replacing products. We construct AI Product Displacement Risk (AI-PDR), a firm-level measure of vulnerability to product substitution by generative AI. AI-PDR captures the demand-side threat to revenue---the opposite channel from the supply-side labor cost savings measured by existing AI-exposure indices. Event studies around four AI releases show that the displacement signal strengthens as AI advances from demonstration to targeted product substitution: early capability releases produce no within-industry return spread, a later release reveals a significant spread once correlated beta exposure is absorbed, and the January 2026 launch of AI agents designed to replace specific incumbent SaaS products generates the largest repricing---top-quintile firms underperform bottom-quintile firms by 4.8 percentage points. Digital deliverability drives the entire effect. Analyst target prices decline significantly for high-displacement-risk firms while near-term earnings forecasts are unchanged, consistent with long-horizon repricing.</p></details>
 </div>
 </li>
@@ -215,7 +236,7 @@ Finance and AI, Finance and Industrial Organization
 <div><em>(solo-authored)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Journal of Finance</b></em></div>
 <div>Recipient of <a href="https://easternfinance.org/best-paper-awards-of-2025/" target="_blank">Outstanding Doctoral Paper Award at EFA 2025 (Philadelphia)</a></div>
-<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748" target="_blank">SSRN</a> <a href="/files/slides_Li_UnderwriterMA.pdf" target="_blank">Slides</a> <a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/" target="_blank">ProMarket</a> <span class="cite-link" onclick="openCite('cite2')">Citation</span> <span class="topic-tag">Finance &amp; IO</span></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4687748" target="_blank">SSRN</a> <a href="/files/slides_Li_UnderwriterMA.pdf" target="_blank">Slides</a> <a href="https://www.promarket.org/2024/05/20/banking-consolidation-raises-the-costs-for-local-governments-to-issue-new-debt/" target="_blank">ProMarket</a> <span class="cite-link" onclick="openCite('cite2')">Citation</span> <a class="topic-tag" href="/?topic=finance-io">Finance &amp; IO</a></div>
 <details class="abstract"><summary>Abstract</summary><p>Antitrust regulators historically focused on commercial banking. Does investment bank consolidation have competitive effects? Using the municipal bond market as a natural laboratory, I find that underwriting spreads increase by 4.5% of their sample mean following within-market consolidation. The effects double for larger M&As or in concentrated markets. Narrative analysis and placebo tests support a causal interpretation. Consolidation does not generate efficiency gains that manifest as lower bond yields or substitution of other issuer-paid services. Further, Census data indicate a decline in issuance after consolidation. My findings provide a novel perspective on bank antitrust regulations.</p></details>
 </div>
 </li>
@@ -225,7 +246,7 @@ Finance and AI, Finance and Industrial Organization
 <div class="pub-title">The Welfare Benefits of Pay-As-You-Go Financing</div>
 <div><em>(with Paul Gertler, Brett Green, &amp; David Sraer)</em></div>
 <div><em>Revise &amp; Resubmit at <b>Review of Economic Studies</b></em></div>
-<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559" target="_blank">SSRN</a> <a href="https://www.nber.org/papers/w33484" target="_blank">NBER Working Paper</a> <a href="/files/slides_GertlerGreenLiSraer.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite3')">Citation</span> <span class="topic-tag">Finance &amp; IO</span></div>
+<div class="pub-links"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4641559" target="_blank">SSRN</a> <a href="https://www.nber.org/papers/w33484" target="_blank">NBER Working Paper</a> <a href="/files/slides_GertlerGreenLiSraer.pdf" target="_blank">Slides</a> <span class="cite-link" onclick="openCite('cite3')">Citation</span> <a class="topic-tag" href="/?topic=finance-io">Finance &amp; IO</a></div>
 <details class="abstract"><summary>Abstract</summary><p>The rapid expansion of digital financial products in low- and middle-income countries has increased access to credit but raises important questions about their welfare effects. Pay-as-you-go (PAYGo) financing is one such product, relying on lockout technology that allows lenders to remotely disable the collateral's flow benefits when borrowers miss payments. This paper quantifies the welfare effects of PAYGo financing. We build a dynamic structural model of consumer behavior and estimate it using a large-scale, multi-arm pricing experiment conducted by a fintech lender that offers PAYGo financing for smartphones. We find that the welfare gains from access to PAYGo financing are equivalent to a 3.4% increase in income while remaining highly profitable for the lender. The welfare gains are larger for low-risk borrowers and those in the middle of the income distribution. Under plausible assumptions, PAYGo dominates traditional secured loans for all but the riskiest consumers. We explore contract design and show that variations of PAYGo contracts can deliver further welfare improvements.</p></details>
 </div>
 </li>
@@ -233,7 +254,7 @@ Finance and AI, Finance and Industrial Organization
 
 ## Publications
 
-<ol style="counter-reset: pub-counter 3;">
+<ol class="pub-list" style="counter-reset: pub-counter 3;">
 <li>
 <div class="pub-entry">
 <div class="pub-title">Board Connections, Firm Profitability, and Product Market Actions</div>
@@ -241,7 +262,7 @@ Finance and AI, Finance and Industrial Organization
 <div><em><b>Journal of Financial Economics</b>, 2026</em></div>
 <div>Recipient of <a href="https://weinberg.udel.edu/2024-corporate-governance-symposium/" target="_blank">John L. Weinberg/IRRCi Research Paper Award</a></div>
 <div>Recipient of <a href="http://ewfs.org/award/" target="_blank">Sudipto Bhattacharya Memorial Prize</a></div>
-<div class="pub-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0304405X26001030" target="_blank">Publisher</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853" target="_blank">SSRN</a> <a href="/files/slides_GopalanLiZaldokas.pdf" target="_blank">Slides</a> <a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/" target="_blank">CLS Blue Sky Blog</a> <span class="cite-link" onclick="openCite('cite4')">Citation</span> <span class="topic-tag">Finance &amp; IO</span></div>
+<div class="pub-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0304405X26001030" target="_blank">Publisher</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4053853" target="_blank">SSRN</a> <a href="/files/slides_GopalanLiZaldokas.pdf" target="_blank">Slides</a> <a href="https://clsbluesky.law.columbia.edu/2023/04/11/do-board-connections-between-product-market-peers-impede-competition/" target="_blank">CLS Blue Sky Blog</a> <span class="cite-link" onclick="openCite('cite4')">Citation</span> <a class="topic-tag" href="/?topic=finance-io">Finance &amp; IO</a></div>
 <details class="abstract"><summary>Abstract</summary><p>A firm's gross margin increases by 0.8 p.p. after forming a new direct board connection to a product market peer. Gross margin also rises by 0.4 p.p. after a connection is formed to a peer indirectly through a third intermediate firm. Further, using barcode-level data of 2.7 million products, we show that new board connections are related to higher consumer good prices, a greater tendency for market allocation, and slower new product introductions. The effects are stronger when the newly connected peers share corporate customers or have similar business descriptions and hold when controlling for other inter-firm relationships.</p></details>
 </div>
 </li>
@@ -350,4 +371,55 @@ function copyBib(preId) {
     });
   });
 }
+
+/* Topic filter: each topic tag links to /?topic=..., which lists only the papers with that tag.
+   The layout collapses this script onto one line, so use block comments and semicolons only. */
+function tagTopic(link) {
+  return new URLSearchParams(link.search).get('topic');
+}
+function showTopic(topic) {
+  var label = '';
+  document.querySelectorAll('.topic-tag').forEach(function(tag) {
+    var active = !!topic && tagTopic(tag) === topic;
+    tag.classList.toggle('active', active);
+    if (active) {
+      label = tag.textContent;
+    }
+  });
+  if (!label) {
+    topic = null;
+  }
+  document.querySelectorAll('.pub-entry').forEach(function(entry) {
+    var topics = Array.from(entry.querySelectorAll('.topic-tag'), tagTopic);
+    entry.closest('li').hidden = !!topic && topics.indexOf(topic) === -1;
+  });
+  /* Hide a section (its heading and list) when it has no matching papers, and keep the numbering continuous */
+  var shown = 0;
+  document.querySelectorAll('ol.pub-list').forEach(function(list) {
+    var count = list.querySelectorAll('li:not([hidden])').length;
+    list.hidden = count === 0;
+    list.previousElementSibling.hidden = count === 0;
+    list.style.counterReset = 'pub-counter ' + shown;
+    shown += count;
+  });
+  document.getElementById('topic-filter-name').textContent = label;
+  document.getElementById('topic-filter').hidden = !topic;
+}
+document.addEventListener('click', function(event) {
+  var link = event.target.closest('.topic-tag, #topic-filter a');
+  if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+    return;
+  }
+  event.preventDefault();
+  var topic = link.classList.contains('active') ? null : tagTopic(link);
+  history.pushState(null, '', topic ? '/?topic=' + topic : '/');
+  showTopic(topic);
+  if (topic) {
+    document.getElementById('topic-filter').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+});
+window.addEventListener('popstate', function() {
+  showTopic(new URLSearchParams(location.search).get('topic'));
+});
+showTopic(new URLSearchParams(location.search).get('topic'));
 </script>
