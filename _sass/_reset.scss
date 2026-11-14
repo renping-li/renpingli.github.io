@@ -70,9 +70,9 @@ a {
   color: $link-color;
 }
 
-/* Apply focus state */
+/* Apply focus state (keyboard focus only, so a mouse click leaves no ring) */
 
-a:focus {
+a:focus-visible {
   @extend %tab-focus;
 }
 
