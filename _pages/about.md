@@ -195,6 +195,14 @@ details.abstract p {
   border-color: #0A3161;
 }
 
+/* Research interests link to the same topic views as the tags */
+a.topic-link {
+  color: #0A3161;
+}
+a.topic-link.active {
+  text-decoration: underline;
+}
+
 /* Topic filter banner, shown while the list is filtered to one topic */
 .topic-filter {
   margin-top: 1.5em;
@@ -214,7 +222,7 @@ I am an Assistant Professor of Finance at Tulane University. I received a PhD in
 
 ## Research Interests
 
-Finance and AI, Finance and Industrial Organization
+<a class="topic-link" href="/?topic=finance-ai">Finance and AI</a>, <a class="topic-link" href="/?topic=finance-io">Finance and Industrial Organization</a>
 
 <div id="topic-filter" class="topic-filter" hidden>Showing papers on <strong id="topic-filter-name"></strong> · <a href="/">Show all papers</a></div>
 
@@ -372,18 +380,19 @@ function copyBib(preId) {
   });
 }
 
-/* Topic filter: each topic tag links to /?topic=..., which lists only the papers with that tag.
+/* Topic filter: each topic tag and research interest links to /?topic=..., which lists only the
+   papers with that tag. The banner names the topic as the research interest spells it.
    The layout collapses this script onto one line, so use block comments and semicolons only. */
 function tagTopic(link) {
   return new URLSearchParams(link.search).get('topic');
 }
 function showTopic(topic) {
   var label = '';
-  document.querySelectorAll('.topic-tag').forEach(function(tag) {
-    var active = !!topic && tagTopic(tag) === topic;
-    tag.classList.toggle('active', active);
-    if (active) {
-      label = tag.textContent;
+  document.querySelectorAll('.topic-link, .topic-tag').forEach(function(link) {
+    var active = !!topic && tagTopic(link) === topic;
+    link.classList.toggle('active', active);
+    if (active && !label) {
+      label = link.textContent;
     }
   });
   if (!label) {
@@ -406,7 +415,7 @@ function showTopic(topic) {
   document.getElementById('topic-filter').hidden = !topic;
 }
 document.addEventListener('click', function(event) {
-  var link = event.target.closest('.topic-tag, #topic-filter a');
+  var link = event.target.closest('.topic-link, .topic-tag, #topic-filter a');
   if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
     return;
   }
